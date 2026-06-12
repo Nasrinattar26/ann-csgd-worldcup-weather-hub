@@ -1,0 +1,38 @@
+[
+  {
+    "init": "2026061200",
+    "product": "expected_precip",
+    "gif_file": "2026061200_expected_precip_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_expected_precip_lead8.gif"
+  },
+  {
+    "init": "2026061200",
+    "product": "prob_gt_0p5inch",
+    "gif_file": "2026061200_prob_gt_0p5inch_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_0p5inch_lead8.gif"
+  },
+  {
+    "init": "2026061200",
+    "product": "prob_gt_1inch",
+    "gif_file": "2026061200_prob_gt_1inch_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_1inch_lead8.gif"
+  },
+  {
+    "init": "2026061200",
+    "product": "prob_gt_2inch",
+    "gif_file": "2026061200_prob_gt_2inch_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_2inch_lead8.gif"
+  },
+  {
+    "init": "2026061200",
+    "product": "prob_gt_2yrARI",
+    "gif_file": "2026061200_prob_gt_2yrARI_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_2yrARI_lead8.gif"
+  },
+  {
+    "init": "2026061200",
+    "product": "prob_gt_5yrARI",
+    "gif_file": "2026061200_prob_gt_5yrARI_lead8.gif",
+    "full_path": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_5yrARI_lead8.gif"
+  }
+]

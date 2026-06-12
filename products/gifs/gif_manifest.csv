@@ -1,0 +1,7 @@
+init,product,gif_file,full_path
+2026061200,expected_precip,2026061200_expected_precip_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_expected_precip_lead8.gif
+2026061200,prob_gt_0p5inch,2026061200_prob_gt_0p5inch_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_0p5inch_lead8.gif
+2026061200,prob_gt_1inch,2026061200_prob_gt_1inch_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_1inch_lead8.gif
+2026061200,prob_gt_2inch,2026061200_prob_gt_2inch_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_2inch_lead8.gif
+2026061200,prob_gt_2yrARI,2026061200_prob_gt_2yrARI_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_2yrARI_lead8.gif
+2026061200,prob_gt_5yrARI,2026061200_prob_gt_5yrARI_lead8.gif,/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026061200/gifs/2026061200_prob_gt_5yrARI_lead8.gif

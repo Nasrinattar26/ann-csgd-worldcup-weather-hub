@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Do not commit large source science files
+*.nc
+*.nc4
+*.h5
+*.hdf5
+
+# Temporary files
+*.tmp
+*.idx
+*.log
