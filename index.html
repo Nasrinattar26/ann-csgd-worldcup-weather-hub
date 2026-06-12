@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
 
-  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_no_ann12_public_v1">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_dashboard_box_v2">
 </head>
 
 <body>
@@ -61,14 +61,13 @@
       <div class="panel">
         <h2>What this dashboard shows</h2>
         <ul class="check-list">
-          <li>Nearest grid-point city time series</li>
-          <li>5×5 grid-cell box statistics</li>
-          <li>Peak value and peak lead time</li>
-          <li>GIF products</li>
-          <li>RT6 quicklook maps</li>
-          <li>forecast comparison maps</li>
-          <li>supporting map data links</li>
-          <li>GRIB2 manifest links</li>
+          <li>Interactive host-city map</li>
+          <li>City-level forecast time series</li>
+          <li>Nearby-grid rainfall statistics</li>
+          <li>Peak rainfall-risk value and timing</li>
+          <li>Forecast animations</li>
+          <li>Forecast comparison maps</li>
+          <li>Downloadable forecast data</li>
         </ul>
       </div>
     </section>
@@ -210,10 +209,10 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data/cities.js?v=2026061200_no_ann12_public_v1"></script>
-  <script src="data/app_data.js?v=2026061200_no_ann12_public_v1"></script>
-  <script src="data/product_manifest.js?v=2026061200_no_ann12_public_v1"></script>
-  <script src="assets/js/product_gallery.js?v=2026061200_no_ann12_public_v1"></script>
-  <script src="assets/js/app.js?v=2026061200_no_ann12_public_v1"></script>
+  <script src="data/app_data.js?v=2026061200_dashboard_box_v2"></script>
+  <script src="data/product_manifest.js?v=2026061200_dashboard_box_v2"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_dashboard_box_v2"></script>
+  <script src="assets/js/app.js?v=2026061200_dashboard_box_v2"></script>
 
 <script>
 (function () {
