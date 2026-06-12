@@ -199,7 +199,11 @@
     }
 
     try {
-      const response = await fetch(city.timeseries_json);
+      
+      const cacheVersion = (APP_DATA && APP_DATA.init) ? `${APP_DATA.init}_real_v1` : Date.now();
+      const sep = city.timeseries_json.includes("?") ? "&" : "?";
+      const response = await fetch(`${city.timeseries_json}${sep}v=${cacheVersion}`);
+
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
