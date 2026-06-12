@@ -14,7 +14,8 @@ window.WC_PRODUCT_MANIFEST = {
     "prob_gt_1inch": "Chance of 1+ inch rainfall",
     "prob_gt_2inch": "Chance of 2+ inch rainfall",
     "prob_gt_2yr": "Chance of exceeding a 2-year rainfall threshold",
-    "prob_gt_5yr": "Chance of exceeding a 5-year rainfall threshold"
+    "prob_gt_5yr": "Chance of exceeding a 5-year rainfall threshold",
+    "support_file": "Supporting download file"
   },
   "excluded_public_product": "expected_precip",
   "counts_by_category": {
@@ -51,7 +52,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.9,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 0.5+ inch rainfall animation",
-      "public_description": "Animated national forecast maps showing how rainfall risk evolves over lead time."
+      "public_description": "Forecast animations"
     },
     {
       "path": "products/conus_gifs/2026061200_prob_gt_1inch_lead8.gif",
@@ -66,7 +67,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.452,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall animation",
-      "public_description": "Animated national forecast maps showing how rainfall risk evolves over lead time."
+      "public_description": "Forecast animations"
     },
     {
       "path": "products/conus_gifs/2026061200_prob_gt_2inch_lead8.gif",
@@ -81,7 +82,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.136,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall animation",
-      "public_description": "Animated national forecast maps showing how rainfall risk evolves over lead time."
+      "public_description": "Forecast animations"
     },
     {
       "path": "products/conus_gifs/2026061200_prob_gt_2yrARI_lead8.gif",
@@ -96,7 +97,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.585,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold animation",
-      "public_description": "Animated national forecast maps showing how rainfall risk evolves over lead time."
+      "public_description": "Forecast animations"
     },
     {
       "path": "products/conus_gifs/2026061200_prob_gt_5yrARI_lead8.gif",
@@ -111,7 +112,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.69,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold animation",
-      "public_description": "Animated national forecast maps showing how rainfall risk evolves over lead time."
+      "public_description": "Forecast animations"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -126,7 +127,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.606,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -141,7 +142,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.593,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -156,7 +157,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.602,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -171,7 +172,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.587,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -186,7 +187,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.595,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -201,7 +202,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.595,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -216,7 +217,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.584,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -231,7 +232,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.593,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -246,7 +247,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.577,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -261,7 +262,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.58,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -276,7 +277,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.587,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -291,7 +292,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.575,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -306,7 +307,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.582,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -321,7 +322,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.567,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -336,7 +337,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.569,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -351,7 +352,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.584,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -366,7 +367,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.571,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -381,7 +382,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.577,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -396,7 +397,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.562,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/conus_ero_2x2/2026061200_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -411,7 +412,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 0.565,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
-      "public_description": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products."
+      "public_description": "Forecast comparison maps"
     },
     {
       "path": "products/grib2/12h/2026061200_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
@@ -426,7 +427,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.297,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 0.5+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/24h/2026061200_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
@@ -441,7 +442,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.213,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 0.5+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/12h/2026061200_ANN12v4_12h_prob_gt_1inch_percent.grib2",
@@ -456,7 +457,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.297,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/24h/2026061200_ANN12v4_24h_prob_gt_1inch_24h.grib2",
@@ -471,7 +472,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.213,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 1+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/12h/2026061200_ANN12v4_12h_prob_gt_2inch_percent.grib2",
@@ -486,7 +487,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.297,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/24h/2026061200_ANN12v4_24h_prob_gt_2inch_24h.grib2",
@@ -501,7 +502,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.213,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of 2+ inch rainfall forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/12h/2026061200_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
@@ -516,7 +517,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.247,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/24h/2026061200_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
@@ -531,7 +532,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.166,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 2-year rainfall threshold forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/12h/2026061200_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
@@ -546,7 +547,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.247,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/24h/2026061200_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
@@ -561,7 +562,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 1.212,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Chance of exceeding a 5-year rainfall threshold forecast data",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/2026061200_ANN12v4_GRIB2_download_package.tar.gz",
@@ -576,7 +577,7 @@ window.WC_PRODUCT_MANIFEST = {
       "size_mb": 5.927,
       "modified_utc": "2026-06-12 19:18 UTC",
       "display_name": "Complete downloadable forecast data package",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/manifest.csv",
@@ -590,8 +591,8 @@ window.WC_PRODUCT_MANIFEST = {
       "size_bytes": 3310,
       "size_mb": 0.003,
       "modified_utc": "2026-06-12 19:18 UTC",
-      "display_name": "Supporting download file supporting file",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "display_name": "Supporting download file supporting download",
+      "public_description": "Downloadable forecast data"
     },
     {
       "path": "products/grib2/manifest.json",
@@ -605,15 +606,15 @@ window.WC_PRODUCT_MANIFEST = {
       "size_bytes": 5506,
       "size_mb": 0.005,
       "modified_utc": "2026-06-12 19:18 UTC",
-      "display_name": "Supporting download file supporting file",
-      "public_description": "Machine-readable forecast files for technical users and downstream systems."
+      "display_name": "Supporting download file supporting download",
+      "public_description": "Downloadable forecast data"
     }
   ],
-  "note": "Public gallery uses plain-language names: forecast animations, forecast comparison maps, and downloadable forecast data. Internal workflow labels such as RT7 are hidden from the website.",
+  "note": "Public-facing product gallery. Internal workflow labels and raw file names are hidden from the main display.",
   "public_category_descriptions": {
     "conus_gifs": "Animated national forecast maps showing how rainfall risk evolves over lead time.",
     "conus_ero_2x2": "Comparison maps showing the ANN-CSGD forecast alongside reference forecast products.",
     "grib2": "Machine-readable forecast files for technical users and downstream systems."
   },
-  "public_title": "ANN-CSGD model forecast products"
+  "public_title": "Forecast Products and Downloads"
 };

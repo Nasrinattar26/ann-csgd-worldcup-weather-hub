@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
 
-  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_public_names_v1">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_public_names_v2">
 </head>
 
 <body>
@@ -66,8 +66,8 @@
           <li>Peak value and peak lead time</li>
           <li>GIF products</li>
           <li>RT6 quicklook maps</li>
-          <li>RT7 2×2 ERO comparison plots</li>
-          <li>ERO GeoJSON links</li>
+          <li>forecast comparison maps</li>
+          <li>supporting map data links</li>
           <li>GRIB2 manifest links</li>
         </ul>
       </div>
@@ -117,8 +117,8 @@
       <div class="panel product-gallery-panel">
         <div class="section-title compact-title">
           <div>
-            <h2>ANN12-v4 Product Gallery</h2>
-            <p>Run-specific GIFs, RT6 quicklooks, RT7 2×2 ERO comparison plots, ERO GeoJSON, and GRIB2 download products.</p>
+            <h2>Forecast Products and Downloads</h2>
+            <p>Forecast animations, comparison maps, and downloadable data for selected rainfall-risk thresholds.</p>
           </div>
         </div>
 
@@ -210,10 +210,10 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data/cities.js?v=2026061200_stateview_v1"></script>
-  <script src="data/app_data.js?v=2026061200_public_names_v1"></script>
-  <script src="data/product_manifest.js?v=2026061200_public_names_v1"></script>
-  <script src="assets/js/product_gallery.js?v=2026061200_public_names_v1"></script>
-  <script src="assets/js/app.js?v=2026061200_public_names_v1"></script>
+  <script src="data/app_data.js?v=2026061200_public_names_v2"></script>
+  <script src="data/product_manifest.js?v=2026061200_public_names_v2"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_public_names_v2"></script>
+  <script src="assets/js/app.js?v=2026061200_public_names_v2"></script>
 
 <script>
 (function () {
@@ -233,8 +233,8 @@
         gifs: "GIF products",
         rt6_quicklooks_full: "RT6 full-domain quicklooks",
         rt6_quicklooks_ero: "RT6 ERO quicklooks",
-        rt7_ero_2x2: "RT7 2×2 ERO comparison plots",
-        ero_geojson: "Clean ERO GeoJSON",
+        rt7_ero_2x2: "forecast comparison maps",
+        ero_geojson: "Clean supporting map data",
         grib2: "GRIB2 products"
       };
       return labels[category] || category;
@@ -308,7 +308,7 @@
         if (isVisual(f.kind)) {
           preview =
             '<a href="' + escapeHtml(f.path) + '" target="_blank" rel="noopener">' +
-            '<img src="' + escapeHtml(f.path) + '" alt="' + escapeHtml(f.name) + '">' +
+            '<img src="' + escapeHtml(f.path) + '" alt="' + escapeHtml(f.display_name || f.product_label || f.name) + '">' +
             '</a>';
         } else {
           preview =
@@ -321,10 +321,10 @@
           preview +
           '<div class="product-card-body">' +
           '<a class="product-name" href="' + escapeHtml(f.path) + '" target="_blank" rel="noopener">' +
-          escapeHtml(f.name) +
+          escapeHtml(f.display_name || f.product_label || f.name) +
           '</a>' +
           '<div class="product-meta">' +
-          '<span>' + escapeHtml(label(f.category)) + '</span>' +
+          '<span>' + escapeHtml(f.category_label || label(f.category)) + '</span>' +
           '<span>' + escapeHtml(f.size_mb) + ' MB</span>' +
           '</div>' +
           '</div>';

@@ -17,9 +17,7 @@
     const labels = {
       conus_gifs: "Forecast animations",
       conus_ero_2x2: "Forecast comparison maps",
-      grib2: "Downloadable forecast data",
-      state_gifs: "State forecast animations",
-      rt7_ero_2x2: "Forecast comparison maps"
+      grib2: "Downloadable forecast data"
     };
     return labels[category] || category || "Unknown";
   }
@@ -149,7 +147,7 @@
             ${escapeHtml(f.display_name || f.product_label || f.name)}
           </a>
           <div class="product-meta">
-            <span>${escapeHtml(humanCategory(f.category))}</span>
+            <span>${escapeHtml(f.category_label || humanCategory(f.category))}</span>
             <span>${escapeHtml(f.size_mb)} MB</span>
           </div>
         </div>
