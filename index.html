@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>ANN-CSGD World Cup Weather Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="description" content="ANN-CSGD World Cup Weather Hub: ANN12-v4 probabilistic precipitation guidance for U.S. FIFA World Cup 2026 host markets.">
 
   <!-- Leaflet map library -->
   <link
@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
 
-  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_products_v3">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_professional_v1">
 </head>
 
 <body>
@@ -26,9 +26,9 @@
     </div>
 
     <div class="hero-card">
-      <div class="small-label">Current mode</div>
-      <div class="big-value">Prototype</div>
-      <div class="small-note">City map and dashboard shell are active. ANN12-v4 data products will be connected next.</div>
+      <div class="small-label">Current run</div>
+      <div class="big-value">INIT 2026061200</div>
+      <div class="small-note">Real ANN12-v4 city-level guidance, product gallery, and downloadable run products are connected.</div>
     </div>
   </header>
 
@@ -54,12 +54,12 @@
           <button class="product-button">P &gt; 5-year ARI</button>
         </div>
         <p class="muted">
-          These buttons are placeholders for now. In the next step, we will connect them to ANN12-v4 city-level time series.
+          Select a product to update the city-level time series, peak values, valid time, and 5×5 grid-box statistics.
         </p>
       </div>
 
       <div class="panel">
-        <h2>Planned Data Layers</h2>
+        <h2>Available Data Layers</h2>
         <ul class="check-list">
           <li>Nearest grid-point city time series</li>
           <li>5×5 grid-cell box statistics</li>
@@ -118,7 +118,7 @@
         <div class="section-title compact-title">
           <div>
             <h2>ANN12-v4 Product Gallery</h2>
-            <p>GIFs, RT6 quicklooks, RT7 2×2 ERO plots, ERO GeoJSON, and GRIB2 product links.</p>
+            <p>Run-specific GIFs, RT6 quicklooks, RT7 2×2 ERO comparison plots, ERO GeoJSON, and GRIB2 download products.</p>
           </div>
         </div>
 
@@ -209,11 +209,11 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="data/cities.js?v=2026061200_real_v1"></script>
-  <script src="data/app_data.js?v=2026061200_real_v1"></script>
-  <script src="data/product_manifest.js?v=2026061200_products_v3"></script>
-  <script src="assets/js/product_gallery.js?v=2026061200_products_v3"></script>
-  <script src="assets/js/app.js?v=2026061200_real_v1"></script>
+  <script src="data/cities.js?v=2026061200_professional_v1"></script>
+  <script src="data/app_data.js?v=2026061200_professional_v1"></script>
+  <script src="data/product_manifest.js?v=2026061200_professional_v1"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_professional_v1"></script>
+  <script src="assets/js/app.js?v=2026061200_professional_v1"></script>
 
 <script>
 (function () {

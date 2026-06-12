@@ -652,3 +652,106 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   STEP 8A PROFESSIONAL POLISH CSS
+   ============================================================ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(255,255,255,0.20), transparent 62%);
+  pointer-events: none;
+}
+
+.hero-text,
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  letter-spacing: -0.045em;
+}
+
+.hero-card {
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
+
+.page {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.panel,
+.map-shell,
+.metric-card {
+  border-color: #cfdaea;
+}
+
+.panel h2,
+.map-shell h2 {
+  letter-spacing: -0.02em;
+}
+
+.control-panel .panel:first-child {
+  border-top: 4px solid var(--blue);
+}
+
+.product-button {
+  transition: all 0.16s ease;
+}
+
+.product-button.active {
+  box-shadow: 0 10px 22px rgba(23, 78, 166, 0.22);
+}
+
+.metric-card,
+.data-card {
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+}
+
+.pill {
+  border: 1px solid rgba(22, 101, 52, 0.12);
+}
+
+.sample-warning {
+  display: none !important;
+}
+
+.product-gallery-panel {
+  border-top: 4px solid #0f766e;
+}
+
+.data-panel {
+  border-top: 4px solid #174ea6;
+}
+
+#map {
+  border-top: 1px solid var(--line);
+}
+
+.city-card h3,
+.product-name {
+  letter-spacing: -0.01em;
+}
+
+.chart {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,251,255,0.96));
+}
+
+footer {
+  max-width: 1680px;
+  margin: 0 auto;
+}
