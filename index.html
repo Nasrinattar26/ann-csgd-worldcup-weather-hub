@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
 
-  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_products_v2">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_products_v3">
 </head>
 
 <body>
@@ -211,8 +211,149 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data/cities.js?v=2026061200_real_v1"></script>
   <script src="data/app_data.js?v=2026061200_real_v1"></script>
-  <script src="data/product_manifest.js?v=2026061200_products_v2"></script>
-  <script src="assets/js/product_gallery.js?v=2026061200_products_v2"></script>
+  <script src="data/product_manifest.js?v=2026061200_products_v3"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_products_v3"></script>
   <script src="assets/js/app.js?v=2026061200_real_v1"></script>
+
+<script>
+(function () {
+  function emergencyGalleryInit() {
+    var manifest = window.WC_PRODUCT_MANIFEST;
+    var select = document.getElementById("gallery-category");
+    var search = document.getElementById("gallery-search");
+    var summary = document.getElementById("gallery-summary");
+    var gallery = document.getElementById("product-gallery");
+
+    if (!manifest || !select || !gallery) {
+      return;
+    }
+
+    function label(category) {
+      var labels = {
+        gifs: "GIF products",
+        rt6_quicklooks_full: "RT6 full-domain quicklooks",
+        rt6_quicklooks_ero: "RT6 ERO quicklooks",
+        rt7_ero_2x2: "RT7 2×2 ERO comparison plots",
+        ero_geojson: "Clean ERO GeoJSON",
+        grib2: "GRIB2 products"
+      };
+      return labels[category] || category;
+    }
+
+    function escapeHtml(s) {
+      return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+        return {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        }[c];
+      });
+    }
+
+    function isVisual(kind) {
+      return kind === "image" || kind === "gif";
+    }
+
+    function populateSelect() {
+      select.innerHTML = "";
+
+      var all = document.createElement("option");
+      all.value = "all";
+      all.textContent = "All products (" + (manifest.n_files || 0) + ")";
+      select.appendChild(all);
+
+      Object.keys(manifest.counts_by_category || {}).sort().forEach(function (cat) {
+        var opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = label(cat) + " (" + manifest.counts_by_category[cat] + ")";
+        select.appendChild(opt);
+      });
+    }
+
+    function render() {
+      var files = manifest.files || [];
+      var cat = select.value || "all";
+      var q = search ? search.value.trim().toLowerCase() : "";
+
+      if (cat !== "all") {
+        files = files.filter(function (f) { return f.category === cat; });
+      }
+
+      if (q) {
+        files = files.filter(function (f) {
+          return String(f.name || "").toLowerCase().indexOf(q) >= 0 ||
+                 String(f.path || "").toLowerCase().indexOf(q) >= 0 ||
+                 String(f.kind || "").toLowerCase().indexOf(q) >= 0 ||
+                 String(f.category || "").toLowerCase().indexOf(q) >= 0;
+        });
+      }
+
+      var shown = files.slice(0, 180);
+
+      if (summary) {
+        summary.textContent =
+          "Manifest INIT " + manifest.init + ": showing " + shown.length +
+          " of " + files.length + " matching files. Total files: " + manifest.n_files + ".";
+      }
+
+      gallery.innerHTML = "";
+
+      shown.forEach(function (f) {
+        var card = document.createElement("div");
+        card.className = "product-card";
+
+        var preview;
+        if (isVisual(f.kind)) {
+          preview =
+            '<a href="' + escapeHtml(f.path) + '" target="_blank" rel="noopener">' +
+            '<img src="' + escapeHtml(f.path) + '" alt="' + escapeHtml(f.name) + '">' +
+            '</a>';
+        } else {
+          preview =
+            '<div class="file-preview">' +
+            '<div class="file-kind">' + escapeHtml(f.kind) + '</div>' +
+            '</div>';
+        }
+
+        card.innerHTML =
+          preview +
+          '<div class="product-card-body">' +
+          '<a class="product-name" href="' + escapeHtml(f.path) + '" target="_blank" rel="noopener">' +
+          escapeHtml(f.name) +
+          '</a>' +
+          '<div class="product-meta">' +
+          '<span>' + escapeHtml(label(f.category)) + '</span>' +
+          '<span>' + escapeHtml(f.size_mb) + ' MB</span>' +
+          '</div>' +
+          '</div>';
+
+        gallery.appendChild(card);
+      });
+    }
+
+    populateSelect();
+    render();
+
+    if (!select.dataset.inlineGalleryListener) {
+      select.addEventListener("change", render);
+      select.dataset.inlineGalleryListener = "true";
+    }
+
+    if (search && !search.dataset.inlineGalleryListener) {
+      search.addEventListener("input", render);
+      search.dataset.inlineGalleryListener = "true";
+    }
+
+    console.log("[InlineGalleryFallback] rendered files:", manifest.n_files);
+  }
+
+  window.addEventListener("load", function () {
+    setTimeout(emergencyGalleryInit, 300);
+  });
+})();
+</script>
+
 </body>
 </html>
