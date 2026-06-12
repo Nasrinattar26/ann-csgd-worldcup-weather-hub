@@ -9,94 +9,107 @@
     "lat": 32.7473,
     "lon": -97.0945
   },
-  "n_records": 96,
+  "nearest_grid": {
+    "grid_i": 77,
+    "grid_j": 120,
+    "grid_lat": 32.75,
+    "grid_lon": -97.0
+  },
+  "box_indices": {
+    "i0": 75,
+    "i1_exclusive": 80,
+    "j0": 118,
+    "j1_exclusive": 123
+  },
+  "n_records": 186,
+  "n_lead_records": 31,
   "products": [
     {
-      "product_id": "expected_precip_mm",
+      "product_id": "expected_precip",
       "product_label": "Expected precipitation",
-      "units": "mm",
+      "units": "mm per 12h",
       "nearest_peak": {
-        "value": 15.22,
+        "value": 15.015392303466797,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 20.547,
+        "value": 16.061546325683594,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
-      "product_id": "prob_gt_0p5inch",
+      "product_id": "prob_gt_0p5inch_percent",
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 71.906,
+        "value": 36.41749572753906,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 97.073,
+        "value": 38.7270393371582,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
-      "product_id": "prob_gt_1inch",
+      "product_id": "prob_gt_1inch_percent",
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 34.424,
+        "value": 19.55271339416504,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 46.473,
+        "value": 21.1820011138916,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
-      "product_id": "prob_gt_2inch",
+      "product_id": "prob_gt_2inch_percent",
       "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 11.884,
+        "value": 6.47735595703125,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 16.043,
+        "value": 7.19677209854126,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
-      "product_id": "prob_gt_2yrARI",
-      "product_label": "Probability > 2-year ARI",
+      "product_id": "prob_gt_2yr12h_ari_percent",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 11.36,
+        "value": 1.576387882232666,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 15.336,
+        "value": 1.613938808441162,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
-      "product_id": "prob_gt_5yrARI",
-      "product_label": "Probability > 5-year ARI",
+      "product_id": "prob_gt_5yr12h_ari_percent",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 5.755,
+        "value": 0.6460249423980713,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 7.769,
+        "value": 0.6516695022583008,
         "lead_hour": 84,
         "valid_time": "2026-06-15 12:00 UTC"
       }
@@ -104,7 +117,8 @@
   ],
   "files": {
     "timeseries_json": "data/cities/dallas_arlington/timeseries_12h.json",
+    "timeseries_csv": "data/cities/dallas_arlington/timeseries_12h.csv",
     "summary_json": "data/cities/dallas_arlington/summary.json"
   },
-  "is_sample_data": true
+  "is_sample_data": false
 }
