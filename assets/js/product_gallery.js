@@ -15,12 +15,9 @@
 
   function humanCategory(category) {
     const labels = {
-      gifs: "GIF products",
-      rt6_quicklooks_full: "RT6 full-domain quicklooks",
-      rt6_quicklooks_ero: "RT6 ERO quicklooks",
-      rt7_ero_2x2: "RT7 2×2 ERO comparison plots",
-      ero_geojson: "Clean ERO GeoJSON",
-      grib2: "GRIB2 products"
+      state_gifs: "State-cropped ANN-CSGD GIFs",
+      ero_2x2: "ERO 2×2 comparison plots",
+      grib2: "GRIB2 downloads"
     };
     return labels[category] || category || "Unknown";
   }
