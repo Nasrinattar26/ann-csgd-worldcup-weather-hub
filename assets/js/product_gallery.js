@@ -1,4 +1,6 @@
 (function () {
+  let initialized = false;
+
   function escapeHtml(s) {
     return String(s ?? "").replace(/[&<>"']/g, function (c) {
       return {
@@ -11,10 +13,6 @@
     });
   }
 
-  function isVisual(kind) {
-    return kind === "image" || kind === "gif";
-  }
-
   function humanCategory(category) {
     const labels = {
       gifs: "GIF products",
@@ -24,14 +22,31 @@
       ero_geojson: "Clean ERO GeoJSON",
       grib2: "GRIB2 products"
     };
-    return labels[category] || category;
+    return labels[category] || category || "Unknown";
+  }
+
+  function isVisual(kind) {
+    return kind === "image" || kind === "gif";
+  }
+
+  function getManifest() {
+    return window.WC_PRODUCT_MANIFEST || {
+      init: "unknown",
+      n_files: 0,
+      counts_by_category: {},
+      counts_by_kind: {},
+      files: []
+    };
   }
 
   function setupGalleryCategorySelect() {
-    const manifest = window.WC_PRODUCT_MANIFEST || { files: [], counts_by_category: {} };
+    const manifest = getManifest();
     const select = document.getElementById("gallery-category");
 
-    if (!select) return;
+    if (!select) {
+      console.warn("[ProductGallery] gallery-category select not found.");
+      return;
+    }
 
     select.innerHTML = "";
 
@@ -51,28 +66,33 @@
   }
 
   function renderGallery() {
-    const manifest = window.WC_PRODUCT_MANIFEST || { files: [] };
+    const manifest = getManifest();
+
     const gallery = document.getElementById("product-gallery");
     const summary = document.getElementById("gallery-summary");
     const categorySelect = document.getElementById("gallery-category");
     const searchInput = document.getElementById("gallery-search");
 
-    if (!gallery) return;
+    if (!gallery) {
+      console.warn("[ProductGallery] product-gallery container not found.");
+      return;
+    }
 
     const category = categorySelect ? categorySelect.value : "all";
     const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
 
     let files = manifest.files || [];
 
-    if (category !== "all") {
+    if (category && category !== "all") {
       files = files.filter(f => f.category === category);
     }
 
     if (query) {
       files = files.filter(f =>
-        String(f.name).toLowerCase().includes(query) ||
-        String(f.path).toLowerCase().includes(query) ||
-        String(f.kind).toLowerCase().includes(query)
+        String(f.name || "").toLowerCase().includes(query) ||
+        String(f.path || "").toLowerCase().includes(query) ||
+        String(f.kind || "").toLowerCase().includes(query) ||
+        String(f.category || "").toLowerCase().includes(query)
       );
     }
 
@@ -80,10 +100,11 @@
     const shown = files.slice(0, maxShow);
 
     if (summary) {
-      if (!files.length) {
-        summary.textContent = "No product files are in the manifest yet. The next step will copy ANN12-v4 products into the GitHub site.";
+      if (!manifest.files || !manifest.files.length) {
+        summary.textContent = "No product files are available in the manifest yet.";
       } else {
-        summary.textContent = `Showing ${shown.length} of ${files.length} matching product files.`;
+        summary.textContent =
+          `Manifest INIT ${manifest.init}: showing ${shown.length} of ${files.length} matching files. Total files: ${manifest.n_files}.`;
       }
     }
 
@@ -92,10 +113,10 @@
     if (!shown.length) {
       gallery.innerHTML = `
         <div class="empty-gallery-card">
-          <h3>Product gallery is ready</h3>
+          <h3>Product gallery is ready, but no matching files are selected</h3>
           <p>
-            No product files have been copied yet. Next, we will populate this section with
-            GIFs, RT6 quicklooks, RT7 2×2 plots, ERO GeoJSON, and safe GRIB2 links/manifests.
+            Try selecting “All products” or clearing the search box. If this message appears with
+            an empty manifest, the product manifest did not load correctly.
           </p>
         </div>
       `;
@@ -107,6 +128,7 @@
       card.className = "product-card";
 
       let preview = "";
+
       if (isVisual(f.kind)) {
         preview = `
           <a href="${escapeHtml(f.path)}" target="_blank" rel="noopener">
@@ -138,19 +160,47 @@
     }
   }
 
-  window.initProductGallery = function () {
-    setupGalleryCategorySelect();
-    renderGallery();
-
+  function attachListeners() {
     const categorySelect = document.getElementById("gallery-category");
     const searchInput = document.getElementById("gallery-search");
 
-    if (categorySelect) {
+    if (categorySelect && !categorySelect.dataset.galleryListenerAttached) {
       categorySelect.addEventListener("change", renderGallery);
+      categorySelect.dataset.galleryListenerAttached = "true";
     }
 
-    if (searchInput) {
+    if (searchInput && !searchInput.dataset.galleryListenerAttached) {
       searchInput.addEventListener("input", renderGallery);
+      searchInput.dataset.galleryListenerAttached = "true";
     }
+  }
+
+  window.initProductGallery = function () {
+    const manifest = getManifest();
+
+    console.log("[ProductGallery] Initializing. Files:", manifest.n_files);
+
+    setupGalleryCategorySelect();
+    attachListeners();
+    renderGallery();
+
+    initialized = true;
   };
+
+  function autoInit() {
+    if (initialized) return;
+
+    const gallery = document.getElementById("product-gallery");
+    const manifest = window.WC_PRODUCT_MANIFEST;
+
+    if (gallery && manifest) {
+      window.initProductGallery();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", autoInit);
+  } else {
+    autoInit();
+  }
 })();
