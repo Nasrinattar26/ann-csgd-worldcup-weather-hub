@@ -16,7 +16,7 @@
   function humanCategory(category) {
     const labels = {
       state_gifs: "State-cropped ANN-CSGD GIFs",
-      ero_2x2: "ERO 2×2 comparison plots",
+      rt7_ero_2x2: "ERO 2×2 comparison plots",
       grib2: "GRIB2 downloads"
     };
     return labels[category] || category || "Unknown";
