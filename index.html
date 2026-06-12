@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ANN-CSGD World Cup Weather Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="description" content="ANN-CSGD World Cup Weather Hub: ANN12-v4 probabilistic precipitation guidance for U.S. FIFA World Cup 2026 host markets.">
+  <title>ANN-CSGD Model World Cup Weather Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="description" content="ANN-CSGD World Cup Weather Hub: ANN-CSGD model probabilistic precipitation guidance for U.S. FIFA World Cup 2026 host markets.">
 
   <!-- Leaflet map library -->
   <link
@@ -11,24 +11,24 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   >
 
-  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_public_names_v2">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026061200_no_ann12_public_v1">
 </head>
 
 <body>
   <header class="hero">
     <div class="hero-text">
-      <div class="eyebrow">ANN12-v4 real-time probabilistic precipitation guidance</div>
+      <div class="eyebrow">ANN-CSGD model real-time probabilistic precipitation guidance</div>
       <h1>ANN-CSGD World Cup Weather Hub</h1>
       <p>
         Interactive weather-risk dashboard for U.S. FIFA World Cup 2026 host markets,
-        powered by the ANN-CSGD / ANN12-v4 real-time workflow.
+        powered by the ANN-CSGD real-time forecast workflow.
       </p>
     </div>
 
     <div class="hero-card">
       <div class="small-label">Current run</div>
       <div class="big-value">INIT 2026061200</div>
-      <div class="small-note">Real ANN12-v4 city-level guidance, product gallery, and downloadable run products are connected.</div>
+      <div class="small-note">Real ANN-CSGD city-level guidance, forecast products, and downloadable data are connected.</div>
     </div>
   </header>
 
@@ -44,7 +44,7 @@
       </div>
 
       <div class="panel">
-        <h2>ANN12-v4 Products</h2>
+        <h2>Rainfall Risk Products</h2>
         <div class="product-list">
           <button class="product-button active">Expected precipitation</button>
           <button class="product-button">P &gt; 0.5 inch</button>
@@ -135,15 +135,15 @@
       <div class="panel data-panel">
         <div class="section-title compact-title">
           <div>
-            <h2>ANN12-v4 City-Level Time Series</h2>
-            <p id="data-status">Loading ANN12-v4 sample data...</p>
+            <h2>City-Level Rainfall Risk Forecast</h2>
+            <p id="data-status">Loading ANN-CSGD model sample data...</p>
           </div>
           <div id="run-badge" class="pill">INIT —</div>
         </div>
 
         <div id="sample-warning" class="sample-warning">
           Sample mode: these values are synthetic placeholders used only to test the interface.
-          The next step will replace them with real ANN12-v4 NetCDF-extracted city data.
+          The next step will replace them with real ANN-CSGD model NetCDF-extracted city data.
         </div>
 
         <div class="data-grid">
@@ -204,16 +204,16 @@
   </main>
 
   <footer>
-    <span>Generated for Nasrin Attar’s ANN-CSGD / ANN12-v4 real-time workflow on UTA HPC alph.</span>
+    <span>Generated for Nasrin Attar’s ANN-CSGD / ANN-CSGD model real-time workflow on UTA HPC alph.</span>
     <span>Static GitHub Pages site.</span>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="data/cities.js?v=2026061200_stateview_v1"></script>
-  <script src="data/app_data.js?v=2026061200_public_names_v2"></script>
-  <script src="data/product_manifest.js?v=2026061200_public_names_v2"></script>
-  <script src="assets/js/product_gallery.js?v=2026061200_public_names_v2"></script>
-  <script src="assets/js/app.js?v=2026061200_public_names_v2"></script>
+  <script src="data/cities.js?v=2026061200_no_ann12_public_v1"></script>
+  <script src="data/app_data.js?v=2026061200_no_ann12_public_v1"></script>
+  <script src="data/product_manifest.js?v=2026061200_no_ann12_public_v1"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_no_ann12_public_v1"></script>
+  <script src="assets/js/app.js?v=2026061200_no_ann12_public_v1"></script>
 
 <script>
 (function () {
