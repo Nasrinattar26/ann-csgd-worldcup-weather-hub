@@ -1,0 +1,1399 @@
+{
+  "title": "ANN-CSGD World Cup Weather Hub",
+  "init": "2026061200",
+  "created_utc": "2026-06-12 18:25 UTC",
+  "mode": "sample",
+  "is_sample_data": true,
+  "sample_note": "This is synthetic ANN12-like data used only to test the interactive dashboard before connecting the real ANN12-v4 NetCDF.",
+  "products": [
+    {
+      "id": "expected_precip_mm",
+      "label": "Expected precipitation",
+      "units": "mm",
+      "kind": "amount"
+    },
+    {
+      "id": "prob_gt_0p5inch",
+      "label": "Probability > 0.5 inch",
+      "units": "%",
+      "kind": "probability"
+    },
+    {
+      "id": "prob_gt_1inch",
+      "label": "Probability > 1 inch",
+      "units": "%",
+      "kind": "probability"
+    },
+    {
+      "id": "prob_gt_2inch",
+      "label": "Probability > 2 inch",
+      "units": "%",
+      "kind": "probability"
+    },
+    {
+      "id": "prob_gt_2yrARI",
+      "label": "Probability > 2-year ARI",
+      "units": "%",
+      "kind": "probability"
+    },
+    {
+      "id": "prob_gt_5yrARI",
+      "label": "Probability > 5-year ARI",
+      "units": "%",
+      "kind": "probability"
+    }
+  ],
+  "lead_hours": [
+    12,
+    24,
+    36,
+    48,
+    60,
+    72,
+    84,
+    96,
+    108,
+    120,
+    132,
+    144,
+    156,
+    168,
+    180,
+    192
+  ],
+  "cities": [
+    {
+      "id": "atlanta",
+      "market": "Atlanta",
+      "display_name": "Atlanta",
+      "stadium_area": "Mercedes-Benz Stadium area",
+      "state": "GA",
+      "lat": 33.7554,
+      "lon": -84.4008,
+      "timeseries_json": "data/cities/atlanta/timeseries_12h.json",
+      "summary_json": "data/cities/atlanta/summary.json"
+    },
+    {
+      "id": "boston_foxborough",
+      "market": "Boston / Foxborough",
+      "display_name": "Boston / Foxborough",
+      "stadium_area": "Gillette Stadium area",
+      "state": "MA",
+      "lat": 42.0909,
+      "lon": -71.2643,
+      "timeseries_json": "data/cities/boston_foxborough/timeseries_12h.json",
+      "summary_json": "data/cities/boston_foxborough/summary.json"
+    },
+    {
+      "id": "dallas_arlington",
+      "market": "Dallas / Arlington",
+      "display_name": "Dallas / Arlington",
+      "stadium_area": "AT&T Stadium area",
+      "state": "TX",
+      "lat": 32.7473,
+      "lon": -97.0945,
+      "timeseries_json": "data/cities/dallas_arlington/timeseries_12h.json",
+      "summary_json": "data/cities/dallas_arlington/summary.json"
+    },
+    {
+      "id": "houston",
+      "market": "Houston",
+      "display_name": "Houston",
+      "stadium_area": "NRG Stadium area",
+      "state": "TX",
+      "lat": 29.6847,
+      "lon": -95.4107,
+      "timeseries_json": "data/cities/houston/timeseries_12h.json",
+      "summary_json": "data/cities/houston/summary.json"
+    },
+    {
+      "id": "kansas_city",
+      "market": "Kansas City",
+      "display_name": "Kansas City",
+      "stadium_area": "Arrowhead Stadium area",
+      "state": "MO",
+      "lat": 39.049,
+      "lon": -94.4839,
+      "timeseries_json": "data/cities/kansas_city/timeseries_12h.json",
+      "summary_json": "data/cities/kansas_city/summary.json"
+    },
+    {
+      "id": "los_angeles_inglewood",
+      "market": "Los Angeles / Inglewood",
+      "display_name": "Los Angeles / Inglewood",
+      "stadium_area": "SoFi Stadium area",
+      "state": "CA",
+      "lat": 33.9535,
+      "lon": -118.3392,
+      "timeseries_json": "data/cities/los_angeles_inglewood/timeseries_12h.json",
+      "summary_json": "data/cities/los_angeles_inglewood/summary.json"
+    },
+    {
+      "id": "miami_gardens",
+      "market": "Miami / Miami Gardens",
+      "display_name": "Miami / Miami Gardens",
+      "stadium_area": "Hard Rock Stadium area",
+      "state": "FL",
+      "lat": 25.958,
+      "lon": -80.2389,
+      "timeseries_json": "data/cities/miami_gardens/timeseries_12h.json",
+      "summary_json": "data/cities/miami_gardens/summary.json"
+    },
+    {
+      "id": "new_york_new_jersey",
+      "market": "New York / New Jersey",
+      "display_name": "New York / New Jersey",
+      "stadium_area": "MetLife Stadium area",
+      "state": "NJ",
+      "lat": 40.8135,
+      "lon": -74.0745,
+      "timeseries_json": "data/cities/new_york_new_jersey/timeseries_12h.json",
+      "summary_json": "data/cities/new_york_new_jersey/summary.json"
+    },
+    {
+      "id": "philadelphia",
+      "market": "Philadelphia",
+      "display_name": "Philadelphia",
+      "stadium_area": "Lincoln Financial Field area",
+      "state": "PA",
+      "lat": 39.9008,
+      "lon": -75.1675,
+      "timeseries_json": "data/cities/philadelphia/timeseries_12h.json",
+      "summary_json": "data/cities/philadelphia/summary.json"
+    },
+    {
+      "id": "san_francisco_santa_clara",
+      "market": "San Francisco Bay Area / Santa Clara",
+      "display_name": "San Francisco Bay Area / Santa Clara",
+      "stadium_area": "Levi's Stadium area",
+      "state": "CA",
+      "lat": 37.403,
+      "lon": -121.97,
+      "timeseries_json": "data/cities/san_francisco_santa_clara/timeseries_12h.json",
+      "summary_json": "data/cities/san_francisco_santa_clara/summary.json"
+    },
+    {
+      "id": "seattle",
+      "market": "Seattle",
+      "display_name": "Seattle",
+      "stadium_area": "Lumen Field area",
+      "state": "WA",
+      "lat": 47.5952,
+      "lon": -122.3316,
+      "timeseries_json": "data/cities/seattle/timeseries_12h.json",
+      "summary_json": "data/cities/seattle/summary.json"
+    }
+  ],
+  "city_summaries": [
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "atlanta",
+        "market": "Atlanta",
+        "display_name": "Atlanta",
+        "stadium_area": "Mercedes-Benz Stadium area",
+        "state": "GA",
+        "lat": 33.7554,
+        "lon": -84.4008
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 17.37,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 23.449,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 80.601,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 108.811,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 38.431,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 51.882,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 13.172,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 17.782,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 12.445,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.801,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 6.306,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 8.513,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/atlanta/timeseries_12h.json",
+        "summary_json": "data/cities/atlanta/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "boston_foxborough",
+        "market": "Boston / Foxborough",
+        "display_name": "Boston / Foxborough",
+        "stadium_area": "Gillette Stadium area",
+        "state": "MA",
+        "lat": 42.0909,
+        "lon": -71.2643
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 14.186,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 19.151,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 67.062,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 90.534,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 31.917,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 43.088,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.071,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.946,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 10.675,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.411,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 5.407,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 7.299,
+            "lead_hour": 96,
+            "valid_time": "2026-06-16 00:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/boston_foxborough/timeseries_12h.json",
+        "summary_json": "data/cities/boston_foxborough/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "dallas_arlington",
+        "market": "Dallas / Arlington",
+        "display_name": "Dallas / Arlington",
+        "stadium_area": "AT&T Stadium area",
+        "state": "TX",
+        "lat": 32.7473,
+        "lon": -97.0945
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 15.22,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 20.547,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 71.906,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 97.073,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 34.424,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 46.473,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.884,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.043,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.36,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 15.336,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 5.755,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 7.769,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/dallas_arlington/timeseries_12h.json",
+        "summary_json": "data/cities/dallas_arlington/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "houston",
+        "market": "Houston",
+        "display_name": "Houston",
+        "stadium_area": "NRG Stadium area",
+        "state": "TX",
+        "lat": 29.6847,
+        "lon": -95.4107
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 16.33,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 22.046,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 76.516,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 103.297,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 36.599,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 49.408,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 12.579,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.982,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.937,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.116,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 6.046,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 8.162,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/houston/timeseries_12h.json",
+        "summary_json": "data/cities/houston/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "kansas_city",
+        "market": "Kansas City",
+        "display_name": "Kansas City",
+        "stadium_area": "Arrowhead Stadium area",
+        "state": "MO",
+        "lat": 39.049,
+        "lon": -94.4839
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 13.526,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 18.26,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 64.527,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 87.111,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 30.916,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 41.736,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 10.747,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.508,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 10.4,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.04,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 5.267,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 7.111,
+            "lead_hour": 72,
+            "valid_time": "2026-06-15 00:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/kansas_city/timeseries_12h.json",
+        "summary_json": "data/cities/kansas_city/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "los_angeles_inglewood",
+        "market": "Los Angeles / Inglewood",
+        "display_name": "Los Angeles / Inglewood",
+        "stadium_area": "SoFi Stadium area",
+        "state": "CA",
+        "lat": 33.9535,
+        "lon": -118.3392
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 8.488,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 11.458,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 43.433,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 58.635,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 20.787,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 28.063,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 7.41,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 10.003,
+            "lead_hour": 108,
+            "valid_time": "2026-06-16 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 7.536,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 10.174,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 3.803,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 5.134,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/los_angeles_inglewood/timeseries_12h.json",
+        "summary_json": "data/cities/los_angeles_inglewood/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "miami_gardens",
+        "market": "Miami / Miami Gardens",
+        "display_name": "Miami / Miami Gardens",
+        "stadium_area": "Hard Rock Stadium area",
+        "state": "FL",
+        "lat": 25.958,
+        "lon": -80.2389
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 17.339,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 23.407,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 80.543,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 108.733,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 38.433,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 51.884,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 13.13,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 17.726,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 12.362,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.688,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 6.25,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 8.438,
+            "lead_hour": 120,
+            "valid_time": "2026-06-17 00:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/miami_gardens/timeseries_12h.json",
+        "summary_json": "data/cities/miami_gardens/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "new_york_new_jersey",
+        "market": "New York / New Jersey",
+        "display_name": "New York / New Jersey",
+        "stadium_area": "MetLife Stadium area",
+        "state": "NJ",
+        "lat": 40.8135,
+        "lon": -74.0745
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 14.748,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 19.91,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 69.87,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 94.325,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 33.434,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 45.136,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.551,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 15.593,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.067,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.941,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 5.603,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 7.564,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/new_york_new_jersey/timeseries_12h.json",
+        "summary_json": "data/cities/new_york_new_jersey/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "philadelphia",
+        "market": "Philadelphia",
+        "display_name": "Philadelphia",
+        "stadium_area": "Lincoln Financial Field area",
+        "state": "PA",
+        "lat": 39.9008,
+        "lon": -75.1675
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 13.908,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 18.775,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 66.197,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 89.366,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 31.627,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 42.697,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 10.933,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.759,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 10.515,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 14.195,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 5.314,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 7.173,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/philadelphia/timeseries_12h.json",
+        "summary_json": "data/cities/philadelphia/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "san_francisco_santa_clara",
+        "market": "San Francisco Bay Area / Santa Clara",
+        "display_name": "San Francisco Bay Area / Santa Clara",
+        "stadium_area": "Levi's Stadium area",
+        "state": "CA",
+        "lat": 37.403,
+        "lon": -121.97
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 19.781,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 26.704,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 90.968,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 122.807,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 43.465,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 58.677,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 14.802,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 19.983,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 13.81,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 18.644,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 6.997,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 9.446,
+            "lead_hour": 60,
+            "valid_time": "2026-06-14 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/san_francisco_santa_clara/timeseries_12h.json",
+        "summary_json": "data/cities/san_francisco_santa_clara/summary.json"
+      },
+      "is_sample_data": true
+    },
+    {
+      "init": "2026061200",
+      "city": {
+        "id": "seattle",
+        "market": "Seattle",
+        "display_name": "Seattle",
+        "stadium_area": "Lumen Field area",
+        "state": "WA",
+        "lat": 47.5952,
+        "lon": -122.3316
+      },
+      "n_records": 96,
+      "products": [
+        {
+          "product_id": "expected_precip_mm",
+          "product_label": "Expected precipitation",
+          "units": "mm",
+          "nearest_peak": {
+            "value": 16.276,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 21.973,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_0p5inch",
+          "product_label": "Probability > 0.5 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 76.342,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 103.062,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_1inch",
+          "product_label": "Probability > 1 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 36.537,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 49.325,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2inch",
+          "product_label": "Probability > 2 inch",
+          "units": "%",
+          "nearest_peak": {
+            "value": 12.571,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.97,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_2yrARI",
+          "product_label": "Probability > 2-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 11.941,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 16.12,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        },
+        {
+          "product_id": "prob_gt_5yrARI",
+          "product_label": "Probability > 5-year ARI",
+          "units": "%",
+          "nearest_peak": {
+            "value": 6.051,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          },
+          "box_max_peak": {
+            "value": 8.168,
+            "lead_hour": 84,
+            "valid_time": "2026-06-15 12:00 UTC"
+          }
+        }
+      ],
+      "files": {
+        "timeseries_json": "data/cities/seattle/timeseries_12h.json",
+        "summary_json": "data/cities/seattle/summary.json"
+      },
+      "is_sample_data": true
+    }
+  ]
+}

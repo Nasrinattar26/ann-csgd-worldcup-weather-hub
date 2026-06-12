@@ -304,3 +304,131 @@ footer {
     flex-direction: column;
   }
 }
+
+/* ============================================================
+   STEP 4B DATA PANEL CSS
+   ============================================================ */
+
+.compact-title {
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.sample-warning {
+  margin: 0 0 14px;
+  border: 1px solid #facc15;
+  border-radius: 16px;
+  padding: 12px 14px;
+  background: #fef9c3;
+  color: #854d0e;
+  line-height: 1.45;
+  font-size: 0.92rem;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.data-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8fbff, #ffffff);
+  padding: 15px;
+}
+
+.data-value {
+  margin-top: 7px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--blue-dark);
+  overflow-wrap: anywhere;
+}
+
+.chart-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 16px;
+  align-items: start;
+  margin: 4px 0 12px;
+}
+
+.chart-toolbar p {
+  margin-top: 4px;
+}
+
+#metric-select {
+  margin-bottom: 0;
+}
+
+.chart {
+  width: 100%;
+  min-height: 280px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fbfdff;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.chart svg {
+  width: 100%;
+  height: 280px;
+  display: block;
+}
+
+.chart-empty {
+  padding: 24px;
+  color: var(--muted);
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+#timeseries-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: white;
+}
+
+#timeseries-table th,
+#timeseries-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+#timeseries-table th {
+  background: var(--soft-blue);
+  color: #1e3a8a;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#timeseries-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+@media (max-width: 1050px) {
+  .data-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chart-toolbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+}

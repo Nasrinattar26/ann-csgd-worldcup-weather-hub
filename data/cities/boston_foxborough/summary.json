@@ -1,0 +1,110 @@
+{
+  "init": "2026061200",
+  "city": {
+    "id": "boston_foxborough",
+    "market": "Boston / Foxborough",
+    "display_name": "Boston / Foxborough",
+    "stadium_area": "Gillette Stadium area",
+    "state": "MA",
+    "lat": 42.0909,
+    "lon": -71.2643
+  },
+  "n_records": 96,
+  "products": [
+    {
+      "product_id": "expected_precip_mm",
+      "product_label": "Expected precipitation",
+      "units": "mm",
+      "nearest_peak": {
+        "value": 14.186,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 19.151,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_0p5inch",
+      "product_label": "Probability > 0.5 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 67.062,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 90.534,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_1inch",
+      "product_label": "Probability > 1 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 31.917,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 43.088,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2inch",
+      "product_label": "Probability > 2 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 11.071,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 14.946,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2yrARI",
+      "product_label": "Probability > 2-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 10.675,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 14.411,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_5yrARI",
+      "product_label": "Probability > 5-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 5.407,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 7.299,
+        "lead_hour": 96,
+        "valid_time": "2026-06-16 00:00 UTC"
+      }
+    }
+  ],
+  "files": {
+    "timeseries_json": "data/cities/boston_foxborough/timeseries_12h.json",
+    "summary_json": "data/cities/boston_foxborough/summary.json"
+  },
+  "is_sample_data": true
+}

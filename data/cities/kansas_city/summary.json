@@ -1,0 +1,110 @@
+{
+  "init": "2026061200",
+  "city": {
+    "id": "kansas_city",
+    "market": "Kansas City",
+    "display_name": "Kansas City",
+    "stadium_area": "Arrowhead Stadium area",
+    "state": "MO",
+    "lat": 39.049,
+    "lon": -94.4839
+  },
+  "n_records": 96,
+  "products": [
+    {
+      "product_id": "expected_precip_mm",
+      "product_label": "Expected precipitation",
+      "units": "mm",
+      "nearest_peak": {
+        "value": 13.526,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 18.26,
+        "lead_hour": 84,
+        "valid_time": "2026-06-15 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_0p5inch",
+      "product_label": "Probability > 0.5 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 64.527,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 87.111,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_1inch",
+      "product_label": "Probability > 1 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 30.916,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 41.736,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2inch",
+      "product_label": "Probability > 2 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 10.747,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 14.508,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2yrARI",
+      "product_label": "Probability > 2-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 10.4,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 14.04,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_5yrARI",
+      "product_label": "Probability > 5-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 5.267,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 7.111,
+        "lead_hour": 72,
+        "valid_time": "2026-06-15 00:00 UTC"
+      }
+    }
+  ],
+  "files": {
+    "timeseries_json": "data/cities/kansas_city/timeseries_12h.json",
+    "summary_json": "data/cities/kansas_city/summary.json"
+  },
+  "is_sample_data": true
+}

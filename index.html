@@ -114,13 +114,73 @@
         <div id="city-grid" class="city-grid"></div>
       </div>
 
-      <div class="panel placeholder-panel">
-        <h2>ANN12-v4 Data Preview</h2>
-        <p>
-          This section will become the city-level ANN12-v4 forecast table and time-series chart.
-          Next, we will generate <code>data/app_data.json</code> and connect the dashboard to your
-          NetCDF output from the selected INIT/run.
-        </p>
+      <div class="panel data-panel">
+        <div class="section-title compact-title">
+          <div>
+            <h2>ANN12-v4 City-Level Time Series</h2>
+            <p id="data-status">Loading ANN12-v4 sample data...</p>
+          </div>
+          <div id="run-badge" class="pill">INIT —</div>
+        </div>
+
+        <div id="sample-warning" class="sample-warning">
+          Sample mode: these values are synthetic placeholders used only to test the interface.
+          The next step will replace them with real ANN12-v4 NetCDF-extracted city data.
+        </div>
+
+        <div class="data-grid">
+          <div class="data-card">
+            <div class="small-label">Nearest-grid peak</div>
+            <div id="peak-nearest" class="data-value">—</div>
+          </div>
+
+          <div class="data-card">
+            <div class="small-label">5×5 box-max peak</div>
+            <div id="peak-box" class="data-value">—</div>
+          </div>
+
+          <div class="data-card">
+            <div class="small-label">Peak lead hour</div>
+            <div id="peak-lead" class="data-value">—</div>
+          </div>
+
+          <div class="data-card">
+            <div class="small-label">Peak valid time</div>
+            <div id="peak-valid" class="data-value">—</div>
+          </div>
+        </div>
+
+        <div class="chart-toolbar">
+          <div>
+            <strong id="chart-title">Time series</strong>
+            <p id="chart-subtitle">Nearest grid point and 5×5 grid-box statistics.</p>
+          </div>
+
+          <select id="metric-select">
+            <option value="nearest_value">Nearest grid point</option>
+            <option value="box_mean">5×5 box mean</option>
+            <option value="box_max">5×5 box maximum</option>
+            <option value="box_p90">5×5 box 90th percentile</option>
+          </select>
+        </div>
+
+        <div id="chart" class="chart"></div>
+
+        <div class="table-wrap">
+          <table id="timeseries-table">
+            <thead>
+              <tr>
+                <th>Lead hour</th>
+                <th>Valid time</th>
+                <th>Nearest</th>
+                <th>5×5 mean</th>
+                <th>5×5 max</th>
+                <th>5×5 p90</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </section>
   </main>
@@ -132,6 +192,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data/cities.js"></script>
+  <script src="data/app_data.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+{
+  "init": "2026061200",
+  "city": {
+    "id": "los_angeles_inglewood",
+    "market": "Los Angeles / Inglewood",
+    "display_name": "Los Angeles / Inglewood",
+    "stadium_area": "SoFi Stadium area",
+    "state": "CA",
+    "lat": 33.9535,
+    "lon": -118.3392
+  },
+  "n_records": 96,
+  "products": [
+    {
+      "product_id": "expected_precip_mm",
+      "product_label": "Expected precipitation",
+      "units": "mm",
+      "nearest_peak": {
+        "value": 8.488,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 11.458,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_0p5inch",
+      "product_label": "Probability > 0.5 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 43.433,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 58.635,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_1inch",
+      "product_label": "Probability > 1 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 20.787,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 28.063,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2inch",
+      "product_label": "Probability > 2 inch",
+      "units": "%",
+      "nearest_peak": {
+        "value": 7.41,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 10.003,
+        "lead_hour": 108,
+        "valid_time": "2026-06-16 12:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_2yrARI",
+      "product_label": "Probability > 2-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 7.536,
+        "lead_hour": 120,
+        "valid_time": "2026-06-17 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 10.174,
+        "lead_hour": 120,
+        "valid_time": "2026-06-17 00:00 UTC"
+      }
+    },
+    {
+      "product_id": "prob_gt_5yrARI",
+      "product_label": "Probability > 5-year ARI",
+      "units": "%",
+      "nearest_peak": {
+        "value": 3.803,
+        "lead_hour": 120,
+        "valid_time": "2026-06-17 00:00 UTC"
+      },
+      "box_max_peak": {
+        "value": 5.134,
+        "lead_hour": 120,
+        "valid_time": "2026-06-17 00:00 UTC"
+      }
+    }
+  ],
+  "files": {
+    "timeseries_json": "data/cities/los_angeles_inglewood/timeseries_12h.json",
+    "summary_json": "data/cities/los_angeles_inglewood/summary.json"
+  },
+  "is_sample_data": true
+}
