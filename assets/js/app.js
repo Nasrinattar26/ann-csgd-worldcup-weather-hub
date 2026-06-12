@@ -3,7 +3,7 @@
   const APP_DATA = window.WC_APP_DATA;
 
   const cities = (APP_DATA && APP_DATA.cities) || (CITY_META && CITY_META.cities) || [];
-  const products = (APP_DATA && APP_DATA.products) || [];
+  const products = ((APP_DATA && APP_DATA.products) || []).filter(p => p.id !== "expected_precip");
 
   let map = null;
   let markers = {};
