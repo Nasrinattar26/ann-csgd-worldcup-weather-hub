@@ -26,7 +26,7 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected precipitation",
+      "product_label": "Expected rainfall",
       "units": "mm per 12h",
       "nearest_peak": {
         "value": 0.026414591819047928,
@@ -41,7 +41,7 @@
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Probability > 0.5 inch",
+      "product_label": "Chance of 0.5+ inch rainfall",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
@@ -56,7 +56,7 @@
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Probability > 1 inch",
+      "product_label": "Chance of 1+ inch rainfall",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
@@ -71,7 +71,7 @@
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Probability > 2 inch",
+      "product_label": "Chance of 2+ inch rainfall",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
@@ -86,7 +86,7 @@
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Probability > 2-year 12-h ARI",
+      "product_label": "Chance of exceeding a 2-year rainfall threshold",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
@@ -101,7 +101,7 @@
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Probability > 5-year 12-h ARI",
+      "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,

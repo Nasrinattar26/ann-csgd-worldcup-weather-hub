@@ -15,9 +15,11 @@
 
   function humanCategory(category) {
     const labels = {
-      conus_gifs: "CONUS ANN-CSGD GIFs",
-      conus_ero_2x2: "CONUS ERO comparison plots",
-      grib2: "ANN-CSGD GRIB2 downloads"
+      conus_gifs: "Forecast animations",
+      conus_ero_2x2: "Forecast comparison maps",
+      grib2: "Downloadable forecast data",
+      state_gifs: "State forecast animations",
+      rt7_ero_2x2: "Forecast comparison maps"
     };
     return labels[category] || category || "Unknown";
   }
@@ -129,7 +131,7 @@
       if (isVisual(f.kind)) {
         preview = `
           <a href="${escapeHtml(f.path)}" target="_blank" rel="noopener">
-            <img src="${escapeHtml(f.path)}" alt="${escapeHtml(f.name)}">
+            <img src="${escapeHtml(f.path)}" alt="${escapeHtml(f.display_name || f.product_label || f.name)}">
           </a>
         `;
       } else {
@@ -144,7 +146,7 @@
         ${preview}
         <div class="product-card-body">
           <a class="product-name" href="${escapeHtml(f.path)}" target="_blank" rel="noopener">
-            ${escapeHtml(f.name)}
+            ${escapeHtml(f.display_name || f.product_label || f.name)}
           </a>
           <div class="product-meta">
             <span>${escapeHtml(humanCategory(f.category))}</span>

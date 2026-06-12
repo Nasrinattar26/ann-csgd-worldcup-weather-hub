@@ -3,7 +3,17 @@
   const APP_DATA = window.WC_APP_DATA;
 
   const cities = (APP_DATA && APP_DATA.cities) || (CITY_META && CITY_META.cities) || [];
-  const products = ((APP_DATA && APP_DATA.products) || []).filter(p => p.id !== "expected_precip");
+  const PRODUCT_PUBLIC_LABELS = {
+    prob_gt_0p5inch_percent: "Chance of 0.5+ inch rainfall",
+    prob_gt_1inch_percent: "Chance of 1+ inch rainfall",
+    prob_gt_2inch_percent: "Chance of 2+ inch rainfall",
+    prob_gt_2yr12h_ari_percent: "Chance of exceeding a 2-year rainfall threshold",
+    prob_gt_5yr12h_ari_percent: "Chance of exceeding a 5-year rainfall threshold"
+  };
+
+  const products = ((APP_DATA && APP_DATA.products) || [])
+    .filter(p => p.id !== "expected_precip")
+    .map(p => ({ ...p, label: PRODUCT_PUBLIC_LABELS[p.id] || p.label }));
 
   let map = null;
   let markers = {};
