@@ -5,80 +5,133 @@
   <title>ANN-CSGD World Cup Weather Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #152238;
-    }
+  <!-- Leaflet map library -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
 
-    header {
-      padding: 44px 32px;
-      background: linear-gradient(135deg, #0f172a, #174ea6);
-      color: white;
-    }
-
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 36px;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 18px;
-      color: #dbeafe;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 32px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #dbe3ef;
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.10);
-    }
-
-    .status {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #dcfce7;
-      color: #166534;
-      font-weight: bold;
-      margin-bottom: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>ANN-CSGD World Cup Weather Hub</h1>
-    <p>ANN12-v4 probabilistic precipitation guidance for U.S. FIFA World Cup 2026 host markets.</p>
-  </header>
-
-  <main>
-    <div class="card">
-      <div class="status">GitHub Pages test site is ready</div>
-
-      <h2>Initial site published from UTA HPC alph</h2>
-
+  <header class="hero">
+    <div class="hero-text">
+      <div class="eyebrow">ANN12-v4 real-time probabilistic precipitation guidance</div>
+      <h1>ANN-CSGD World Cup Weather Hub</h1>
       <p>
-        This is the first test page for the ANN-CSGD World Cup / FIFA 2026 Weather App.
-      </p>
-
-      <p>
-        Next, this page will become an interactive dashboard with a host-city map,
-        city selector, ANN12-v4 probability products, city-level time series,
-        GIFs, RT6 quicklooks, RT7 2x2 ERO comparison plots, ERO GeoJSON links,
-        and GRIB2 product manifests.
+        Interactive weather-risk dashboard for U.S. FIFA World Cup 2026 host markets,
+        powered by the ANN-CSGD / ANN12-v4 real-time workflow.
       </p>
     </div>
+
+    <div class="hero-card">
+      <div class="small-label">Current mode</div>
+      <div class="big-value">Prototype</div>
+      <div class="small-note">City map and dashboard shell are active. ANN12-v4 data products will be connected next.</div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="control-panel">
+      <div class="panel">
+        <h2>Host Market</h2>
+        <select id="city-select"></select>
+
+        <div id="selected-city-card" class="selected-city-card">
+          Loading city metadata...
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>ANN12-v4 Products</h2>
+        <div class="product-list">
+          <button class="product-button active">Expected precipitation</button>
+          <button class="product-button">P &gt; 0.5 inch</button>
+          <button class="product-button">P &gt; 1 inch</button>
+          <button class="product-button">P &gt; 2 inch</button>
+          <button class="product-button">P &gt; 2-year ARI</button>
+          <button class="product-button">P &gt; 5-year ARI</button>
+        </div>
+        <p class="muted">
+          These buttons are placeholders for now. In the next step, we will connect them to ANN12-v4 city-level time series.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2>Planned Data Layers</h2>
+        <ul class="check-list">
+          <li>Nearest grid-point city time series</li>
+          <li>5×5 grid-cell box statistics</li>
+          <li>Peak value and peak lead time</li>
+          <li>GIF products</li>
+          <li>RT6 quicklook maps</li>
+          <li>RT7 2×2 ERO comparison plots</li>
+          <li>ERO GeoJSON links</li>
+          <li>GRIB2 manifest links</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="map-shell">
+        <div class="section-title">
+          <div>
+            <h2>U.S. FIFA World Cup 2026 Host Markets</h2>
+            <p>Click a marker or choose a city from the sidebar.</p>
+          </div>
+          <div id="city-count" class="pill">Loading...</div>
+        </div>
+
+        <div id="map"></div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="metric-card">
+          <div class="small-label">Selected market</div>
+          <div id="metric-market" class="metric-value">—</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="small-label">Stadium area</div>
+          <div id="metric-stadium" class="metric-value">—</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="small-label">Approx. coordinates</div>
+          <div id="metric-coords" class="metric-value">—</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="section-title">
+          <div>
+            <h2>Host Market Cards</h2>
+            <p>All 11 U.S. host markets included in the app metadata.</p>
+          </div>
+        </div>
+
+        <div id="city-grid" class="city-grid"></div>
+      </div>
+
+      <div class="panel placeholder-panel">
+        <h2>ANN12-v4 Data Preview</h2>
+        <p>
+          This section will become the city-level ANN12-v4 forecast table and time-series chart.
+          Next, we will generate <code>data/app_data.json</code> and connect the dashboard to your
+          NetCDF output from the selected INIT/run.
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <span>Generated for Nasrin Attar’s ANN-CSGD / ANN12-v4 real-time workflow on UTA HPC alph.</span>
+    <span>Static GitHub Pages site.</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data/cities.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
