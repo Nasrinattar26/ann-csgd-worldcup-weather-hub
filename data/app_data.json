@@ -99,7 +99,20 @@
       "lon": -84.4008,
       "timeseries_json": "data/cities/atlanta/timeseries_12h.json",
       "timeseries_csv": "data/cities/atlanta/timeseries_12h.csv",
-      "summary_json": "data/cities/atlanta/summary.json"
+      "summary_json": "data/cities/atlanta/summary.json",
+      "state_view": {
+        "label": "Georgia",
+        "bounds": [
+          [
+            30.3,
+            -85.7
+          ],
+          [
+            35.1,
+            -80.7
+          ]
+        ]
+      }
     },
     {
       "id": "boston_foxborough",
@@ -111,7 +124,20 @@
       "lon": -71.2643,
       "timeseries_json": "data/cities/boston_foxborough/timeseries_12h.json",
       "timeseries_csv": "data/cities/boston_foxborough/timeseries_12h.csv",
-      "summary_json": "data/cities/boston_foxborough/summary.json"
+      "summary_json": "data/cities/boston_foxborough/summary.json",
+      "state_view": {
+        "label": "Massachusetts",
+        "bounds": [
+          [
+            41.2,
+            -73.6
+          ],
+          [
+            42.95,
+            -69.8
+          ]
+        ]
+      }
     },
     {
       "id": "dallas_arlington",
@@ -123,7 +149,20 @@
       "lon": -97.0945,
       "timeseries_json": "data/cities/dallas_arlington/timeseries_12h.json",
       "timeseries_csv": "data/cities/dallas_arlington/timeseries_12h.csv",
-      "summary_json": "data/cities/dallas_arlington/summary.json"
+      "summary_json": "data/cities/dallas_arlington/summary.json",
+      "state_view": {
+        "label": "Texas",
+        "bounds": [
+          [
+            25.8,
+            -106.7
+          ],
+          [
+            36.6,
+            -93.5
+          ]
+        ]
+      }
     },
     {
       "id": "houston",
@@ -135,7 +174,20 @@
       "lon": -95.4107,
       "timeseries_json": "data/cities/houston/timeseries_12h.json",
       "timeseries_csv": "data/cities/houston/timeseries_12h.csv",
-      "summary_json": "data/cities/houston/summary.json"
+      "summary_json": "data/cities/houston/summary.json",
+      "state_view": {
+        "label": "Texas",
+        "bounds": [
+          [
+            25.8,
+            -106.7
+          ],
+          [
+            36.6,
+            -93.5
+          ]
+        ]
+      }
     },
     {
       "id": "kansas_city",
@@ -147,7 +199,20 @@
       "lon": -94.4839,
       "timeseries_json": "data/cities/kansas_city/timeseries_12h.json",
       "timeseries_csv": "data/cities/kansas_city/timeseries_12h.csv",
-      "summary_json": "data/cities/kansas_city/summary.json"
+      "summary_json": "data/cities/kansas_city/summary.json",
+      "state_view": {
+        "label": "Missouri",
+        "bounds": [
+          [
+            35.9,
+            -95.8
+          ],
+          [
+            40.7,
+            -89.0
+          ]
+        ]
+      }
     },
     {
       "id": "los_angeles_inglewood",
@@ -159,7 +224,20 @@
       "lon": -118.3392,
       "timeseries_json": "data/cities/los_angeles_inglewood/timeseries_12h.json",
       "timeseries_csv": "data/cities/los_angeles_inglewood/timeseries_12h.csv",
-      "summary_json": "data/cities/los_angeles_inglewood/summary.json"
+      "summary_json": "data/cities/los_angeles_inglewood/summary.json",
+      "state_view": {
+        "label": "California",
+        "bounds": [
+          [
+            32.3,
+            -124.6
+          ],
+          [
+            42.1,
+            -114.0
+          ]
+        ]
+      }
     },
     {
       "id": "miami_gardens",
@@ -171,7 +249,20 @@
       "lon": -80.2389,
       "timeseries_json": "data/cities/miami_gardens/timeseries_12h.json",
       "timeseries_csv": "data/cities/miami_gardens/timeseries_12h.csv",
-      "summary_json": "data/cities/miami_gardens/summary.json"
+      "summary_json": "data/cities/miami_gardens/summary.json",
+      "state_view": {
+        "label": "Florida",
+        "bounds": [
+          [
+            24.4,
+            -87.8
+          ],
+          [
+            31.1,
+            -79.8
+          ]
+        ]
+      }
     },
     {
       "id": "new_york_new_jersey",
@@ -183,7 +274,20 @@
       "lon": -74.0745,
       "timeseries_json": "data/cities/new_york_new_jersey/timeseries_12h.json",
       "timeseries_csv": "data/cities/new_york_new_jersey/timeseries_12h.csv",
-      "summary_json": "data/cities/new_york_new_jersey/summary.json"
+      "summary_json": "data/cities/new_york_new_jersey/summary.json",
+      "state_view": {
+        "label": "New Jersey",
+        "bounds": [
+          [
+            38.9,
+            -75.6
+          ],
+          [
+            41.4,
+            -73.8
+          ]
+        ]
+      }
     },
     {
       "id": "philadelphia",
@@ -195,7 +299,20 @@
       "lon": -75.1675,
       "timeseries_json": "data/cities/philadelphia/timeseries_12h.json",
       "timeseries_csv": "data/cities/philadelphia/timeseries_12h.csv",
-      "summary_json": "data/cities/philadelphia/summary.json"
+      "summary_json": "data/cities/philadelphia/summary.json",
+      "state_view": {
+        "label": "Pennsylvania",
+        "bounds": [
+          [
+            39.6,
+            -80.6
+          ],
+          [
+            42.3,
+            -74.6
+          ]
+        ]
+      }
     },
     {
       "id": "san_francisco_santa_clara",
@@ -207,7 +324,20 @@
       "lon": -121.97,
       "timeseries_json": "data/cities/san_francisco_santa_clara/timeseries_12h.json",
       "timeseries_csv": "data/cities/san_francisco_santa_clara/timeseries_12h.csv",
-      "summary_json": "data/cities/san_francisco_santa_clara/summary.json"
+      "summary_json": "data/cities/san_francisco_santa_clara/summary.json",
+      "state_view": {
+        "label": "California",
+        "bounds": [
+          [
+            32.3,
+            -124.6
+          ],
+          [
+            42.1,
+            -114.0
+          ]
+        ]
+      }
     },
     {
       "id": "seattle",
@@ -219,7 +349,20 @@
       "lon": -122.3316,
       "timeseries_json": "data/cities/seattle/timeseries_12h.json",
       "timeseries_csv": "data/cities/seattle/timeseries_12h.csv",
-      "summary_json": "data/cities/seattle/summary.json"
+      "summary_json": "data/cities/seattle/summary.json",
+      "state_view": {
+        "label": "Washington",
+        "bounds": [
+          [
+            45.5,
+            -124.9
+          ],
+          [
+            49.1,
+            -116.8
+          ]
+        ]
+      }
     }
   ],
   "city_summaries": [
@@ -232,7 +375,20 @@
         "stadium_area": "Mercedes-Benz Stadium area",
         "state": "GA",
         "lat": 33.7554,
-        "lon": -84.4008
+        "lon": -84.4008,
+        "state_view": {
+          "label": "Georgia",
+          "bounds": [
+            [
+              30.3,
+              -85.7
+            ],
+            [
+              35.1,
+              -80.7
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 73,
@@ -356,7 +512,20 @@
         "stadium_area": "Gillette Stadium area",
         "state": "MA",
         "lat": 42.0909,
-        "lon": -71.2643
+        "lon": -71.2643,
+        "state_view": {
+          "label": "Massachusetts",
+          "bounds": [
+            [
+              41.2,
+              -73.6
+            ],
+            [
+              42.95,
+              -69.8
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 40,
@@ -480,7 +649,20 @@
         "stadium_area": "AT&T Stadium area",
         "state": "TX",
         "lat": 32.7473,
-        "lon": -97.0945
+        "lon": -97.0945,
+        "state_view": {
+          "label": "Texas",
+          "bounds": [
+            [
+              25.8,
+              -106.7
+            ],
+            [
+              36.6,
+              -93.5
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 77,
@@ -604,7 +786,20 @@
         "stadium_area": "NRG Stadium area",
         "state": "TX",
         "lat": 29.6847,
-        "lon": -95.4107
+        "lon": -95.4107,
+        "state_view": {
+          "label": "Texas",
+          "bounds": [
+            [
+              25.8,
+              -106.7
+            ],
+            [
+              36.6,
+              -93.5
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 89,
@@ -728,7 +923,20 @@
         "stadium_area": "Arrowhead Stadium area",
         "state": "MO",
         "lat": 39.049,
-        "lon": -94.4839
+        "lon": -94.4839,
+        "state_view": {
+          "label": "Missouri",
+          "bounds": [
+            [
+              35.9,
+              -95.8
+            ],
+            [
+              40.7,
+              -89.0
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 52,
@@ -852,7 +1060,20 @@
         "stadium_area": "SoFi Stadium area",
         "state": "CA",
         "lat": 33.9535,
-        "lon": -118.3392
+        "lon": -118.3392,
+        "state_view": {
+          "label": "California",
+          "bounds": [
+            [
+              32.3,
+              -124.6
+            ],
+            [
+              42.1,
+              -114.0
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 72,
@@ -976,7 +1197,20 @@
         "stadium_area": "Hard Rock Stadium area",
         "state": "FL",
         "lat": 25.958,
-        "lon": -80.2389
+        "lon": -80.2389,
+        "state_view": {
+          "label": "Florida",
+          "bounds": [
+            [
+              24.4,
+              -87.8
+            ],
+            [
+              31.1,
+              -79.8
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 104,
@@ -1100,7 +1334,20 @@
         "stadium_area": "MetLife Stadium area",
         "state": "NJ",
         "lat": 40.8135,
-        "lon": -74.0745
+        "lon": -74.0745,
+        "state_view": {
+          "label": "New Jersey",
+          "bounds": [
+            [
+              38.9,
+              -75.6
+            ],
+            [
+              41.4,
+              -73.8
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 45,
@@ -1224,7 +1471,20 @@
         "stadium_area": "Lincoln Financial Field area",
         "state": "PA",
         "lat": 39.9008,
-        "lon": -75.1675
+        "lon": -75.1675,
+        "state_view": {
+          "label": "Pennsylvania",
+          "bounds": [
+            [
+              39.6,
+              -80.6
+            ],
+            [
+              42.3,
+              -74.6
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 48,
@@ -1348,7 +1608,20 @@
         "stadium_area": "Levi's Stadium area",
         "state": "CA",
         "lat": 37.403,
-        "lon": -121.97
+        "lon": -121.97,
+        "state_view": {
+          "label": "California",
+          "bounds": [
+            [
+              32.3,
+              -124.6
+            ],
+            [
+              42.1,
+              -114.0
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 58,
@@ -1472,7 +1745,20 @@
         "stadium_area": "Lumen Field area",
         "state": "WA",
         "lat": 47.5952,
-        "lon": -122.3316
+        "lon": -122.3316,
+        "state_view": {
+          "label": "Washington",
+          "bounds": [
+            [
+              45.5,
+              -124.9
+            ],
+            [
+              49.1,
+              -116.8
+            ]
+          ]
+        }
       },
       "nearest_grid": {
         "grid_i": 18,

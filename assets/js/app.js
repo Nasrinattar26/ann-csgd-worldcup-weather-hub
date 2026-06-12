@@ -68,6 +68,7 @@
       <strong>${city.display_name}</strong><br>
       ${city.stadium_area}<br>
       State: ${city.state}<br>
+      Map view: ${city.state_view ? city.state_view.label : city.state}<br>
       Latitude: ${fmtCoord(city.lat)}<br>
       Longitude: ${fmtCoord(city.lon)}
     `;
@@ -132,7 +133,7 @@
       `);
 
       marker.on("click", () => {
-        setSelectedCity(city.id, false);
+        setSelectedCity(city.id, true);
       });
 
       markers[city.id] = marker;
@@ -143,7 +144,15 @@
     const city = cityById(cityId);
 
     if (map && city) {
-      map.setView([city.lat, city.lon], 7);
+      if (city.state_view && city.state_view.bounds) {
+        map.fitBounds(city.state_view.bounds, {
+          padding: [36, 36],
+          maxZoom: 8
+        });
+      } else {
+        map.setView([city.lat, city.lon], 7);
+      }
+
       if (markers[cityId]) {
         markers[cityId].openPopup();
       }
