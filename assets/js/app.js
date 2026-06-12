@@ -421,6 +421,11 @@
     setupProductButtons();
     setupMetricSelect();
     renderRunInfo();
+
+    if (window.initProductGallery) {
+      window.initProductGallery();
+    }
+
     loadCityPayload(selectedCityId);
   }
 

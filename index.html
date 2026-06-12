@@ -114,6 +114,24 @@
         <div id="city-grid" class="city-grid"></div>
       </div>
 
+      <div class="panel product-gallery-panel">
+        <div class="section-title compact-title">
+          <div>
+            <h2>ANN12-v4 Product Gallery</h2>
+            <p>GIFs, RT6 quicklooks, RT7 2×2 ERO plots, ERO GeoJSON, and GRIB2 product links.</p>
+          </div>
+        </div>
+
+        <div class="gallery-toolbar">
+          <select id="gallery-category"></select>
+          <input id="gallery-search" type="search" placeholder="Filter products by name, category, or type...">
+        </div>
+
+        <p id="gallery-summary" class="muted"></p>
+
+        <div id="product-gallery" class="product-gallery"></div>
+      </div>
+
       <div class="panel data-panel">
         <div class="section-title compact-title">
           <div>
@@ -193,6 +211,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data/cities.js?v=2026061200_real_v1"></script>
   <script src="data/app_data.js?v=2026061200_real_v1"></script>
+  <script src="data/product_manifest.js?v=2026061200_gallery_v1"></script>
+  <script src="assets/js/product_gallery.js?v=2026061200_gallery_v1"></script>
   <script src="assets/js/app.js?v=2026061200_real_v1"></script>
 </body>
 </html>
