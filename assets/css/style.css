@@ -755,3 +755,82 @@ footer {
   max-width: 1680px;
   margin: 0 auto;
 }
+
+/* ============================================================
+   STEP 14A LOGO CSS
+   ============================================================ */
+
+.hero {
+  position: relative;
+}
+
+.brand-logo-strip {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo-card {
+  height: 72px;
+  min-width: 112px;
+  max-width: 320px;
+  border-radius: 18px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.uta-logo-card {
+  width: 300px;
+}
+
+.hydromet-logo-card {
+  width: 96px;
+  border-radius: 999px;
+  padding: 6px;
+}
+
+.hydromet-logo-card img {
+  border-radius: 999px;
+}
+
+.logo-missing {
+  background: rgba(255,255,255,0.16);
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .brand-logo-strip {
+    flex-wrap: wrap;
+  }
+
+  .brand-logo-card {
+    height: 58px;
+  }
+
+  .uta-logo-card {
+    width: 260px;
+  }
+
+  .hydromet-logo-card {
+    width: 76px;
+  }
+}
