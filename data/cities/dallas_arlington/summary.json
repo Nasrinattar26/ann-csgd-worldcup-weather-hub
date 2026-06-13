@@ -1,5 +1,5 @@
 {
-  "init": "2026061200",
+  "init": "2026061300",
   "city": {
     "id": "dallas_arlington",
     "market": "Dallas / Arlington",
@@ -7,7 +7,20 @@
     "stadium_area": "AT&T Stadium area",
     "state": "TX",
     "lat": 32.7473,
-    "lon": -97.0945
+    "lon": -97.0945,
+    "state_view": {
+      "label": "Texas",
+      "bounds": [
+        [
+          25.8,
+          -106.7
+        ],
+        [
+          36.6,
+          -93.5
+        ]
+      ]
+    }
   },
   "nearest_grid": {
     "grid_i": 77,
@@ -26,91 +39,91 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected rainfall",
+      "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 15.015392303466797,
-        "lead_hour": 84,
+        "value": 17.53834342956543,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 16.061546325683594,
-        "lead_hour": 84,
+        "value": 17.703697204589844,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Chance of 0.5+ inch rainfall",
+      "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 36.41749572753906,
-        "lead_hour": 84,
+        "value": 43.843753814697266,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 38.7270393371582,
-        "lead_hour": 84,
+        "value": 44.21646499633789,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Chance of 1+ inch rainfall",
+      "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 19.55271339416504,
-        "lead_hour": 84,
+        "value": 23.712284088134766,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 21.1820011138916,
-        "lead_hour": 84,
+        "value": 23.984067916870117,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Chance of 2+ inch rainfall",
+      "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 6.47735595703125,
-        "lead_hour": 84,
+        "value": 7.5469255447387695,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 7.19677209854126,
-        "lead_hour": 84,
+        "value": 7.663702964782715,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 1.576387882232666,
-        "lead_hour": 84,
+        "value": 1.6665875911712646,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.613938808441162,
-        "lead_hour": 84,
+        "value": 1.864933967590332,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 5-year rainfall threshold",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.6460249423980713,
-        "lead_hour": 84,
+        "value": 0.6333351135253906,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.6516695022583008,
-        "lead_hour": 84,
+        "value": 0.7235169410705566,
+        "lead_hour": 60,
         "valid_time": "2026-06-15 12:00 UTC"
       }
     }

@@ -1,5 +1,5 @@
 {
-  "init": "2026061200",
+  "init": "2026061300",
   "city": {
     "id": "houston",
     "market": "Houston",
@@ -7,7 +7,20 @@
     "stadium_area": "NRG Stadium area",
     "state": "TX",
     "lat": 29.6847,
-    "lon": -95.4107
+    "lon": -95.4107,
+    "state_view": {
+      "label": "Texas",
+      "bounds": [
+        [
+          25.8,
+          -106.7
+        ],
+        [
+          36.6,
+          -93.5
+        ]
+      ]
+    }
   },
   "nearest_grid": {
     "grid_i": 89,
@@ -26,92 +39,92 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected rainfall",
+      "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 11.47124195098877,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 11.151057243347168,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 12.708318710327148,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 15.331808090209961,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Chance of 0.5+ inch rainfall",
+      "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 26.610820770263672,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 24.27422332763672,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 29.888784408569336,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 32.15433883666992,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Chance of 1+ inch rainfall",
+      "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 14.201813697814941,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 13.666457176208496,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 15.991145133972168,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 19.262767791748047,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Chance of 2+ inch rainfall",
+      "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 4.947769641876221,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 5.3727030754089355,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 5.631738662719727,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 8.263629913330078,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.5592703819274902,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 0.8247017860412598,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.8857131004333496,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 1.314300298690796,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 5-year rainfall threshold",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.15799403190612793,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 0.28308629989624023,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.28961896896362305,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 0.4436194896697998,
+        "lead_hour": 156,
+        "valid_time": "2026-06-19 12:00 UTC"
       }
     }
   ],

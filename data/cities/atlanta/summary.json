@@ -1,5 +1,5 @@
 {
-  "init": "2026061200",
+  "init": "2026061300",
   "city": {
     "id": "atlanta",
     "market": "Atlanta",
@@ -7,7 +7,20 @@
     "stadium_area": "Mercedes-Benz Stadium area",
     "state": "GA",
     "lat": 33.7554,
-    "lon": -84.4008
+    "lon": -84.4008,
+    "state_view": {
+      "label": "Georgia",
+      "bounds": [
+        [
+          30.3,
+          -85.7
+        ],
+        [
+          35.1,
+          -80.7
+        ]
+      ]
+    }
   },
   "nearest_grid": {
     "grid_i": 73,
@@ -26,91 +39,91 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected rainfall",
+      "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 6.7930521965026855,
-        "lead_hour": 108,
-        "valid_time": "2026-06-16 12:00 UTC"
+        "value": 9.763652801513672,
+        "lead_hour": 168,
+        "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 8.468329429626465,
-        "lead_hour": 114,
-        "valid_time": "2026-06-16 18:00 UTC"
+        "value": 11.058722496032715,
+        "lead_hour": 162,
+        "valid_time": "2026-06-19 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Chance of 0.5+ inch rainfall",
+      "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 15.579509735107422,
-        "lead_hour": 96,
-        "valid_time": "2026-06-16 00:00 UTC"
+        "value": 21.25942611694336,
+        "lead_hour": 168,
+        "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 19.339149475097656,
-        "lead_hour": 114,
-        "valid_time": "2026-06-16 18:00 UTC"
+        "value": 24.258459091186523,
+        "lead_hour": 162,
+        "valid_time": "2026-06-19 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Chance of 1+ inch rainfall",
+      "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 7.912069320678711,
-        "lead_hour": 108,
-        "valid_time": "2026-06-16 12:00 UTC"
+        "value": 11.837726593017578,
+        "lead_hour": 168,
+        "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 10.07811450958252,
-        "lead_hour": 114,
-        "valid_time": "2026-06-16 18:00 UTC"
+        "value": 13.600343704223633,
+        "lead_hour": 162,
+        "valid_time": "2026-06-19 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Chance of 2+ inch rainfall",
+      "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 2.9493868350982666,
-        "lead_hour": 192,
+        "value": 4.608386993408203,
+        "lead_hour": 168,
         "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 3.4761548042297363,
-        "lead_hour": 114,
-        "valid_time": "2026-06-16 18:00 UTC"
+        "value": 5.292642116546631,
+        "lead_hour": 162,
+        "valid_time": "2026-06-19 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 1.1685490608215332,
-        "lead_hour": 192,
+        "value": 1.8514275550842285,
+        "lead_hour": 168,
         "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.24703049659729,
-        "lead_hour": 192,
-        "valid_time": "2026-06-20 00:00 UTC"
+        "value": 2.0249128341674805,
+        "lead_hour": 162,
+        "valid_time": "2026-06-19 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 5-year rainfall threshold",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.7452964782714844,
-        "lead_hour": 192,
+        "value": 1.1857271194458008,
+        "lead_hour": 168,
         "valid_time": "2026-06-20 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.762099027633667,
-        "lead_hour": 192,
+        "value": 1.2692749500274658,
+        "lead_hour": 168,
         "valid_time": "2026-06-20 00:00 UTC"
       }
     }

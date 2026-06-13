@@ -1,5 +1,5 @@
 {
-  "init": "2026061200",
+  "init": "2026061300",
   "city": {
     "id": "los_angeles_inglewood",
     "market": "Los Angeles / Inglewood",
@@ -7,7 +7,20 @@
     "stadium_area": "SoFi Stadium area",
     "state": "CA",
     "lat": 33.9535,
-    "lon": -118.3392
+    "lon": -118.3392,
+    "state_view": {
+      "label": "California",
+      "bounds": [
+        [
+          32.3,
+          -124.6
+        ],
+        [
+          42.1,
+          -114.0
+        ]
+      ]
+    }
   },
   "nearest_grid": {
     "grid_i": 72,
@@ -26,92 +39,92 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected rainfall",
+      "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.026414591819047928,
+        "value": 0.02654270827770233,
         "lead_hour": 192,
-        "valid_time": "2026-06-20 00:00 UTC"
+        "valid_time": "2026-06-21 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.030569950118660927,
-        "lead_hour": 18,
-        "valid_time": "2026-06-12 18:00 UTC"
+        "value": 0.04129498079419136,
+        "lead_hour": 66,
+        "valid_time": "2026-06-15 18:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Chance of 0.5+ inch rainfall",
+      "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Chance of 1+ inch rainfall",
+      "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Chance of 2+ inch rainfall",
+      "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 5-year rainfall threshold",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-12 12:00 UTC"
+        "valid_time": "2026-06-13 12:00 UTC"
       }
     }
   ],

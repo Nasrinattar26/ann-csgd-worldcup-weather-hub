@@ -1,5 +1,5 @@
 {
-  "init": "2026061200",
+  "init": "2026061300",
   "city": {
     "id": "new_york_new_jersey",
     "market": "New York / New Jersey",
@@ -7,7 +7,20 @@
     "stadium_area": "MetLife Stadium area",
     "state": "NJ",
     "lat": 40.8135,
-    "lon": -74.0745
+    "lon": -74.0745,
+    "state_view": {
+      "label": "New Jersey",
+      "bounds": [
+        [
+          38.9,
+          -75.6
+        ],
+        [
+          41.4,
+          -73.8
+        ]
+      ]
+    }
   },
   "nearest_grid": {
     "grid_i": 45,
@@ -26,91 +39,91 @@
   "products": [
     {
       "product_id": "expected_precip",
-      "product_label": "Expected rainfall",
+      "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 7.2902374267578125,
-        "lead_hour": 78,
+        "value": 11.306406021118164,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 8.89820384979248,
-        "lead_hour": 78,
+        "value": 11.80694580078125,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_0p5inch_percent",
-      "product_label": "Chance of 0.5+ inch rainfall",
+      "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 18.694734573364258,
-        "lead_hour": 78,
+        "value": 31.30415153503418,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 23.361099243164062,
-        "lead_hour": 78,
+        "value": 33.44038009643555,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_1inch_percent",
-      "product_label": "Chance of 1+ inch rainfall",
+      "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 6.896543502807617,
-        "lead_hour": 78,
+        "value": 12.361473083496094,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 9.269237518310547,
-        "lead_hour": 78,
+        "value": 12.889469146728516,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2inch_percent",
-      "product_label": "Chance of 2+ inch rainfall",
+      "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 1.1628031730651855,
-        "lead_hour": 78,
+        "value": 2.108907699584961,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.8253982067108154,
-        "lead_hour": 78,
+        "value": 2.34144926071167,
+        "lead_hour": 54,
         "valid_time": "2026-06-15 06:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_2yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.3158986568450928,
-        "lead_hour": 180,
-        "valid_time": "2026-06-19 12:00 UTC"
+        "value": 0.5750954151153564,
+        "lead_hour": 150,
+        "valid_time": "2026-06-19 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.48833489418029785,
-        "lead_hour": 174,
+        "value": 0.7200002670288086,
+        "lead_hour": 150,
         "valid_time": "2026-06-19 06:00 UTC"
       }
     },
     {
       "product_id": "prob_gt_5yr12h_ari_percent",
-      "product_label": "Chance of exceeding a 5-year rainfall threshold",
+      "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.1288771629333496,
-        "lead_hour": 180,
-        "valid_time": "2026-06-19 12:00 UTC"
+        "value": 0.22962093353271484,
+        "lead_hour": 150,
+        "valid_time": "2026-06-19 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.224989652633667,
-        "lead_hour": 174,
+        "value": 0.3110229969024658,
+        "lead_hour": 150,
         "valid_time": "2026-06-19 06:00 UTC"
       }
     }
