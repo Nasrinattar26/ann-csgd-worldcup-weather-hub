@@ -756,3 +756,29 @@ footer {
   margin: 0 auto;
 }
 
+/* Quick guide */
+.user-guide-panel {
+  border-left: 4px solid #2563eb;
+}
+
+.user-guide-text {
+  display: grid;
+  gap: 0.75rem;
+  color: #334155;
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+.user-guide-text p {
+  margin: 0;
+}
+
+.user-guide-text strong {
+  color: #0f172a;
+}
+
+.user-guide-text .guide-source {
+  font-size: 0.86rem;
+  color: #64748b;
+  font-style: italic;
+}
