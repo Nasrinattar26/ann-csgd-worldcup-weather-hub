@@ -1,5 +1,5 @@
 {
-  "init": "2026061700",
+  "init": "2026061800",
   "city": {
     "id": "seattle",
     "market": "Seattle",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.05090935528278351,
-        "lead_hour": 192,
-        "valid_time": "2026-06-25 00:00 UTC"
+        "value": 0.02501249499619007,
+        "lead_hour": 186,
+        "valid_time": "2026-06-25 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.06752096861600876,
-        "lead_hour": 192,
-        "valid_time": "2026-06-25 00:00 UTC"
+        "value": 0.032584067434072495,
+        "lead_hour": 174,
+        "valid_time": "2026-06-25 06:00 UTC"
       }
     },
     {
@@ -59,12 +59,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.7881393432617188e-05,
-        "lead_hour": 192,
-        "valid_time": "2026-06-25 00:00 UTC"
+        "value": 0.0,
+        "lead_hour": 12,
+        "valid_time": "2026-06-18 12:00 UTC"
       }
     },
     {
@@ -74,12 +74,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       }
     },
     {
@@ -89,12 +89,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       }
     },
     {
@@ -119,12 +119,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-17 12:00 UTC"
+        "valid_time": "2026-06-18 12:00 UTC"
       }
     }
   ],
