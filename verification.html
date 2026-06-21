@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>FFaIR Verification | ANN-CSGD World Cup Weather Hub</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="FFaIR verification graphics comparing ANN-CSGD and raw GEFS 24-hour precipitation forecasts against MRMS-GC observations."
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="assets/css/verification.css"
+  >
+</head>
+
+<body>
+  <header class="hero verification-hero">
+    <div class="hero-text">
+      <div class="eyebrow">
+        Experimental forecast verification
+      </div>
+
+      <h1>FFaIR ANN-CSGD Verification</h1>
+
+      <p>
+        Valid-time-matched 12Z–12Z, 24-hour verification graphics
+        comparing raw GEFS and ANN-CSGD precipitation guidance
+        against MRMS-GC MultiSensor QPE observations.
+      </p>
+    </div>
+
+    <div class="hero-card verification-hero-card">
+      <div class="small-label">Website section</div>
+
+      <div class="big-value">Verification</div>
+
+      <div class="small-note">
+        Select the initialization, valid period, domain, and
+        verification product below.
+      </div>
+
+      <a class="verification-return-button" href="index.html">
+        Return to Forecast Dashboard
+      </a>
+    </div>
+  </header>
+
+  <main class="verification-page">
+    <section class="verification-overview">
+      <div class="panel">
+        <div class="section-title verification-section-title">
+          <div>
+            <div class="eyebrow verification-eyebrow">
+              Product description
+            </div>
+
+            <h2>How to interpret these graphics</h2>
+          </div>
+
+          <div id="verification-count" class="pill">
+            Loading…
+          </div>
+        </div>
+
+        <div class="verification-description-grid">
+          <article class="verification-description-card">
+            <h3>Amount verification</h3>
+
+            <p>
+              Compares raw GEFS ensemble-mean precipitation,
+              ANN-CSGD expected precipitation, and MRMS-GC
+              observed precipitation in millimeters per 24 hours.
+            </p>
+
+            <p>
+              The fourth panel shows
+              <strong>|GEFS − MRMS| − |ANN-CSGD − MRMS|</strong>.
+              Positive values indicate that ANN-CSGD was closer
+              to the observed amount.
+            </p>
+          </article>
+
+          <article class="verification-description-card">
+            <h3>Threshold verification</h3>
+
+            <p>
+              Compares raw GEFS member exceedance probability
+              with ANN-CSGD exceedance probability.
+            </p>
+
+            <p>
+              MRMS-GC supplies the verifying precipitation amount,
+              while the observed-exceedance contour identifies
+              locations where the selected threshold occurred.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel verification-controls-panel">
+      <div class="section-title compact-title">
+        <div>
+          <h2>Select Verification Products</h2>
+
+          <p>
+            Only completed observation periods appear in the catalog.
+          </p>
+        </div>
+      </div>
+
+      <div class="verification-controls">
+        <label>
+          <span>Initialization</span>
+
+          <select id="verification-init">
+            <option>Loading…</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Valid period</span>
+
+          <select id="verification-valid">
+            <option>Loading…</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Domain</span>
+
+          <select id="verification-domain">
+            <option value="CONUS">CONUS</option>
+            <option value="Texas">Texas</option>
+            <option value="all">All domains</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Product family</span>
+
+          <select id="verification-family">
+            <option value="all">All products</option>
+            <option value="amount">Amount verification</option>
+            <option value="threshold">Threshold verification</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Threshold</span>
+
+          <select id="verification-threshold">
+            <option value="all">All thresholds</option>
+            <option value="0p5inch">0.5 inch</option>
+            <option value="1inch">1 inch</option>
+            <option value="2inch">2 inches</option>
+            <option value="2yr24h_ari">2-year 24-hour ARI</option>
+            <option value="5yr24h_ari">5-year 24-hour ARI</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel verification-results-panel">
+      <div class="section-title compact-title">
+        <div>
+          <h2>Verification Graphics</h2>
+
+          <p id="verification-status">
+            Loading verification catalog…
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="verification-gallery"
+        class="verification-gallery"
+        aria-live="polite"
+      ></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>
+      Generated by Nasrin Attar’s ANN-CSGD project under the
+      supervision of Prof. Yu Zhang at The University of Texas
+      at Arlington.
+    </span>
+
+    <a href="index.html">
+      Forecast Dashboard
+    </a>
+  </footer>
+
+  <script src="assets/js/verification.js"></script>
+</body>
+</html>
