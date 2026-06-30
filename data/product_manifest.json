@@ -1,6 +1,6 @@
 {
   "init": "2026063000",
-  "created_utc": "2026-06-30 13:05 UTC",
+  "created_utc": "2026-06-30 13:20 UTC",
   "products_root": "products",
   "public_title": "Forecast Products and Downloads",
   "n_files": 35,
@@ -46,7 +46,7 @@
       "kind": "gif",
       "size_bytes": 1668195,
       "size_mb": 1.591,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_gifs/2026063000_prob_gt_1inch_lead8.gif",
@@ -60,7 +60,7 @@
       "kind": "gif",
       "size_bytes": 1522669,
       "size_mb": 1.452,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_gifs/2026063000_prob_gt_2inch_lead8.gif",
@@ -74,7 +74,7 @@
       "kind": "gif",
       "size_bytes": 1005478,
       "size_mb": 0.959,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_gifs/2026063000_prob_gt_2yrARI_lead8.gif",
@@ -88,7 +88,7 @@
       "kind": "gif",
       "size_bytes": 1569488,
       "size_mb": 1.497,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_gifs/2026063000_prob_gt_5yrARI_lead8.gif",
@@ -102,7 +102,7 @@
       "kind": "gif",
       "size_bytes": 1715465,
       "size_mb": 1.636,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -116,7 +116,7 @@
       "kind": "image",
       "size_bytes": 627061,
       "size_mb": 0.598,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -130,7 +130,7 @@
       "kind": "image",
       "size_bytes": 624361,
       "size_mb": 0.595,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -144,7 +144,7 @@
       "kind": "image",
       "size_bytes": 613708,
       "size_mb": 0.585,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -158,7 +158,7 @@
       "kind": "image",
       "size_bytes": 622606,
       "size_mb": 0.594,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -172,7 +172,7 @@
       "kind": "image",
       "size_bytes": 639419,
       "size_mb": 0.61,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -186,7 +186,7 @@
       "kind": "image",
       "size_bytes": 614637,
       "size_mb": 0.586,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -200,7 +200,7 @@
       "kind": "image",
       "size_bytes": 611940,
       "size_mb": 0.584,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -214,7 +214,7 @@
       "kind": "image",
       "size_bytes": 600589,
       "size_mb": 0.573,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -228,7 +228,7 @@
       "kind": "image",
       "size_bytes": 614014,
       "size_mb": 0.586,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -242,7 +242,7 @@
       "kind": "image",
       "size_bytes": 631388,
       "size_mb": 0.602,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -256,7 +256,7 @@
       "kind": "image",
       "size_bytes": 609258,
       "size_mb": 0.581,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -270,7 +270,7 @@
       "kind": "image",
       "size_bytes": 604453,
       "size_mb": 0.576,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -284,7 +284,7 @@
       "kind": "image",
       "size_bytes": 588998,
       "size_mb": 0.562,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -298,7 +298,7 @@
       "kind": "image",
       "size_bytes": 600327,
       "size_mb": 0.573,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -312,7 +312,7 @@
       "kind": "image",
       "size_bytes": 615149,
       "size_mb": 0.587,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -326,7 +326,7 @@
       "kind": "image",
       "size_bytes": 606733,
       "size_mb": 0.579,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -340,7 +340,7 @@
       "kind": "image",
       "size_bytes": 602021,
       "size_mb": 0.574,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -354,7 +354,7 @@
       "kind": "image",
       "size_bytes": 585716,
       "size_mb": 0.559,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -368,7 +368,7 @@
       "kind": "image",
       "size_bytes": 594531,
       "size_mb": 0.567,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/conus_ero_2x2/2026063000_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
@@ -382,7 +382,7 @@
       "kind": "image",
       "size_bytes": 606878,
       "size_mb": 0.579,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/12h/2026063000_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
@@ -396,7 +396,7 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/24h/2026063000_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
@@ -410,7 +410,7 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/12h/2026063000_ANN12v4_12h_prob_gt_1inch_percent.grib2",
@@ -424,7 +424,7 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/24h/2026063000_ANN12v4_24h_prob_gt_1inch_24h.grib2",
@@ -438,7 +438,7 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/12h/2026063000_ANN12v4_12h_prob_gt_2inch_percent.grib2",
@@ -452,7 +452,7 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/24h/2026063000_ANN12v4_24h_prob_gt_2inch_24h.grib2",
@@ -466,7 +466,7 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/12h/2026063000_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
@@ -480,7 +480,7 @@
       "kind": "grib2",
       "size_bytes": 1307053,
       "size_mb": 1.247,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/24h/2026063000_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
@@ -494,7 +494,7 @@
       "kind": "grib2",
       "size_bytes": 1222727,
       "size_mb": 1.166,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/12h/2026063000_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
@@ -508,7 +508,7 @@
       "kind": "grib2",
       "size_bytes": 1307053,
       "size_mb": 1.247,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     },
     {
       "path": "products/grib2/24h/2026063000_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
@@ -522,7 +522,7 @@
       "kind": "grib2",
       "size_bytes": 1270403,
       "size_mb": 1.212,
-      "modified_utc": "2026-06-30 13:05 UTC"
+      "modified_utc": "2026-06-30 13:20 UTC"
     }
   ],
   "note": "Public-facing gallery with forecast animations, comparison maps, and individual GRIB2 forecast data files only."
