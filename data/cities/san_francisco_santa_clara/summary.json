@@ -1,5 +1,5 @@
 {
-  "init": "2026062900",
+  "init": "2026063000",
   "city": {
     "id": "san_francisco_santa_clara",
     "market": "San Francisco Bay Area / Santa Clara",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.023909511044621468,
+        "value": 0.024886583909392357,
         "lead_hour": 186,
-        "valid_time": "2026-07-06 18:00 UTC"
+        "valid_time": "2026-07-07 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.03205391392111778,
+        "value": 0.032195404171943665,
         "lead_hour": 162,
-        "valid_time": "2026-07-05 18:00 UTC"
+        "valid_time": "2026-07-06 18:00 UTC"
       }
     },
     {
@@ -59,12 +59,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       }
     },
     {
@@ -74,12 +74,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       }
     },
     {
@@ -89,12 +89,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       }
     },
     {
@@ -119,12 +119,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-06-29 12:00 UTC"
+        "valid_time": "2026-06-30 12:00 UTC"
       }
     }
   ],
