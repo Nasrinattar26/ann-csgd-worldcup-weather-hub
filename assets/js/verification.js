@@ -11,6 +11,9 @@
   var validSelect =
     document.getElementById("verification-valid");
 
+  var daySelect =
+    document.getElementById("verification-day");
+
   var domainSelect =
     document.getElementById("verification-domain");
 
@@ -46,6 +49,15 @@
     return String(b).localeCompare(String(a));
   }
 
+  function dayNumber(value) {
+    var match = String(value || "").match(/\d+/);
+    return match ? Number(match[0]) : 0;
+  }
+
+  function ascendingDay(a, b) {
+    return dayNumber(a) - dayNumber(b);
+  }
+
   function validPeriodLabel(item) {
     return (
       item.valid_start_utc +
@@ -75,13 +87,53 @@
     });
   }
 
+  function updateLeadDays() {
+    var selectedInit = initSelect.value;
+    var previousDay = daySelect.value || "all";
+
+    var days = unique(
+      state.items
+        .filter(function (item) {
+          return item.init === selectedInit;
+        })
+        .map(function (item) {
+          return item.day;
+        })
+    ).sort(ascendingDay);
+
+    replaceOptions(
+      daySelect,
+      ["all"].concat(days),
+      function (value) {
+        return value === "all" ? "All days" : value;
+      }
+    );
+
+    if (days.indexOf(previousDay) >= 0 || previousDay === "all") {
+      daySelect.value = previousDay;
+    }
+  }
+
   function updateValidPeriods() {
     var selectedInit = initSelect.value;
+    var selectedDay = daySelect.value || "all";
+    var previousValid = validSelect.value;
 
     var periods = unique(
       state.items
         .filter(function (item) {
-          return item.init === selectedInit;
+          if (item.init !== selectedInit) {
+            return false;
+          }
+
+          if (
+            selectedDay !== "all" &&
+            item.day !== selectedDay
+          ) {
+            return false;
+          }
+
+          return true;
         })
         .map(validPeriodLabel)
     ).sort(descendingText);
@@ -90,10 +142,15 @@
       validSelect,
       periods
     );
+
+    if (periods.indexOf(previousValid) >= 0) {
+      validSelect.value = previousValid;
+    }
   }
 
   function selectedItems() {
     var selectedInit = initSelect.value;
+    var selectedDay = daySelect.value || "all";
     var selectedValid = validSelect.value;
     var selectedDomain = domainSelect.value;
     var selectedFamily = familySelect.value;
@@ -102,6 +159,13 @@
 
     return state.items.filter(function (item) {
       if (item.init !== selectedInit) {
+        return false;
+      }
+
+      if (
+        selectedDay !== "all" &&
+        item.day !== selectedDay
+      ) {
         return false;
       }
 
@@ -296,7 +360,7 @@
         document.createElement("p");
 
       paragraph.textContent =
-        "Choose another initialization, valid period, domain, product family, or threshold.";
+        "Choose another initialization, lead day, valid period, domain, product family, or threshold.";
 
       empty.appendChild(heading);
       empty.appendChild(paragraph);
@@ -323,6 +387,15 @@
 
   function attachEvents() {
     initSelect.addEventListener(
+      "change",
+      function () {
+        updateLeadDays();
+        updateValidPeriods();
+        render();
+      }
+    );
+
+    daySelect.addEventListener(
       "change",
       function () {
         updateValidPeriods();
@@ -380,6 +453,7 @@
       }
     );
 
+    updateLeadDays();
     updateValidPeriods();
     attachEvents();
     render();
