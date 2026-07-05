@@ -1,8 +1,248 @@
 {
-  "generated_utc": "2026-07-04T14:26:40Z",
+  "generated_utc": "2026-07-05T14:25:55Z",
   "minimum_init": "2026060100",
-  "count": 2016,
+  "count": 2100,
   "items": [
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070400/thresholds/5yr24h_ari/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070400/thresholds/2yr24h_ari/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070400/thresholds/2inch/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070400/thresholds/1inch/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070400/thresholds/0p5inch/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070400/amount/Texas/2026070400_Day1_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070400/thresholds/5yr24h_ari/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070400/thresholds/2yr24h_ari/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070400/thresholds/2inch/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070400/thresholds/1inch/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070400/thresholds/0p5inch/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070400",
+      "day": "Day1",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070400/amount/CONUS/2026070400_Day1_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070300/thresholds/5yr24h_ari/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070300/thresholds/2yr24h_ari/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070300/thresholds/2inch/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070300/thresholds/1inch/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070300/thresholds/0p5inch/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070300/amount/Texas/2026070300_Day2_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070300/thresholds/5yr24h_ari/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070300/thresholds/2yr24h_ari/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070300/thresholds/2inch/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070300/thresholds/1inch/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070300/thresholds/0p5inch/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070300",
+      "day": "Day2",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070300/amount/CONUS/2026070300_Day2_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
+    },
     {
       "init": "2026070300",
       "day": "Day1",
@@ -122,6 +362,126 @@
       "family": "amount",
       "threshold": "amount",
       "image": "products/verification/2026070300/amount/CONUS/2026070300_Day1_valid20260703_1200_to_20260704_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070200/thresholds/5yr24h_ari/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070200/thresholds/2yr24h_ari/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070200/thresholds/2inch/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070200/thresholds/1inch/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070200/thresholds/0p5inch/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070200/amount/Texas/2026070200_Day3_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070200/thresholds/5yr24h_ari/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070200/thresholds/2yr24h_ari/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070200/thresholds/2inch/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070200/thresholds/1inch/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070200/thresholds/0p5inch/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070200",
+      "day": "Day3",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070200/amount/CONUS/2026070200_Day3_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
     },
     {
       "init": "2026070200",
@@ -362,6 +722,126 @@
       "family": "amount",
       "threshold": "amount",
       "image": "products/verification/2026070200/amount/CONUS/2026070200_Day1_valid20260702_1200_to_20260703_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070100/thresholds/5yr24h_ari/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070100/thresholds/2yr24h_ari/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070100/thresholds/2inch/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070100/thresholds/1inch/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070100/thresholds/0p5inch/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070100/amount/Texas/2026070100_Day4_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026070100/thresholds/5yr24h_ari/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026070100/thresholds/2yr24h_ari/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026070100/thresholds/2inch/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026070100/thresholds/1inch/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026070100/thresholds/0p5inch/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026070100",
+      "day": "Day4",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026070100/amount/CONUS/2026070100_Day4_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
     },
     {
       "init": "2026070100",
@@ -722,6 +1202,126 @@
       "family": "amount",
       "threshold": "amount",
       "image": "products/verification/2026070100/amount/CONUS/2026070100_Day1_valid20260701_1200_to_20260702_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026063000/thresholds/5yr24h_ari/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026063000/thresholds/2yr24h_ari/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026063000/thresholds/2inch/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026063000/thresholds/1inch/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026063000/thresholds/0p5inch/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026063000/amount/Texas/2026063000_Day5_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026063000/thresholds/5yr24h_ari/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026063000/thresholds/2yr24h_ari/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026063000/thresholds/2inch/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026063000/thresholds/1inch/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026063000/thresholds/0p5inch/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026063000",
+      "day": "Day5",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026063000/amount/CONUS/2026063000_Day5_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
     },
     {
       "init": "2026063000",
@@ -1202,6 +1802,126 @@
       "family": "amount",
       "threshold": "amount",
       "image": "products/verification/2026063000/amount/CONUS/2026063000_Day1_valid20260630_1200_to_20260701_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026062900/thresholds/5yr24h_ari/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026062900/thresholds/2yr24h_ari/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026062900/thresholds/2inch/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026062900/thresholds/1inch/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026062900/thresholds/0p5inch/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026062900/amount/Texas/2026062900_Day6_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026062900/thresholds/5yr24h_ari/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026062900/thresholds/2yr24h_ari/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026062900/thresholds/2inch/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026062900/thresholds/1inch/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026062900/thresholds/0p5inch/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062900",
+      "day": "Day6",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026062900/amount/CONUS/2026062900_Day6_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
     },
     {
       "init": "2026062900",
@@ -1802,6 +2522,126 @@
       "family": "amount",
       "threshold": "amount",
       "image": "products/verification/2026062900/amount/CONUS/2026062900_Day1_valid20260629_1200_to_20260630_1200_CONUS_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026062800/thresholds/5yr24h_ari/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026062800/thresholds/2yr24h_ari/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026062800/thresholds/2inch/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026062800/thresholds/1inch/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026062800/thresholds/0p5inch/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "Texas",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026062800/amount/Texas/2026062800_Day7_valid20260704_1200_to_20260705_1200_Texas_amount_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "5yr24h_ari",
+      "image": "products/verification/2026062800/thresholds/5yr24h_ari/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_5yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2yr24h_ari",
+      "image": "products/verification/2026062800/thresholds/2yr24h_ari/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_2yr24h_ari_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "2inch",
+      "image": "products/verification/2026062800/thresholds/2inch/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_2inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "1inch",
+      "image": "products/verification/2026062800/thresholds/1inch/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_1inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "threshold",
+      "threshold": "0p5inch",
+      "image": "products/verification/2026062800/thresholds/0p5inch/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_0p5inch_verification_2x2.png"
+    },
+    {
+      "init": "2026062800",
+      "day": "Day7",
+      "valid_start_utc": "2026-07-04 12:00Z",
+      "valid_end_utc": "2026-07-05 12:00Z",
+      "domain": "CONUS",
+      "family": "amount",
+      "threshold": "amount",
+      "image": "products/verification/2026062800/amount/CONUS/2026062800_Day7_valid20260704_1200_to_20260705_1200_CONUS_amount_verification_2x2.png"
     },
     {
       "init": "2026062800",
