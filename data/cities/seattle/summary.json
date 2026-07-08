@@ -1,5 +1,5 @@
 {
-  "init": "2026070700",
+  "init": "2026070800",
   "city": {
     "id": "seattle",
     "market": "Seattle",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.05366549268364906,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.05184606462717056,
+        "lead_hour": 78,
+        "valid_time": "2026-07-11 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.41508713364601135,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.24026905000209808,
+        "lead_hour": 78,
+        "valid_time": "2026-07-11 06:00 UTC"
       }
     },
     {
@@ -59,12 +59,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-07 12:00 UTC"
+        "valid_time": "2026-07-08 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.4854738712310791,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.05639195442199707,
+        "lead_hour": 78,
+        "valid_time": "2026-07-11 06:00 UTC"
       }
     },
     {
@@ -74,12 +74,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-07 12:00 UTC"
+        "valid_time": "2026-07-08 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.05872845649719238,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.001049041748046875,
+        "lead_hour": 78,
+        "valid_time": "2026-07-11 06:00 UTC"
       }
     },
     {
@@ -89,12 +89,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-07 12:00 UTC"
+        "valid_time": "2026-07-08 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.0013649463653564453,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.0,
+        "lead_hour": 12,
+        "valid_time": "2026-07-08 12:00 UTC"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-07 12:00 UTC"
+        "valid_time": "2026-07-08 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.0037789344787597656,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 5.9604644775390625e-06,
+        "lead_hour": 78,
+        "valid_time": "2026-07-11 06:00 UTC"
       }
     },
     {
@@ -119,12 +119,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-07 12:00 UTC"
+        "valid_time": "2026-07-08 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.00047087669372558594,
-        "lead_hour": 138,
-        "valid_time": "2026-07-12 18:00 UTC"
+        "value": 0.0,
+        "lead_hour": 12,
+        "valid_time": "2026-07-08 12:00 UTC"
       }
     }
   ],
