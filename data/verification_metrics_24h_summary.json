@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-13T21:22:22Z",
+  "generated_utc": "2026-07-13T22:09:01Z",
   "accumulation": "24-h 12Z-to-12Z website verification",
   "categorical_metrics": {
     "metrics": [
@@ -21,9 +21,14 @@
       "Brier Score",
       "Brier Skill Score"
     ],
-    "forecast_source": "threshold exceedance probability; BSS is relative to sample climatology"
+    "forecast_source": "threshold exceedance probability",
+    "bss_reference": "historical MRMS event-frequency climatology",
+    "climatology_file": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/ffair24_diagnostics/climatology/mrms_historical_event_climatology_24h_12z12z_monthly_2020_2025.nc",
+    "climatology_period": "2020-2025",
+    "climatology_accumulation": "24-h 12Z-to-12Z",
+    "climatology_grouping": "monthly, grid-cell-specific, threshold-specific"
   },
-  "note": "POD/FAR/CSI are computed from single-valued mean precipitation forecasts. BS/BSS are computed from exceedance probabilities, with BSS relative to sample climatology.",
+  "note": "POD/FAR/CSI are computed from single-valued mean precipitation forecasts. BS/BSS are computed from exceedance probabilities, with BSS relative to historical MRMS event-frequency climatology.",
   "items": [
     {
       "lead_day": "Day1",
@@ -33,6 +38,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 34078,
@@ -45,9 +51,10 @@
       "FAR": 0.5275337211,
       "CSI": 0.2986896147,
       "brier_score": 0.049399768,
-      "bs_climatology": 0.0660255512,
-      "brier_skill_score": 0.2518083214,
-      "sum_squared_error": 23684.6199685072
+      "bs_climatology": 0.0637612827,
+      "brier_skill_score": 0.225238799,
+      "sum_squared_error": 23684.6199685072,
+      "sum_clim_squared_error": 30570.2194911967
     },
     {
       "lead_day": "Day1",
@@ -57,6 +64,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 34078,
@@ -69,9 +77,10 @@
       "FAR": 0.4964446033,
       "CSI": 0.2721631777,
       "brier_score": 0.0516022992,
-      "bs_climatology": 0.0660255512,
-      "brier_skill_score": 0.2184495505,
-      "sum_squared_error": 24740.6191651935
+      "bs_climatology": 0.0637612827,
+      "brier_skill_score": 0.190695403,
+      "sum_squared_error": 24740.6191651935,
+      "sum_clim_squared_error": 30570.2194911967
     },
     {
       "lead_day": "Day2",
@@ -81,6 +90,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 33762,
@@ -93,9 +103,10 @@
       "FAR": 0.5753599094,
       "CSI": 0.2399656193,
       "brier_score": 0.0539378792,
-      "bs_climatology": 0.0671842695,
-      "brier_skill_score": 0.1971650572,
-      "sum_squared_error": 25142.0636266852
+      "bs_climatology": 0.064918338,
+      "brier_skill_score": 0.1691426359,
+      "sum_squared_error": 25142.0636266852,
+      "sum_clim_squared_error": 30260.3848903831
     },
     {
       "lead_day": "Day2",
@@ -105,6 +116,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 33762,
@@ -117,9 +129,10 @@
       "FAR": 0.5500617502,
       "CSI": 0.2206432635,
       "brier_score": 0.0555579939,
-      "bs_climatology": 0.0671842695,
-      "brier_skill_score": 0.1730505627,
-      "sum_squared_error": 25897.2476896796
+      "bs_climatology": 0.064918338,
+      "brier_skill_score": 0.144186441,
+      "sum_squared_error": 25897.2476896796,
+      "sum_clim_squared_error": 30260.3848903831
     },
     {
       "lead_day": "Day3",
@@ -129,6 +142,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 32467,
@@ -141,9 +155,10 @@
       "FAR": 0.5697446888,
       "CSI": 0.2066180419,
       "brier_score": 0.0548440657,
-      "bs_climatology": 0.0665598281,
-      "brier_skill_score": 0.1760185191,
-      "sum_squared_error": 24834.051090018
+      "bs_climatology": 0.0643292857,
+      "brier_skill_score": 0.1474479293,
+      "sum_squared_error": 24834.051090018,
+      "sum_clim_squared_error": 29129.072515431
     },
     {
       "lead_day": "Day3",
@@ -153,6 +168,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 32467,
@@ -165,9 +181,10 @@
       "FAR": 0.5391365391,
       "CSI": 0.1889979128,
       "brier_score": 0.0559655969,
-      "bs_climatology": 0.0665598281,
-      "brier_skill_score": 0.1591685477,
-      "sum_squared_error": 25341.8938757641
+      "bs_climatology": 0.0643292857,
+      "brier_skill_score": 0.130013705,
+      "sum_squared_error": 25341.8938757641,
+      "sum_clim_squared_error": 29129.072515431
     },
     {
       "lead_day": "Day4",
@@ -177,6 +194,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 31995,
@@ -189,9 +207,10 @@
       "FAR": 0.5435116307,
       "CSI": 0.1876653479,
       "brier_score": 0.0562526223,
-      "bs_climatology": 0.0674998427,
-      "brier_skill_score": 0.1666258763,
-      "sum_squared_error": 24722.6899796671
+      "bs_climatology": 0.0651167381,
+      "brier_skill_score": 0.1361265331,
+      "sum_squared_error": 24722.6899796671,
+      "sum_clim_squared_error": 28618.4156912614
     },
     {
       "lead_day": "Day4",
@@ -201,6 +220,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 31995,
@@ -213,9 +233,10 @@
       "FAR": 0.5246775098,
       "CSI": 0.1717368728,
       "brier_score": 0.0567919142,
-      "bs_climatology": 0.0674998427,
-      "brier_skill_score": 0.1586363481,
-      "sum_squared_error": 24959.7055309916
+      "bs_climatology": 0.0651167381,
+      "brier_skill_score": 0.1278446089,
+      "sum_squared_error": 24959.7055309916,
+      "sum_clim_squared_error": 28618.4156912614
     },
     {
       "lead_day": "Day5",
@@ -225,6 +246,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 31502,
@@ -237,9 +259,10 @@
       "FAR": 0.6223798266,
       "CSI": 0.1216243655,
       "brier_score": 0.0602744786,
-      "bs_climatology": 0.0684539742,
-      "brier_skill_score": 0.1194889805,
-      "sum_squared_error": 25687.5361871589
+      "bs_climatology": 0.0661844011,
+      "brier_skill_score": 0.0892947945,
+      "sum_squared_error": 25687.5361871589,
+      "sum_clim_squared_error": 28206.2033152276
     },
     {
       "lead_day": "Day5",
@@ -249,6 +272,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 31502,
@@ -261,9 +285,10 @@
       "FAR": 0.5918088115,
       "CSI": 0.1177941564,
       "brier_score": 0.0612347345,
-      "bs_climatology": 0.0684539742,
-      "brier_skill_score": 0.1054612204,
-      "sum_squared_error": 26096.7742185179
+      "bs_climatology": 0.0661844011,
+      "brier_skill_score": 0.0747859991,
+      "sum_squared_error": 26096.7742185179,
+      "sum_clim_squared_error": 28206.2033152276
     },
     {
       "lead_day": "Day6",
@@ -273,6 +298,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 26018,
@@ -285,9 +311,10 @@
       "FAR": 0.5696663863,
       "CSI": 0.1020543847,
       "brier_score": 0.0609783524,
-      "bs_climatology": 0.0671201226,
-      "brier_skill_score": 0.091504156,
-      "sum_squared_error": 21926.9618308371
+      "bs_climatology": 0.0651545577,
+      "brier_skill_score": 0.0640969023,
+      "sum_squared_error": 21926.9618308371,
+      "sum_clim_squared_error": 23428.6667984004
     },
     {
       "lead_day": "Day6",
@@ -297,6 +324,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 26018,
@@ -309,9 +337,10 @@
       "FAR": 0.5646476412,
       "CSI": 0.1000133797,
       "brier_score": 0.0619753473,
-      "bs_climatology": 0.0671201226,
-      "brier_skill_score": 0.0766502661,
-      "sum_squared_error": 22285.4672416968
+      "bs_climatology": 0.0651545577,
+      "brier_skill_score": 0.0487949044,
+      "sum_squared_error": 22285.4672416968,
+      "sum_clim_squared_error": 23428.6667984004
     },
     {
       "lead_day": "Day7",
@@ -321,6 +350,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 25798,
@@ -333,9 +363,10 @@
       "FAR": 0.5774236388,
       "CSI": 0.0568783069,
       "brier_score": 0.0620882389,
-      "bs_climatology": 0.0665964698,
-      "brier_skill_score": 0.0676947431,
-      "sum_squared_error": 22326.0614670995
+      "bs_climatology": 0.0645272393,
+      "brier_skill_score": 0.0377979977,
+      "sum_squared_error": 22326.0614670995,
+      "sum_clim_squared_error": 23203.0918797879
     },
     {
       "lead_day": "Day7",
@@ -345,6 +376,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 25798,
@@ -357,9 +389,10 @@
       "FAR": 0.5505895256,
       "CSI": 0.0589441128,
       "brier_score": 0.0631976137,
-      "bs_climatology": 0.0665964698,
-      "brier_skill_score": 0.0510365809,
-      "sum_squared_error": 22724.9771114686
+      "bs_climatology": 0.0645272393,
+      "brier_skill_score": 0.0206056491,
+      "sum_squared_error": 22724.9771114686,
+      "sum_clim_squared_error": 23203.0918797879
     },
     {
       "lead_day": "Day1",
@@ -369,6 +402,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 13800,
@@ -381,9 +415,10 @@
       "FAR": 0.5486534303,
       "CSI": 0.1383882828,
       "brier_score": 0.0236041859,
-      "bs_climatology": 0.0279546337,
-      "brier_skill_score": 0.1556252841,
-      "sum_squared_error": 11316.9797109905
+      "bs_climatology": 0.0275219589,
+      "brier_skill_score": 0.142350805,
+      "sum_squared_error": 11316.9797109905,
+      "sum_clim_squared_error": 13195.3481406658
     },
     {
       "lead_day": "Day1",
@@ -393,6 +428,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 13800,
@@ -405,9 +441,10 @@
       "FAR": 0.5355560737,
       "CSI": 0.123749767,
       "brier_score": 0.0245433285,
-      "bs_climatology": 0.0279546337,
-      "brier_skill_score": 0.1220300454,
-      "sum_squared_error": 11767.249747365
+      "bs_climatology": 0.0275219589,
+      "brier_skill_score": 0.108227413,
+      "sum_squared_error": 11767.249747365,
+      "sum_clim_squared_error": 13195.3481406658
     },
     {
       "lead_day": "Day2",
@@ -417,6 +454,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 13662,
@@ -429,9 +467,10 @@
       "FAR": 0.5738341969,
       "CSI": 0.0852662952,
       "brier_score": 0.025337739,
-      "bs_climatology": 0.028450378,
-      "brier_skill_score": 0.1094058921,
-      "sum_squared_error": 11810.6802908315
+      "bs_climatology": 0.0280167478,
+      "brier_skill_score": 0.0956216906,
+      "sum_squared_error": 11810.6802908315,
+      "sum_clim_squared_error": 13059.4466586693
     },
     {
       "lead_day": "Day2",
@@ -441,6 +480,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 13662,
@@ -453,9 +493,10 @@
       "FAR": 0.6028905712,
       "CSI": 0.074867004,
       "brier_score": 0.026327377,
-      "bs_climatology": 0.028450378,
-      "brier_skill_score": 0.0746211883,
-      "sum_squared_error": 12271.9802395183
+      "bs_climatology": 0.0280167478,
+      "brier_skill_score": 0.0602986053,
+      "sum_squared_error": 12271.9802395183,
+      "sum_clim_squared_error": 13059.4466586693
     },
     {
       "lead_day": "Day3",
@@ -465,6 +506,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 12911,
@@ -477,9 +519,10 @@
       "FAR": 0.4821316614,
       "CSI": 0.060380117,
       "brier_score": 0.0248828948,
-      "bs_climatology": 0.0276999494,
-      "brier_skill_score": 0.1016989076,
-      "sum_squared_error": 11267.2733477154
+      "bs_climatology": 0.0272866509,
+      "brier_skill_score": 0.0880927496,
+      "sum_squared_error": 11267.2733477154,
+      "sum_clim_squared_error": 12355.7229559645
     },
     {
       "lead_day": "Day3",
@@ -489,6 +532,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 12911,
@@ -501,9 +545,10 @@
       "FAR": 0.5495307612,
       "CSI": 0.0618689581,
       "brier_score": 0.0254892234,
-      "bs_climatology": 0.0276999494,
-      "brier_skill_score": 0.0798097476,
-      "sum_squared_error": 11541.826224065
+      "bs_climatology": 0.0272866509,
+      "brier_skill_score": 0.0658720445,
+      "sum_squared_error": 11541.826224065,
+      "sum_clim_squared_error": 12355.7229559645
     },
     {
       "lead_day": "Day4",
@@ -513,6 +558,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 13116,
@@ -525,9 +571,10 @@
       "FAR": 0.6113861386,
       "CSI": 0.0547000209,
       "brier_score": 0.0261329038,
-      "bs_climatology": 0.0289527817,
-      "brier_skill_score": 0.0973957497,
-      "sum_squared_error": 11485.2544168495
+      "bs_climatology": 0.0284788601,
+      "brier_skill_score": 0.0823753585,
+      "sum_squared_error": 11485.2544168495,
+      "sum_clim_squared_error": 12516.2881396784
     },
     {
       "lead_day": "Day4",
@@ -537,6 +584,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 13116,
@@ -549,9 +597,10 @@
       "FAR": 0.6204899777,
       "CSI": 0.0587221724,
       "brier_score": 0.0266032359,
-      "bs_climatology": 0.0289527817,
-      "brier_skill_score": 0.0811509522,
-      "sum_squared_error": 11691.9625415472
+      "bs_climatology": 0.0284788601,
+      "brier_skill_score": 0.0658602286,
+      "sum_squared_error": 11691.9625415472,
+      "sum_clim_squared_error": 12516.2881396784
     },
     {
       "lead_day": "Day5",
@@ -561,6 +610,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 12416,
@@ -573,9 +623,10 @@
       "FAR": 0.6675126904,
       "CSI": 0.0103320451,
       "brier_score": 0.0266292802,
-      "bs_climatology": 0.0282847425,
-      "brier_skill_score": 0.0585284573,
-      "sum_squared_error": 11348.7600998913
+      "bs_climatology": 0.0278902196,
+      "brier_skill_score": 0.0452108098,
+      "sum_squared_error": 11348.7600998913,
+      "sum_clim_squared_error": 11886.1422150047
     },
     {
       "lead_day": "Day5",
@@ -585,6 +636,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 12416,
@@ -597,9 +649,10 @@
       "FAR": 0.6937354988,
       "CSI": 0.020285846,
       "brier_score": 0.0270922472,
-      "bs_climatology": 0.0282847425,
-      "brier_skill_score": 0.0421603718,
-      "sum_squared_error": 11546.0655596347
+      "bs_climatology": 0.0278902196,
+      "brier_skill_score": 0.0286111885,
+      "sum_squared_error": 11546.0655596347,
+      "sum_clim_squared_error": 11886.1422150047
     },
     {
       "lead_day": "Day6",
@@ -609,6 +662,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 10620,
@@ -621,9 +675,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0271284355,
-      "bs_climatology": 0.028661709,
-      "brier_skill_score": 0.0534955367,
-      "sum_squared_error": 9755.0056146149
+      "bs_climatology": 0.0282819603,
+      "brier_skill_score": 0.0407865921,
+      "sum_squared_error": 9755.0056146149,
+      "sum_clim_squared_error": 10169.7969759048
     },
     {
       "lead_day": "Day6",
@@ -633,6 +688,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 10620,
@@ -645,9 +701,10 @@
       "FAR": 0.7411764706,
       "CSI": 0.0080941869,
       "brier_score": 0.027627184,
-      "bs_climatology": 0.028661709,
-      "brier_skill_score": 0.0360943235,
-      "sum_squared_error": 9934.3485954757
+      "bs_climatology": 0.0282819603,
+      "brier_skill_score": 0.0231517287,
+      "sum_squared_error": 9934.3485954757,
+      "sum_clim_squared_error": 10169.7969759048
     },
     {
       "lead_day": "Day7",
@@ -657,6 +714,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 10400,
@@ -669,9 +727,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0269185256,
-      "bs_climatology": 0.0280856586,
-      "brier_skill_score": 0.0415561918,
-      "sum_squared_error": 9679.5249536219
+      "bs_climatology": 0.0276694113,
+      "brier_skill_score": 0.0271377546,
+      "sum_squared_error": 9679.5249536219,
+      "sum_clim_squared_error": 9949.5329367403
     },
     {
       "lead_day": "Day7",
@@ -681,6 +740,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 10400,
@@ -693,9 +753,10 @@
       "FAR": 0.6153846154,
       "CSI": 0.0009600614,
       "brier_score": 0.0273750065,
-      "bs_climatology": 0.0280856586,
-      "brier_skill_score": 0.0253030246,
-      "sum_squared_error": 9843.6690960433
+      "bs_climatology": 0.0276694113,
+      "brier_skill_score": 0.0106400814,
+      "sum_squared_error": 9843.6690960433,
+      "sum_clim_squared_error": 9949.5329367403
     },
     {
       "lead_day": "Day1",
@@ -705,6 +766,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 3062,
@@ -717,9 +779,10 @@
       "FAR": 0.5806451613,
       "CSI": 0.0083925113,
       "brier_score": 0.005955363,
-      "bs_climatology": 0.0063457236,
-      "brier_skill_score": 0.0615155364,
-      "sum_squared_error": 2855.2868973529
+      "bs_climatology": 0.0063324847,
+      "brier_skill_score": 0.0595535041,
+      "sum_squared_error": 2855.2868973529,
+      "sum_clim_squared_error": 3036.097119502
     },
     {
       "lead_day": "Day1",
@@ -729,6 +792,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 479448,
       "n_events": 3062,
@@ -741,9 +805,10 @@
       "FAR": 0.7207792208,
       "CSI": 0.0261875761,
       "brier_score": 0.0062203601,
-      "bs_climatology": 0.0063457236,
-      "brier_skill_score": 0.019755585,
-      "sum_squared_error": 2982.3392318487
+      "bs_climatology": 0.0063324847,
+      "brier_skill_score": 0.0177062477,
+      "sum_squared_error": 2982.3392318487,
+      "sum_clim_squared_error": 3036.097119502
     },
     {
       "lead_day": "Day2",
@@ -753,6 +818,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 3021,
@@ -765,9 +831,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0061846594,
-      "bs_climatology": 0.0064390209,
-      "brier_skill_score": 0.0395031359,
-      "sum_squared_error": 2882.8552898291
+      "bs_climatology": 0.0064246916,
+      "brier_skill_score": 0.0373608915,
+      "sum_squared_error": 2882.8552898291,
+      "sum_clim_squared_error": 2994.7415021704
     },
     {
       "lead_day": "Day2",
@@ -777,6 +844,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 466130,
       "n_events": 3021,
@@ -789,9 +857,10 @@
       "FAR": 0.9583333333,
       "CSI": 0.000652103,
       "brier_score": 0.006460605,
-      "bs_climatology": 0.0064390209,
-      "brier_skill_score": -0.003352068,
-      "sum_squared_error": 3011.4817914637
+      "bs_climatology": 0.0064246916,
+      "brier_skill_score": -0.0055898946,
+      "sum_squared_error": 3011.4817914637,
+      "sum_clim_squared_error": 2994.7415021704
     },
     {
       "lead_day": "Day3",
@@ -801,6 +870,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 2855,
@@ -813,9 +883,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0061383778,
-      "bs_climatology": 0.0062652913,
-      "brier_skill_score": 0.0202566073,
-      "sum_squared_error": 2779.531120222
+      "bs_climatology": 0.0062517417,
+      "brier_skill_score": 0.0181331737,
+      "sum_squared_error": 2779.531120222,
+      "sum_clim_squared_error": 2830.8636626962
     },
     {
       "lead_day": "Day3",
@@ -825,6 +896,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452812,
       "n_events": 2855,
@@ -837,9 +909,10 @@
       "FAR": 0.5918367347,
       "CSI": 0.0069348128,
       "brier_score": 0.0061773448,
-      "bs_climatology": 0.0062652913,
-      "brier_skill_score": 0.0140370992,
-      "sum_squared_error": 2797.1758589726
+      "bs_climatology": 0.0062517417,
+      "brier_skill_score": 0.0119001859,
+      "sum_squared_error": 2797.1758589726,
+      "sum_clim_squared_error": 2830.8636626962
     },
     {
       "lead_day": "Day4",
@@ -849,6 +922,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 2965,
@@ -861,9 +935,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0066872078,
-      "bs_climatology": 0.0067008809,
-      "brier_skill_score": 0.0020404823,
-      "sum_squared_error": 2938.987725658
+      "bs_climatology": 0.0066840939,
+      "brier_skill_score": -0.000465877,
+      "sum_squared_error": 2938.987725658,
+      "sum_clim_squared_error": 2937.6191564114
     },
     {
       "lead_day": "Day4",
@@ -873,6 +948,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 439494,
       "n_events": 2965,
@@ -885,9 +961,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0066593895,
-      "bs_climatology": 0.0067008809,
-      "brier_skill_score": 0.006191936,
-      "sum_squared_error": 2926.761707225
+      "bs_climatology": 0.0066840939,
+      "brier_skill_score": 0.003696003,
+      "sum_squared_error": 2926.761707225,
+      "sum_clim_squared_error": 2937.6191564114
     },
     {
       "lead_day": "Day5",
@@ -897,6 +974,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 2659,
@@ -909,9 +987,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.006434878,
-      "bs_climatology": 0.0062002786,
-      "brier_skill_score": -0.0378369107,
-      "sum_squared_error": 2742.3905797099
+      "bs_climatology": 0.0061899236,
+      "brier_skill_score": -0.0395730974,
+      "sum_squared_error": 2742.3905797099,
+      "sum_clim_squared_error": 2637.99687262
     },
     {
       "lead_day": "Day5",
@@ -921,6 +1000,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 426176,
       "n_events": 2659,
@@ -933,9 +1013,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0062207009,
-      "bs_climatology": 0.0062002786,
-      "brier_skill_score": -0.0032937631,
-      "sum_squared_error": 2651.113422687
+      "bs_climatology": 0.0061899236,
+      "brier_skill_score": -0.0049721629,
+      "sum_squared_error": 2651.113422687,
+      "sum_clim_squared_error": 2637.99687262
     },
     {
       "lead_day": "Day6",
@@ -945,6 +1026,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 2361,
@@ -957,9 +1039,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0066966043,
-      "bs_climatology": 0.0065227733,
-      "brier_skill_score": -0.0266498633,
-      "sum_squared_error": 2408.0051472221
+      "bs_climatology": 0.0065132424,
+      "brier_skill_score": -0.0281521714,
+      "sum_squared_error": 2408.0051472221,
+      "sum_clim_squared_error": 2342.0707695524
     },
     {
       "lead_day": "Day6",
@@ -969,6 +1052,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 2361,
@@ -981,9 +1065,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0064816532,
-      "bs_climatology": 0.0065227733,
-      "brier_skill_score": 0.0063040726,
-      "sum_squared_error": 2330.7117581824
+      "bs_climatology": 0.0065132424,
+      "brier_skill_score": 0.0048499864,
+      "sum_squared_error": 2330.7117581824,
+      "sum_clim_squared_error": 2342.0707695524
     },
     {
       "lead_day": "Day7",
@@ -993,6 +1078,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 2312,
@@ -1005,9 +1091,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0063395084,
-      "bs_climatology": 0.0063882763,
-      "brier_skill_score": 0.0076339726,
-      "sum_squared_error": 2279.5984635187
+      "bs_climatology": 0.006376193,
+      "brier_skill_score": 0.0057533742,
+      "sum_squared_error": 2279.5984635187,
+      "sum_clim_squared_error": 2292.7897409294
     },
     {
       "lead_day": "Day7",
@@ -1017,6 +1104,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359586,
       "n_events": 2312,
@@ -1029,9 +1117,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0063699049,
-      "bs_climatology": 0.0063882763,
-      "brier_skill_score": 0.0028758051,
-      "sum_squared_error": 2290.5286153945
+      "bs_climatology": 0.006376193,
+      "brier_skill_score": 0.0009861897,
+      "sum_squared_error": 2290.5286153945,
+      "sum_clim_squared_error": 2292.7897409294
     },
     {
       "lead_day": "Day1",
@@ -1041,6 +1130,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 459108,
       "n_events": 788,
@@ -1053,9 +1143,10 @@
       "FAR": 0.5555555556,
       "CSI": 0.0100250627,
       "brier_score": 0.0017164541,
-      "bs_climatology": 0.0017134258,
-      "brier_skill_score": -0.0017674008,
-      "sum_squared_error": 788.0378204955
+      "bs_climatology": 0.0017190537,
+      "brier_skill_score": 0.0015121973,
+      "sum_squared_error": 788.0378204955,
+      "sum_clim_squared_error": 789.2312939637
     },
     {
       "lead_day": "Day1",
@@ -1065,6 +1156,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 459108,
       "n_events": 788,
@@ -1077,9 +1169,10 @@
       "FAR": 0.6875,
       "CSI": 0.0182704019,
       "brier_score": 0.0017415846,
-      "bs_climatology": 0.0017134258,
-      "brier_skill_score": -0.0164342264,
-      "sum_squared_error": 799.5754421268
+      "bs_climatology": 0.0017190537,
+      "brier_skill_score": -0.0131066118,
+      "sum_squared_error": 799.5754421268,
+      "sum_clim_squared_error": 789.2312939637
     },
     {
       "lead_day": "Day2",
@@ -1089,6 +1182,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 446355,
       "n_events": 747,
@@ -1101,9 +1195,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0016725394,
-      "bs_climatology": 0.001670755,
-      "brier_skill_score": -0.0010680394,
-      "sum_squared_error": 746.546344068
+      "bs_climatology": 0.0016765589,
+      "brier_skill_score": 0.0023974603,
+      "sum_squared_error": 746.546344068,
+      "sum_clim_squared_error": 748.3404606292
     },
     {
       "lead_day": "Day2",
@@ -1113,6 +1208,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 446355,
       "n_events": 747,
@@ -1125,9 +1221,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.00171326,
-      "bs_climatology": 0.001670755,
-      "brier_skill_score": -0.0254405818,
-      "sum_squared_error": 764.7221639787
+      "bs_climatology": 0.0016765589,
+      "brier_skill_score": -0.0218907091,
+      "sum_squared_error": 764.7221639787,
+      "sum_clim_squared_error": 748.3404606292
     },
     {
       "lead_day": "Day3",
@@ -1137,6 +1234,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 433602,
       "n_events": 716,
@@ -1149,9 +1247,10 @@
       "FAR": 0.0,
       "CSI": 0.001396648,
       "brier_score": 0.0016420428,
-      "bs_climatology": 0.0016485572,
-      "brier_skill_score": 0.0039515485,
-      "sum_squared_error": 711.9930439998
+      "bs_climatology": 0.0016545502,
+      "brier_skill_score": 0.0075594184,
+      "sum_squared_error": 711.9930439998,
+      "sum_clim_squared_error": 717.4162939587
     },
     {
       "lead_day": "Day3",
@@ -1161,6 +1260,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 433602,
       "n_events": 716,
@@ -1173,9 +1273,10 @@
       "FAR": 0.1666666667,
       "CSI": 0.0069735007,
       "brier_score": 0.001639503,
-      "bs_climatology": 0.0016485572,
-      "brier_skill_score": 0.0054921723,
-      "sum_squared_error": 710.8917788482
+      "bs_climatology": 0.0016545502,
+      "brier_skill_score": 0.0090944618,
+      "sum_squared_error": 710.8917788482,
+      "sum_clim_squared_error": 717.4162939587
     },
     {
       "lead_day": "Day4",
@@ -1185,6 +1286,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 420849,
       "n_events": 749,
@@ -1197,9 +1299,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0017768612,
-      "bs_climatology": 0.0017765683,
-      "brier_skill_score": -0.0001648783,
-      "sum_squared_error": 747.7902520077
+      "bs_climatology": 0.0017824364,
+      "brier_skill_score": 0.0031278567,
+      "sum_squared_error": 747.7902520077,
+      "sum_clim_squared_error": 750.136571725
     },
     {
       "lead_day": "Day4",
@@ -1209,6 +1312,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 420849,
       "n_events": 749,
@@ -1221,9 +1325,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0017974691,
-      "bs_climatology": 0.0017765683,
-      "brier_skill_score": -0.0117647044,
-      "sum_squared_error": 756.4630589049
+      "bs_climatology": 0.0017824364,
+      "brier_skill_score": -0.0084337805,
+      "sum_squared_error": 756.4630589049,
+      "sum_clim_squared_error": 750.136571725
     },
     {
       "lead_day": "Day5",
@@ -1233,6 +1338,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 408096,
       "n_events": 695,
@@ -1245,9 +1351,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0017245621,
-      "bs_climatology": 0.0017001303,
-      "brier_skill_score": -0.0143705429,
-      "sum_squared_error": 703.7869119083
+      "bs_climatology": 0.0017060015,
+      "brier_skill_score": -0.0108795919,
+      "sum_squared_error": 703.7869119083,
+      "sum_clim_squared_error": 696.2124050554
     },
     {
       "lead_day": "Day5",
@@ -1257,6 +1364,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 408096,
       "n_events": 695,
@@ -1269,9 +1377,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0017322443,
-      "bs_climatology": 0.0017001303,
-      "brier_skill_score": -0.0188890925,
-      "sum_squared_error": 706.9219557008
+      "bs_climatology": 0.0017060015,
+      "brier_skill_score": -0.015382591,
+      "sum_squared_error": 706.9219557008,
+      "sum_clim_squared_error": 696.2124050554
     },
     {
       "lead_day": "Day6",
@@ -1281,6 +1390,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 344331,
       "n_events": 657,
@@ -1293,9 +1403,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0019252103,
-      "bs_climatology": 0.0019044071,
-      "brier_skill_score": -0.0109236731,
-      "sum_squared_error": 662.9095720571
+      "bs_climatology": 0.0019103426,
+      "brier_skill_score": -0.0077827275,
+      "sum_squared_error": 662.9095720571,
+      "sum_clim_squared_error": 657.7901703858
     },
     {
       "lead_day": "Day6",
@@ -1305,6 +1416,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 344331,
       "n_events": 657,
@@ -1317,9 +1429,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0019208945,
-      "bs_climatology": 0.0019044071,
-      "brier_skill_score": -0.0086574689,
-      "sum_squared_error": 661.4235167608
+      "bs_climatology": 0.0019103426,
+      "brier_skill_score": -0.0055235644,
+      "sum_squared_error": 661.4235167608,
+      "sum_clim_squared_error": 657.7901703858
     },
     {
       "lead_day": "Day7",
@@ -1329,6 +1442,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 344331,
       "n_events": 668,
@@ -1341,9 +1455,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0019531938,
-      "bs_climatology": 0.0019362302,
-      "brier_skill_score": -0.0087611312,
-      "sum_squared_error": 672.5451660753
+      "bs_climatology": 0.0019419947,
+      "brier_skill_score": -0.0057667971,
+      "sum_squared_error": 672.5451660753,
+      "sum_clim_squared_error": 668.6889724434
     },
     {
       "lead_day": "Day7",
@@ -1353,6 +1468,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 344331,
       "n_events": 668,
@@ -1365,9 +1481,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0019494649,
-      "bs_climatology": 0.0019362302,
-      "brier_skill_score": -0.0068352687,
-      "sum_squared_error": 671.2611856907
+      "bs_climatology": 0.0019419947,
+      "brier_skill_score": -0.0038466512,
+      "sum_squared_error": 671.2611856907,
+      "sum_clim_squared_error": 668.6889724434
     },
     {
       "lead_day": "Day1",
@@ -1377,6 +1494,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 478836,
       "n_events": 325,
@@ -1389,9 +1507,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.001283021,
-      "bs_climatology": 0.0006782686,
-      "brier_skill_score": -0.8916120504,
-      "sum_squared_error": 614.3566513374
+      "bs_climatology": 0.0006805818,
+      "brier_skill_score": -0.8851826546,
+      "sum_squared_error": 614.3566513374,
+      "sum_clim_squared_error": 325.8870697875
     },
     {
       "lead_day": "Day1",
@@ -1401,6 +1520,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 478836,
       "n_events": 325,
@@ -1413,9 +1533,10 @@
       "FAR": 0.5,
       "CSI": 0.006116208,
       "brier_score": 0.0006962079,
-      "bs_climatology": 0.0006782686,
-      "brier_skill_score": -0.0264487017,
-      "sum_squared_error": 333.369406793
+      "bs_climatology": 0.0006805818,
+      "brier_skill_score": -0.0229599076,
+      "sum_squared_error": 333.369406793,
+      "sum_clim_squared_error": 325.8870697875
     },
     {
       "lead_day": "Day2",
@@ -1425,6 +1546,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 465535,
       "n_events": 298,
@@ -1437,9 +1559,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0018268359,
-      "bs_climatology": 0.000639714,
-      "brier_skill_score": -1.8557073258,
-      "sum_squared_error": 850.4560373082
+      "bs_climatology": 0.0006420737,
+      "brier_skill_score": -1.8452121195,
+      "sum_squared_error": 850.4560373082,
+      "sum_clim_squared_error": 298.9077796634
     },
     {
       "lead_day": "Day2",
@@ -1449,6 +1572,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 465535,
       "n_events": 298,
@@ -1461,9 +1585,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0006558822,
-      "bs_climatology": 0.000639714,
-      "brier_skill_score": -0.0252741142,
-      "sum_squared_error": 305.3361079525
+      "bs_climatology": 0.0006420737,
+      "brier_skill_score": -0.0215060588,
+      "sum_squared_error": 305.3361079525,
+      "sum_clim_squared_error": 298.9077796634
     },
     {
       "lead_day": "Day3",
@@ -1473,6 +1598,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452234,
       "n_events": 292,
@@ -1485,9 +1611,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0006457495,
-      "bs_climatology": 0.0006452665,
-      "brier_skill_score": -0.0007484546,
-      "sum_squared_error": 292.0298680569
+      "bs_climatology": 0.0006477365,
+      "brier_skill_score": 0.0030677162,
+      "sum_squared_error": 292.0298680569,
+      "sum_clim_squared_error": 292.9284895393
     },
     {
       "lead_day": "Day3",
@@ -1497,6 +1624,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 452234,
       "n_events": 292,
@@ -1509,9 +1637,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0006506213,
-      "bs_climatology": 0.0006452665,
-      "brier_skill_score": -0.0082986112,
-      "sum_squared_error": 294.2330902822
+      "bs_climatology": 0.0006477365,
+      "brier_skill_score": -0.0044536492,
+      "sum_squared_error": 294.2330902822,
+      "sum_clim_squared_error": 292.9284895393
     },
     {
       "lead_day": "Day4",
@@ -1521,6 +1650,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 438933,
       "n_events": 306,
@@ -1533,9 +1663,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0007016753,
-      "bs_climatology": 0.0006966591,
-      "brier_skill_score": -0.0072002955,
-      "sum_squared_error": 307.9884280059
+      "bs_climatology": 0.0006990798,
+      "brier_skill_score": -0.003712666,
+      "sum_squared_error": 307.9884280059,
+      "sum_clim_squared_error": 306.8491994128
     },
     {
       "lead_day": "Day4",
@@ -1545,6 +1676,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 438933,
       "n_events": 306,
@@ -1557,9 +1689,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0007159425,
-      "bs_climatology": 0.0006966591,
-      "brier_skill_score": -0.0276797758,
-      "sum_squared_error": 314.2507801721
+      "bs_climatology": 0.0006990798,
+      "brier_skill_score": -0.0241212321,
+      "sum_squared_error": 314.2507801721,
+      "sum_clim_squared_error": 306.8491994128
     },
     {
       "lead_day": "Day5",
@@ -1569,6 +1702,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 425632,
       "n_events": 285,
@@ -1581,9 +1715,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0006794544,
-      "bs_climatology": 0.0006691442,
-      "brier_skill_score": -0.0154081764,
-      "sum_squared_error": 289.1975559943
+      "bs_climatology": 0.0006716102,
+      "brier_skill_score": -0.0116797448,
+      "sum_squared_error": 289.1975559943,
+      "sum_clim_squared_error": 285.8587981773
     },
     {
       "lead_day": "Day5",
@@ -1593,6 +1728,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 425632,
       "n_events": 285,
@@ -1605,9 +1741,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0006841097,
-      "bs_climatology": 0.0006691442,
-      "brier_skill_score": -0.0223651992,
-      "sum_squared_error": 291.1789798717
+      "bs_climatology": 0.0006716102,
+      "brier_skill_score": -0.0186112225,
+      "sum_squared_error": 291.1789798717,
+      "sum_clim_squared_error": 285.8587981773
     },
     {
       "lead_day": "Day6",
@@ -1617,6 +1754,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359127,
       "n_events": 261,
@@ -1629,9 +1767,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0007358362,
-      "bs_climatology": 0.0007262342,
-      "brier_skill_score": -0.0132216435,
-      "sum_squared_error": 264.2586560214
+      "bs_climatology": 0.0007286894,
+      "brier_skill_score": -0.0098078051,
+      "sum_squared_error": 264.2586560214,
+      "sum_clim_squared_error": 261.6920315763
     },
     {
       "lead_day": "Day6",
@@ -1641,6 +1780,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359127,
       "n_events": 261,
@@ -1653,9 +1793,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.000736811,
-      "bs_climatology": 0.0007262342,
-      "brier_skill_score": -0.0145639393,
-      "sum_squared_error": 264.6087406034
+      "bs_climatology": 0.0007286894,
+      "brier_skill_score": -0.0111455783,
+      "sum_squared_error": 264.6087406034,
+      "sum_clim_squared_error": 261.6920315763
     },
     {
       "lead_day": "Day7",
@@ -1665,6 +1806,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359127,
       "n_events": 277,
@@ -1677,9 +1819,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0007789885,
-      "bs_climatology": 0.00077072,
-      "brier_skill_score": -0.0107282832,
-      "sum_squared_error": 279.7557880721
+      "bs_climatology": 0.000773113,
+      "brier_skill_score": -0.0075996867,
+      "sum_squared_error": 279.7557880721,
+      "sum_clim_squared_error": 277.6457672172
     },
     {
       "lead_day": "Day7",
@@ -1689,6 +1832,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 359127,
       "n_events": 277,
@@ -1701,9 +1845,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.000781462,
-      "bs_climatology": 0.00077072,
-      "brier_skill_score": -0.0139377348,
-      "sum_squared_error": 280.6441204563
+      "bs_climatology": 0.000773113,
+      "brier_skill_score": -0.0107992039,
+      "sum_squared_error": 280.6441204563,
+      "sum_clim_squared_error": 277.6457672172
     },
     {
       "lead_day": "Day1",
@@ -1713,6 +1858,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 5279,
@@ -1725,9 +1871,10 @@
       "FAR": 0.5772409409,
       "CSI": 0.2492815194,
       "brier_score": 0.0607488913,
-      "bs_climatology": 0.0737832492,
-      "brier_skill_score": 0.1766574132,
-      "sum_squared_error": 3997.7630384429
+      "bs_climatology": 0.0724776802,
+      "brier_skill_score": 0.161826218,
+      "sum_squared_error": 3997.7630384429,
+      "sum_clim_squared_error": 4769.6111765299
     },
     {
       "lead_day": "Day1",
@@ -1737,6 +1884,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 5279,
@@ -1749,9 +1897,10 @@
       "FAR": 0.5771632471,
       "CSI": 0.1969529086,
       "brier_score": 0.0645729431,
-      "bs_climatology": 0.0737832492,
-      "brier_skill_score": 0.1248292296,
-      "sum_squared_error": 4249.4162388863
+      "bs_climatology": 0.0724776802,
+      "brier_skill_score": 0.1090644328,
+      "sum_squared_error": 4249.4162388863,
+      "sum_clim_squared_error": 4769.6111765299
     },
     {
       "lead_day": "Day2",
@@ -1761,6 +1910,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 5296,
@@ -1773,9 +1923,10 @@
       "FAR": 0.5745823389,
       "CSI": 0.1974522293,
       "brier_score": 0.0641419364,
-      "bs_climatology": 0.0759240232,
-      "brier_skill_score": 0.1551825937,
-      "sum_squared_error": 4103.8010891989
+      "bs_climatology": 0.0744857638,
+      "brier_skill_score": 0.1388698581,
+      "sum_squared_error": 4103.8010891989,
+      "sum_clim_squared_error": 4765.5991695006
     },
     {
       "lead_day": "Day2",
@@ -1785,6 +1936,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 5296,
@@ -1797,9 +1949,10 @@
       "FAR": 0.4864350309,
       "CSI": 0.170781893,
       "brier_score": 0.0659507768,
-      "bs_climatology": 0.0759240232,
-      "brier_skill_score": 0.1313582451,
-      "sum_squared_error": 4219.5306981043
+      "bs_climatology": 0.0744857638,
+      "brier_skill_score": 0.1145854806,
+      "sum_squared_error": 4219.5306981043,
+      "sum_clim_squared_error": 4765.5991695006
     },
     {
       "lead_day": "Day3",
@@ -1809,6 +1962,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 5028,
@@ -1821,9 +1975,10 @@
       "FAR": 0.6595505618,
       "CSI": 0.1338930623,
       "brier_score": 0.0682021641,
-      "bs_climatology": 0.0743538845,
-      "brier_skill_score": 0.0827356962,
-      "sum_squared_error": 4238.9009047998
+      "bs_climatology": 0.0730298917,
+      "brier_skill_score": 0.066106186,
+      "sum_squared_error": 4238.9009047998,
+      "sum_clim_squared_error": 4538.9538308205
     },
     {
       "lead_day": "Day3",
@@ -1833,6 +1988,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 5028,
@@ -1845,9 +2001,10 @@
       "FAR": 0.608045977,
       "CSI": 0.1120604666,
       "brier_score": 0.0688668471,
-      "bs_climatology": 0.0743538845,
-      "brier_skill_score": 0.0737962438,
-      "sum_squared_error": 4280.2122832608
+      "bs_climatology": 0.0730298917,
+      "brier_skill_score": 0.0570046661,
+      "sum_squared_error": 4280.2122832608,
+      "sum_clim_squared_error": 4538.9538308205
     },
     {
       "lead_day": "Day4",
@@ -1857,6 +2014,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 4461,
@@ -1869,9 +2027,10 @@
       "FAR": 0.6037815126,
       "CSI": 0.1598847067,
       "brier_score": 0.0611910958,
-      "bs_climatology": 0.0684819653,
-      "brier_skill_score": 0.1064640816,
-      "sum_squared_error": 3691.2916627338
+      "bs_climatology": 0.0668727325,
+      "brier_skill_score": 0.0849619341,
+      "sum_squared_error": 3691.2916627338,
+      "sum_clim_squared_error": 4034.0307146362
     },
     {
       "lead_day": "Day4",
@@ -1881,6 +2040,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 4461,
@@ -1893,9 +2053,10 @@
       "FAR": 0.6200607903,
       "CSI": 0.1140302864,
       "brier_score": 0.0607409721,
-      "bs_climatology": 0.0684819653,
-      "brier_skill_score": 0.1130369615,
-      "sum_squared_error": 3664.1383987696
+      "bs_climatology": 0.0668727325,
+      "brier_skill_score": 0.0916929845,
+      "sum_squared_error": 3664.1383987696,
+      "sum_clim_squared_error": 4034.0307146362
     },
     {
       "lead_day": "Day5",
@@ -1905,6 +2066,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 3833,
@@ -1917,9 +2079,10 @@
       "FAR": 0.7806215722,
       "CSI": 0.0703949941,
       "brier_score": 0.0568101279,
-      "bs_climatology": 0.0612322112,
-      "brier_skill_score": 0.072218253,
-      "sum_squared_error": 3323.1652392113
+      "bs_climatology": 0.0601749947,
+      "brier_skill_score": 0.0559180243,
+      "sum_squared_error": 3323.1652392113,
+      "sum_clim_squared_error": 3519.9964885692
     },
     {
       "lead_day": "Day5",
@@ -1929,6 +2092,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 3833,
@@ -1941,9 +2105,10 @@
       "FAR": 0.7377873563,
       "CSI": 0.0751028807,
       "brier_score": 0.0587384009,
-      "bs_climatology": 0.0612322112,
-      "brier_skill_score": 0.0407270974,
-      "sum_squared_error": 3435.961501663
+      "bs_climatology": 0.0601749947,
+      "brier_skill_score": 0.0238735996,
+      "sum_squared_error": 3435.961501663,
+      "sum_clim_squared_error": 3519.9964885692
     },
     {
       "lead_day": "Day6",
@@ -1953,6 +2118,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 3116,
@@ -1965,9 +2131,10 @@
       "FAR": 0.6099158092,
       "CSI": 0.1106687898,
       "brier_score": 0.0538548283,
-      "bs_climatology": 0.0591473598,
-      "brier_skill_score": 0.0894804351,
-      "sum_squared_error": 2658.0589046926
+      "bs_climatology": 0.0581052296,
+      "brier_skill_score": 0.0731500653,
+      "sum_squared_error": 2658.0589046926,
+      "sum_clim_squared_error": 2867.8417133292
     },
     {
       "lead_day": "Day6",
@@ -1977,6 +2144,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 3116,
@@ -1989,9 +2157,10 @@
       "FAR": 0.5837037037,
       "CSI": 0.0800569801,
       "brier_score": 0.0552951358,
-      "bs_climatology": 0.0591473598,
-      "brier_skill_score": 0.0651292628,
-      "sum_squared_error": 2729.1467241515
+      "bs_climatology": 0.0581052296,
+      "brier_skill_score": 0.0483621493,
+      "sum_squared_error": 2729.1467241515,
+      "sum_clim_squared_error": 2867.8417133292
     },
     {
       "lead_day": "Day7",
@@ -2001,6 +2170,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 3041,
@@ -2013,9 +2183,10 @@
       "FAR": 0.6245954693,
       "CSI": 0.0676976948,
       "brier_score": 0.0518270846,
-      "bs_climatology": 0.0578173493,
-      "brier_skill_score": 0.1036066996,
-      "sum_squared_error": 2557.9775874582
+      "bs_climatology": 0.0564575744,
+      "brier_skill_score": 0.0820171585,
+      "sum_squared_error": 2557.9775874582,
+      "sum_clim_squared_error": 2786.5200435294
     },
     {
       "lead_day": "Day7",
@@ -2025,6 +2196,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 3041,
@@ -2037,9 +2209,10 @@
       "FAR": 0.6308411215,
       "CSI": 0.0477197221,
       "brier_score": 0.0526108641,
-      "bs_climatology": 0.0578173493,
-      "brier_skill_score": 0.0900505689,
-      "sum_squared_error": 2596.6618106404
+      "bs_climatology": 0.0564575744,
+      "brier_skill_score": 0.0681345298,
+      "sum_squared_error": 2596.6618106404,
+      "sum_clim_squared_error": 2786.5200435294
     },
     {
       "lead_day": "Day1",
@@ -2049,6 +2222,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 2508,
@@ -2061,9 +2235,10 @@
       "FAR": 0.5892682927,
       "CSI": 0.1352827763,
       "brier_score": 0.0315316628,
-      "bs_climatology": 0.0366584297,
-      "brier_skill_score": 0.1398523333,
-      "sum_squared_error": 2075.0356649561
+      "bs_climatology": 0.0362901392,
+      "brier_skill_score": 0.1311231238,
+      "sum_squared_error": 2075.0356649561,
+      "sum_clim_squared_error": 2388.1814808317
     },
     {
       "lead_day": "Day1",
@@ -2073,6 +2248,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 2508,
@@ -2085,9 +2261,10 @@
       "FAR": 0.5155393053,
       "CSI": 0.0949820789,
       "brier_score": 0.033015115,
-      "bs_climatology": 0.0366584297,
-      "brier_skill_score": 0.0993854546,
-      "sum_squared_error": 2172.6586891404
+      "bs_climatology": 0.0362901392,
+      "brier_skill_score": 0.0902455669,
+      "sum_squared_error": 2172.6586891404,
+      "sum_clim_squared_error": 2388.1814808317
     },
     {
       "lead_day": "Day2",
@@ -2097,6 +2274,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 2626,
@@ -2109,9 +2287,10 @@
       "FAR": 0.4436860068,
       "CSI": 0.0591436865,
       "brier_score": 0.0352288978,
-      "bs_climatology": 0.0393594601,
-      "brier_skill_score": 0.1049445856,
-      "sum_squared_error": 2253.9448842878
+      "bs_climatology": 0.0389253692,
+      "brier_skill_score": 0.0949630393,
+      "sum_squared_error": 2253.9448842878,
+      "sum_clim_squared_error": 2490.4451223579
     },
     {
       "lead_day": "Day2",
@@ -2121,6 +2300,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 2626,
@@ -2133,9 +2313,10 @@
       "FAR": 0.5409836066,
       "CSI": 0.0308256881,
       "brier_score": 0.0367162898,
-      "bs_climatology": 0.0393594601,
-      "brier_skill_score": 0.0671546378,
-      "sum_squared_error": 2349.1082208696
+      "bs_climatology": 0.0389253692,
+      "brier_skill_score": 0.0567516627,
+      "sum_squared_error": 2349.1082208696,
+      "sum_clim_squared_error": 2490.4451223579
     },
     {
       "lead_day": "Day3",
@@ -2145,6 +2326,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 2433,
@@ -2157,9 +2339,10 @@
       "FAR": 0.7928176796,
       "CSI": 0.0275735294,
       "brier_score": 0.0359183887,
-      "bs_climatology": 0.0376135582,
-      "brier_skill_score": 0.0450680445,
-      "sum_squared_error": 2232.3996922664
+      "bs_climatology": 0.0372058804,
+      "brier_skill_score": 0.0346045216,
+      "sum_squared_error": 2232.3996922664,
+      "sum_clim_squared_error": 2312.4198757527
     },
     {
       "lead_day": "Day3",
@@ -2169,6 +2352,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 2433,
@@ -2181,9 +2365,10 @@
       "FAR": 0.8703703704,
       "CSI": 0.0131184408,
       "brier_score": 0.036717224,
-      "bs_climatology": 0.0376135582,
-      "brier_skill_score": 0.023830081,
-      "sum_squared_error": 2282.0489084778
+      "bs_climatology": 0.0372058804,
+      "brier_skill_score": 0.0131338463,
+      "sum_squared_error": 2282.0489084778,
+      "sum_clim_squared_error": 2312.4198757527
     },
     {
       "lead_day": "Day4",
@@ -2193,6 +2378,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 2231,
@@ -2205,9 +2391,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0331633624,
-      "bs_climatology": 0.0356158335,
-      "brier_skill_score": 0.0688590108,
-      "sum_squared_error": 2000.5466753789
+      "bs_climatology": 0.0350942902,
+      "brier_skill_score": 0.0550211377,
+      "sum_squared_error": 2000.5466753789,
+      "sum_clim_squared_error": 2117.027962336
     },
     {
       "lead_day": "Day4",
@@ -2217,6 +2404,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 2231,
@@ -2229,9 +2417,10 @@
       "FAR": 0.9934210526,
       "CSI": 0.0004198153,
       "brier_score": 0.03396489,
-      "bs_climatology": 0.0356158335,
-      "brier_skill_score": 0.046354201,
-      "sum_squared_error": 2048.8980237531
+      "bs_climatology": 0.0350942902,
+      "brier_skill_score": 0.0321818794,
+      "sum_squared_error": 2048.8980237531,
+      "sum_clim_squared_error": 2117.027962336
     },
     {
       "lead_day": "Day5",
@@ -2241,6 +2430,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 1821,
@@ -2253,9 +2443,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0291209651,
-      "bs_climatology": 0.030161236,
-      "brier_skill_score": 0.0344903287,
-      "sum_squared_error": 1703.4599730978
+      "bs_climatology": 0.029838364,
+      "brier_skill_score": 0.0240428359,
+      "sum_squared_error": 1703.4599730978,
+      "sum_clim_squared_error": 1745.4249385091
     },
     {
       "lead_day": "Day5",
@@ -2265,6 +2456,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 1821,
@@ -2277,9 +2469,10 @@
       "FAR": 0.9892473118,
       "CSI": 0.0005227392,
       "brier_score": 0.0300208188,
-      "bs_climatology": 0.030161236,
-      "brier_skill_score": 0.0046555535,
-      "sum_squared_error": 1756.0978150781
+      "bs_climatology": 0.029838364,
+      "brier_skill_score": -0.0061147726,
+      "sum_squared_error": 1756.0978150781,
+      "sum_clim_squared_error": 1745.4249385091
     },
     {
       "lead_day": "Day6",
@@ -2289,6 +2482,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 1556,
@@ -2301,9 +2495,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0285469909,
-      "bs_climatology": 0.0305321634,
-      "brier_skill_score": 0.065019059,
-      "sum_squared_error": 1408.9652818813
+      "bs_climatology": 0.030145654,
+      "brier_skill_score": 0.0530312969,
+      "sum_squared_error": 1408.9652818813,
+      "sum_clim_squared_error": 1487.8688992675
     },
     {
       "lead_day": "Day6",
@@ -2313,6 +2508,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 1556,
@@ -2325,9 +2521,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0291744137,
-      "bs_climatology": 0.0305321634,
-      "brier_skill_score": 0.0444694895,
-      "sum_squared_error": 1439.9323623364
+      "bs_climatology": 0.030145654,
+      "brier_skill_score": 0.0322182532,
+      "sum_squared_error": 1439.9323623364,
+      "sum_clim_squared_error": 1487.8688992675
     },
     {
       "lead_day": "Day7",
@@ -2337,6 +2534,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 1508,
@@ -2349,9 +2547,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.027610935,
-      "bs_climatology": 0.0296200113,
-      "brier_skill_score": 0.0678283432,
-      "sum_squared_error": 1362.7653080555
+      "bs_climatology": 0.0291241497,
+      "brier_skill_score": 0.0519573861,
+      "sum_squared_error": 1362.7653080555,
+      "sum_clim_squared_error": 1437.4515323861
     },
     {
       "lead_day": "Day7",
@@ -2361,6 +2560,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 1508,
@@ -2373,9 +2573,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0281843252,
-      "bs_climatology": 0.0296200113,
-      "brier_skill_score": 0.0484701386,
-      "sum_squared_error": 1391.0655567776
+      "bs_climatology": 0.0291241497,
+      "brier_skill_score": 0.0322695928,
+      "sum_squared_error": 1391.0655567776,
+      "sum_clim_squared_error": 1437.4515323861
     },
     {
       "lead_day": "Day1",
@@ -2385,6 +2586,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 628,
@@ -2397,9 +2599,10 @@
       "FAR": 0.4827586207,
       "CSI": 0.023364486,
       "brier_score": 0.0088691687,
-      "bs_climatology": 0.0094518455,
-      "brier_skill_score": 0.0616468889,
-      "sum_squared_error": 583.6622512544
+      "bs_climatology": 0.009451825,
+      "brier_skill_score": 0.0616448509,
+      "sum_squared_error": 583.6622512544,
+      "sum_clim_squared_error": 622.0056998961
     },
     {
       "lead_day": "Day1",
@@ -2409,6 +2612,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 628,
@@ -2421,9 +2625,10 @@
       "FAR": 0.5,
       "CSI": 0.0278637771,
       "brier_score": 0.0091658343,
-      "bs_climatology": 0.0094518455,
-      "brier_skill_score": 0.030259829,
-      "sum_squared_error": 603.18522382
+      "bs_climatology": 0.009451825,
+      "brier_skill_score": 0.0302577228,
+      "sum_squared_error": 603.18522382,
+      "sum_clim_squared_error": 622.0056998961
     },
     {
       "lead_day": "Day2",
@@ -2433,6 +2638,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 700,
@@ -2445,9 +2651,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0105195065,
-      "bs_climatology": 0.0108212153,
-      "brier_skill_score": 0.0278812347,
-      "sum_squared_error": 673.0380248201
+      "bs_climatology": 0.0108180564,
+      "brier_skill_score": 0.0275973721,
+      "sum_squared_error": 673.0380248201,
+      "sum_clim_squared_error": 692.1392492145
     },
     {
       "lead_day": "Day2",
@@ -2457,6 +2664,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 700,
@@ -2469,9 +2677,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0109990473,
-      "bs_climatology": 0.0108212153,
-      "brier_skill_score": -0.0164336376,
-      "sum_squared_error": 703.7190435983
+      "bs_climatology": 0.0108180564,
+      "brier_skill_score": -0.0167304403,
+      "sum_squared_error": 703.7190435983,
+      "sum_clim_squared_error": 692.1392492145
     },
     {
       "lead_day": "Day3",
@@ -2481,6 +2690,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 653,
@@ -2493,9 +2703,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0105020532,
-      "bs_climatology": 0.0103961136,
-      "brier_skill_score": -0.010190305,
-      "sum_squared_error": 652.7236114507
+      "bs_climatology": 0.0103896812,
+      "brier_skill_score": -0.0108157338,
+      "sum_squared_error": 652.7236114507,
+      "sum_clim_squared_error": 645.7394652741
     },
     {
       "lead_day": "Day3",
@@ -2505,6 +2716,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 653,
@@ -2517,9 +2729,10 @@
       "FAR": 1.0,
       "CSI": 0.0,
       "brier_score": 0.0106362047,
-      "bs_climatology": 0.0103961136,
-      "brier_skill_score": -0.0230943085,
-      "sum_squared_error": 661.0613946469
+      "bs_climatology": 0.0103896812,
+      "brier_skill_score": -0.0237277264,
+      "sum_squared_error": 661.0613946469,
+      "sum_clim_squared_error": 645.7394652741
     },
     {
       "lead_day": "Day4",
@@ -2529,6 +2742,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 580,
@@ -2541,9 +2755,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0096956765,
-      "bs_climatology": 0.0095223037,
-      "brier_skill_score": -0.0182070213,
-      "sum_squared_error": 584.8819866273
+      "bs_climatology": 0.0095096795,
+      "brier_skill_score": -0.0195587035,
+      "sum_squared_error": 584.8819866273,
+      "sum_clim_squared_error": 573.6619035657
     },
     {
       "lead_day": "Day4",
@@ -2553,6 +2768,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 580,
@@ -2565,9 +2781,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0096200428,
-      "bs_climatology": 0.0095223037,
-      "brier_skill_score": -0.0102642263,
-      "sum_squared_error": 580.3194589621
+      "bs_climatology": 0.0095096795,
+      "brier_skill_score": -0.0116053643,
+      "sum_squared_error": 580.3194589621,
+      "sum_clim_squared_error": 573.6619035657
     },
     {
       "lead_day": "Day5",
@@ -2577,6 +2794,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 457,
@@ -2589,9 +2807,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0087695839,
-      "bs_climatology": 0.0077514648,
-      "brier_skill_score": -0.1313453714,
-      "sum_squared_error": 512.9855782273
+      "bs_climatology": 0.0077522092,
+      "brier_skill_score": -0.1312367376,
+      "sum_squared_error": 512.9855782273,
+      "sum_clim_squared_error": 453.4732308152
     },
     {
       "lead_day": "Day5",
@@ -2601,6 +2820,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 457,
@@ -2613,9 +2833,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0079134879,
-      "bs_climatology": 0.0077514648,
-      "brier_skill_score": -0.0209022497,
-      "sum_squared_error": 462.9073880698
+      "bs_climatology": 0.0077522092,
+      "brier_skill_score": -0.0208042209,
+      "sum_squared_error": 462.9073880698,
+      "sum_clim_squared_error": 453.4732308152
     },
     {
       "lead_day": "Day6",
@@ -2625,6 +2846,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 407,
@@ -2637,9 +2859,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0082049909,
-      "bs_climatology": 0.0081782112,
-      "brier_skill_score": -0.0032745215,
-      "sum_squared_error": 404.9655323041
+      "bs_climatology": 0.0081685197,
+      "brier_skill_score": -0.004464857,
+      "sum_squared_error": 404.9655323041,
+      "sum_clim_squared_error": 403.1654561868
     },
     {
       "lead_day": "Day6",
@@ -2649,6 +2872,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 407,
@@ -2661,9 +2885,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0080499476,
-      "bs_climatology": 0.0081782112,
-      "brier_skill_score": 0.0156835727,
-      "sum_squared_error": 397.3132152993
+      "bs_climatology": 0.0081685197,
+      "brier_skill_score": 0.01451573,
+      "sum_squared_error": 397.3132152993,
+      "sum_clim_squared_error": 403.1654561868
     },
     {
       "lead_day": "Day7",
@@ -2673,6 +2898,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 387,
@@ -2685,9 +2911,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0076505789,
-      "bs_climatology": 0.0077795108,
-      "brier_skill_score": 0.0165732663,
-      "sum_squared_error": 377.6019730209
+      "bs_climatology": 0.0077708407,
+      "brier_skill_score": 0.0154760368,
+      "sum_squared_error": 377.6019730209,
+      "sum_clim_squared_error": 383.5376152544
     },
     {
       "lead_day": "Day7",
@@ -2697,6 +2924,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 387,
@@ -2709,9 +2937,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0077493644,
-      "bs_climatology": 0.0077795108,
-      "brier_skill_score": 0.0038751096,
-      "sum_squared_error": 382.4776275554
+      "bs_climatology": 0.0077708407,
+      "brier_skill_score": 0.0027637125,
+      "sum_squared_error": 382.4776275554,
+      "sum_clim_squared_error": 383.5376152544
     },
     {
       "lead_day": "Day1",
@@ -2721,6 +2950,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 82,
@@ -2733,9 +2963,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0014916672,
-      "bs_climatology": 0.0012444965,
-      "brier_skill_score": -0.1986109963,
-      "sum_squared_error": 98.1636323867
+      "bs_climatology": 0.0012534851,
+      "brier_skill_score": -0.1900158555,
+      "sum_squared_error": 98.1636323867,
+      "sum_clim_squared_error": 82.4893483024
     },
     {
       "lead_day": "Day1",
@@ -2745,6 +2976,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 82,
@@ -2757,9 +2989,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.001291494,
-      "bs_climatology": 0.0012444965,
-      "brier_skill_score": -0.0377642613,
-      "sum_squared_error": 84.9906347935
+      "bs_climatology": 0.0012534851,
+      "brier_skill_score": -0.0303225391,
+      "sum_squared_error": 84.9906347935,
+      "sum_clim_squared_error": 82.4893483024
     },
     {
       "lead_day": "Day2",
@@ -2769,6 +3002,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 85,
@@ -2781,9 +3015,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0013565118,
-      "bs_climatology": 0.0013267751,
-      "brier_skill_score": -0.0224127636,
-      "sum_squared_error": 86.7896280071
+      "bs_climatology": 0.00133585,
+      "brier_skill_score": -0.0154672076,
+      "sum_squared_error": 86.7896280071,
+      "sum_clim_squared_error": 85.4676816346
     },
     {
       "lead_day": "Day2",
@@ -2793,6 +3028,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 85,
@@ -2805,9 +3041,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0013934993,
-      "bs_climatology": 0.0013267751,
-      "brier_skill_score": -0.0502904991,
-      "sum_squared_error": 89.1560874121
+      "bs_climatology": 0.00133585,
+      "brier_skill_score": -0.0431555613,
+      "sum_squared_error": 89.1560874121,
+      "sum_clim_squared_error": 85.4676816346
     },
     {
       "lead_day": "Day3",
@@ -2817,6 +3054,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 85,
@@ -2829,9 +3067,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0013917877,
-      "bs_climatology": 0.0013657445,
-      "brier_skill_score": -0.0190688466,
-      "sum_squared_error": 86.5023879948
+      "bs_climatology": 0.0013747911,
+      "brier_skill_score": -0.0123630462,
+      "sum_squared_error": 86.5023879948,
+      "sum_clim_squared_error": 85.4460149667
     },
     {
       "lead_day": "Day3",
@@ -2841,6 +3080,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 85,
@@ -2853,9 +3093,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0013892128,
-      "bs_climatology": 0.0013657445,
-      "brier_skill_score": -0.0171834878,
-      "sum_squared_error": 86.3423516672
+      "bs_climatology": 0.0013747911,
+      "brier_skill_score": -0.0104900937,
+      "sum_squared_error": 86.3423516672,
+      "sum_clim_squared_error": 85.4460149667
     },
     {
       "lead_day": "Day4",
@@ -2865,6 +3106,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 65,
@@ -2877,9 +3119,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0010922188,
-      "bs_climatology": 0.0010763537,
-      "brier_skill_score": -0.0147396122,
-      "sum_squared_error": 65.8870039945
+      "bs_climatology": 0.0010854702,
+      "brier_skill_score": -0.0062171768,
+      "sum_squared_error": 65.8870039945,
+      "sum_clim_squared_error": 65.4799038557
     },
     {
       "lead_day": "Day4",
@@ -2889,6 +3132,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 65,
@@ -2901,9 +3145,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0011128598,
-      "bs_climatology": 0.0010763537,
-      "brier_skill_score": -0.0339164288,
-      "sum_squared_error": 67.132153958
+      "bs_climatology": 0.0010854702,
+      "brier_skill_score": -0.0252329342,
+      "sum_squared_error": 67.132153958,
+      "sum_clim_squared_error": 65.4799038557
     },
     {
       "lead_day": "Day5",
@@ -2913,6 +3158,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 55,
@@ -2925,9 +3171,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0009726517,
-      "bs_climatology": 0.0009393512,
-      "brier_skill_score": -0.035450512,
-      "sum_squared_error": 56.8962319715
+      "bs_climatology": 0.0009488287,
+      "brier_skill_score": -0.0251078019,
+      "sum_squared_error": 56.8962319715,
+      "sum_clim_squared_error": 55.5026816334
     },
     {
       "lead_day": "Day5",
@@ -2937,6 +3184,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 55,
@@ -2949,9 +3197,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0009716683,
-      "bs_climatology": 0.0009393512,
-      "brier_skill_score": -0.0344036661,
-      "sum_squared_error": 56.8387095846
+      "bs_climatology": 0.0009488287,
+      "brier_skill_score": -0.0240714126,
+      "sum_squared_error": 56.8387095846,
+      "sum_clim_squared_error": 55.5026816334
     },
     {
       "lead_day": "Day6",
@@ -2961,6 +3210,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 49,
@@ -2973,9 +3223,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.001032189,
-      "bs_climatology": 0.0009918015,
-      "brier_skill_score": -0.0407213777,
-      "sum_squared_error": 50.9447199818
+      "bs_climatology": 0.0010011366,
+      "brier_skill_score": -0.0310171651,
+      "sum_squared_error": 50.9447199818,
+      "sum_clim_squared_error": 49.4120968176
     },
     {
       "lead_day": "Day6",
@@ -2985,6 +3236,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 49,
@@ -2997,9 +3249,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0010172225,
-      "bs_climatology": 0.0009918015,
-      "brier_skill_score": -0.0256311988,
-      "sum_squared_error": 50.2060353026
+      "bs_climatology": 0.0010011366,
+      "brier_skill_score": -0.0160676947,
+      "sum_squared_error": 50.2060353026,
+      "sum_clim_squared_error": 49.4120968176
     },
     {
       "lead_day": "Day7",
@@ -3009,6 +3262,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 50,
@@ -3021,9 +3275,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0010487645,
-      "bs_climatology": 0.0010120218,
-      "brier_skill_score": -0.0363062279,
-      "sum_squared_error": 51.7628199921
+      "bs_climatology": 0.0010213076,
+      "brier_skill_score": -0.0268840155,
+      "sum_squared_error": 51.7628199921,
+      "sum_clim_squared_error": 50.4076596867
     },
     {
       "lead_day": "Day7",
@@ -3033,6 +3288,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 50,
@@ -3045,9 +3301,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0010424802,
-      "bs_climatology": 0.0010120218,
-      "brier_skill_score": -0.0300966054,
-      "sum_squared_error": 51.4526534003
+      "bs_climatology": 0.0010213076,
+      "brier_skill_score": -0.0207308516,
+      "sum_squared_error": 51.4526534003,
+      "sum_clim_squared_error": 50.4076596867
     },
     {
       "lead_day": "Day1",
@@ -3057,6 +3314,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 32,
@@ -3069,9 +3327,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0008016636,
-      "bs_climatology": 0.0004860266,
-      "brier_skill_score": -0.6494233222,
-      "sum_squared_error": 52.7558805923
+      "bs_climatology": 0.0004885957,
+      "brier_skill_score": -0.6407505458,
+      "sum_squared_error": 52.7558805923,
+      "sum_clim_squared_error": 32.1535048264
     },
     {
       "lead_day": "Day1",
@@ -3081,6 +3340,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 36,
       "n_samples": 65808,
       "n_events": 32,
@@ -3093,9 +3353,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0005056016,
-      "bs_climatology": 0.0004860266,
-      "brier_skill_score": -0.0402756183,
-      "sum_squared_error": 33.2726326614
+      "bs_climatology": 0.0004885957,
+      "brier_skill_score": -0.0348057806,
+      "sum_squared_error": 33.2726326614,
+      "sum_clim_squared_error": 32.1535048264
     },
     {
       "lead_day": "Day2",
@@ -3105,6 +3366,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 33,
@@ -3117,9 +3379,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0011910901,
-      "bs_climatology": 0.0005155201,
-      "brier_skill_score": -1.3104627861,
-      "sum_squared_error": 76.2059456851
+      "bs_climatology": 0.0005180981,
+      "brier_skill_score": -1.2989662503,
+      "sum_squared_error": 76.2059456851,
+      "sum_clim_squared_error": 33.1479184064
     },
     {
       "lead_day": "Day2",
@@ -3129,6 +3392,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 35,
       "n_samples": 63980,
       "n_events": 33,
@@ -3141,9 +3405,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0005340671,
-      "bs_climatology": 0.0005155201,
-      "brier_skill_score": -0.0359772196,
-      "sum_squared_error": 34.1696149373
+      "bs_climatology": 0.0005180981,
+      "brier_skill_score": -0.0308223436,
+      "sum_squared_error": 34.1696149373,
+      "sum_clim_squared_error": 33.1479184064
     },
     {
       "lead_day": "Day3",
@@ -3153,6 +3418,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 32,
@@ -3165,9 +3431,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0005223917,
-      "bs_climatology": 0.0005146017,
-      "brier_skill_score": -0.0151379108,
-      "sum_squared_error": 32.4676880007
+      "bs_climatology": 0.0005169781,
+      "brier_skill_score": -0.0104716571,
+      "sum_squared_error": 32.4676880007,
+      "sum_clim_squared_error": 32.131220875
     },
     {
       "lead_day": "Day3",
@@ -3177,6 +3444,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 34,
       "n_samples": 62152,
       "n_events": 32,
@@ -3189,9 +3457,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.000522334,
-      "bs_climatology": 0.0005146017,
-      "brier_skill_score": -0.015025724,
-      "sum_squared_error": 32.4640998707
+      "bs_climatology": 0.0005169781,
+      "brier_skill_score": -0.0103599859,
+      "sum_squared_error": 32.4640998707,
+      "sum_clim_squared_error": 32.131220875
     },
     {
       "lead_day": "Day4",
@@ -3201,6 +3470,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 25,
@@ -3213,9 +3483,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0004198233,
-      "bs_climatology": 0.000414257,
-      "brier_skill_score": -0.0134367976,
-      "sum_squared_error": 25.3254200068
+      "bs_climatology": 0.0004166956,
+      "brier_skill_score": -0.0075059216,
+      "sum_squared_error": 25.3254200068,
+      "sum_clim_squared_error": 25.1367455664
     },
     {
       "lead_day": "Day4",
@@ -3225,6 +3496,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 33,
       "n_samples": 60324,
       "n_events": 25,
@@ -3237,9 +3509,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0004294362,
-      "bs_climatology": 0.000414257,
-      "brier_skill_score": -0.0366418917,
-      "sum_squared_error": 25.9053069367
+      "bs_climatology": 0.0004166956,
+      "brier_skill_score": -0.0305752138,
+      "sum_squared_error": 25.9053069367,
+      "sum_clim_squared_error": 25.1367455664
     },
     {
       "lead_day": "Day5",
@@ -3249,6 +3522,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 22,
@@ -3261,9 +3535,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0003867096,
-      "bs_climatology": 0.0003759526,
-      "brier_skill_score": -0.0286124917,
-      "sum_squared_error": 22.6209640063
+      "bs_climatology": 0.0003785262,
+      "brier_skill_score": -0.0216190004,
+      "sum_squared_error": 22.6209640063,
+      "sum_clim_squared_error": 22.1422702577
     },
     {
       "lead_day": "Day5",
@@ -3273,6 +3548,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 32,
       "n_samples": 58496,
       "n_events": 22,
@@ -3285,9 +3561,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0003880305,
-      "bs_climatology": 0.0003759526,
-      "brier_skill_score": -0.0321259477,
-      "sum_squared_error": 22.6982309677
+      "bs_climatology": 0.0003785262,
+      "brier_skill_score": -0.0251085685,
+      "sum_squared_error": 22.6982309677,
+      "sum_clim_squared_error": 22.1422702577
     },
     {
       "lead_day": "Day6",
@@ -3297,6 +3574,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 19,
@@ -3309,9 +3587,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.000397991,
-      "bs_climatology": 0.0003848101,
-      "brier_skill_score": -0.0342530918,
-      "sum_squared_error": 19.6432440032
+      "bs_climatology": 0.000387522,
+      "brier_skill_score": -0.0270153369,
+      "sum_squared_error": 19.6432440032,
+      "sum_clim_squared_error": 19.1265342378
     },
     {
       "lead_day": "Day6",
@@ -3321,6 +3600,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 19,
@@ -3333,9 +3613,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0003959426,
-      "bs_climatology": 0.0003848101,
-      "brier_skill_score": -0.028929967,
-      "sum_squared_error": 19.5421435662
+      "bs_climatology": 0.000387522,
+      "brier_skill_score": -0.0217294635,
+      "sum_squared_error": 19.5421435662,
+      "sum_clim_squared_error": 19.1265342378
     },
     {
       "lead_day": "Day7",
@@ -3345,6 +3626,7 @@
       "categorical_forecast_source": "distributional_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 21,
@@ -3357,9 +3639,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0004387007,
-      "bs_climatology": 0.0004252992,
-      "brier_skill_score": -0.0315108879,
-      "sum_squared_error": 21.6525120092
+      "bs_climatology": 0.0004280384,
+      "brier_skill_score": -0.0249097066,
+      "sum_squared_error": 21.6525120092,
+      "sum_clim_squared_error": 21.1262629956
     },
     {
       "lead_day": "Day7",
@@ -3369,6 +3652,7 @@
       "categorical_forecast_source": "ensemble_mean",
       "categorical_event_rule": "mean_precipitation_ge_threshold",
       "probabilistic_score_source": "exceedance_probability",
+      "bss_reference": "historical_mrms_event_frequency_climatology_2020_2025_monthly_24h_12z12z",
       "n_init": 27,
       "n_samples": 49356,
       "n_events": 21,
@@ -3381,9 +3665,10 @@
       "FAR": null,
       "CSI": 0.0,
       "brier_score": 0.0004361272,
-      "bs_climatology": 0.0004252992,
-      "brier_skill_score": -0.0254598483,
-      "sum_squared_error": 21.5254942455
+      "bs_climatology": 0.0004280384,
+      "brier_skill_score": -0.0188973909,
+      "sum_squared_error": 21.5254942455,
+      "sum_clim_squared_error": 21.1262629956
     }
   ]
 }

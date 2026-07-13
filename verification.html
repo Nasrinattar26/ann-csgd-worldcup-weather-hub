@@ -371,7 +371,7 @@
       ${ordered.map(d => `
         <div class="verification-metric-badge-row">
           <span class="verification-metric-badge-model">${d.model}</span>
-          <span class="verification-metric-chip">Events=${intfmt(d.n_events)}</span>
+          <span class="verification-metric-chip">Obs events=${intfmt(d.n_events)}</span>
           <span class="verification-metric-chip">BSS=${fmt(d.brier_skill_score, 3)}</span>
           <span class="verification-metric-chip">POD=${fmt(d.POD, 3)}</span>
           <span class="verification-metric-chip">FAR=${fmt(d.FAR, 3)}</span>
@@ -381,7 +381,7 @@
       <div class="verification-metric-badges-note">
         24-h verification. Observed event: ${eventLabel}.
         POD/FAR/CSI use single-valued mean precipitation forecasts.
-        BSS is computed from exceedance probabilities relative to sample climatology.
+        BSS is computed from exceedance probabilities relative to historical MRMS climatology.
       </div>
     `;
 
