@@ -218,6 +218,7 @@
 
 
 
+
 <style id="verification-metric-card-badges-style">
   .verification-metric-badges {
     margin-top: 0.65rem;
@@ -260,7 +261,7 @@
   }
 
   .verification-metric-badges-note {
-    margin-top: 0.4rem;
+    margin-top: 0.45rem;
     color: #64748b;
     font-size: 0.76rem;
   }
@@ -270,6 +271,7 @@
 (function () {
   const METRICS_URL = "data/verification_metrics_24h_by_init.json";
 
+  // Show raw GEFS first, then ANN-CSGD.
   const MODEL_ORDER = ["raw_GEFS", "ANN-CSGD"];
 
   const THRESHOLD_EVENT_LABELS = {
@@ -288,6 +290,11 @@
     return Number(x).toFixed(digits);
   }
 
+  function intfmt(x) {
+    if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
+    return Number(x).toLocaleString();
+  }
+
   function metricKey(init, leadDay, domain, threshold) {
     return `${init}|${leadDay}|${domain}|${threshold}`;
   }
@@ -300,6 +307,7 @@
   function extractMapMeta(text) {
     if (!text) return null;
 
+    // Only threshold products receive POD/FAR/CSI badges.
     if (!text.includes("/thresholds/")) {
       return null;
     }
@@ -325,8 +333,8 @@
     }
 
     let threshold = null;
-    const thresholdPathMatch = text.match(/\/thresholds\/([^\/\s]+)\//);
 
+    const thresholdPathMatch = text.match(/\/thresholds\/([^\/\s]+)\//);
     if (thresholdPathMatch) {
       threshold = thresholdPathMatch[1];
     } else {
@@ -363,6 +371,7 @@
       ${ordered.map(d => `
         <div class="verification-metric-badge-row">
           <span class="verification-metric-badge-model">${d.model}</span>
+          <span class="verification-metric-chip">Events=${intfmt(d.n_events)}</span>
           <span class="verification-metric-chip">BSS=${fmt(d.brier_skill_score, 3)}</span>
           <span class="verification-metric-chip">POD=${fmt(d.POD, 3)}</span>
           <span class="verification-metric-chip">FAR=${fmt(d.FAR, 3)}</span>
@@ -371,7 +380,8 @@
       `).join("")}
       <div class="verification-metric-badges-note">
         24-h verification. Observed event: ${eventLabel}.
-        POD/FAR/CSI use mean precipitation forecasts. BSS uses exceedance probabilities.
+        POD/FAR/CSI use single-valued mean precipitation forecasts.
+        BSS is computed from exceedance probabilities relative to sample climatology.
       </div>
     `;
 
@@ -436,6 +446,7 @@
 
       const meta = extractMapMeta(text);
 
+      // Skip amount maps and non-threshold products.
       if (!meta) {
         continue;
       }
@@ -453,6 +464,7 @@
         continue;
       }
 
+      // Avoid duplicate metric boxes on the same card.
       if (card.dataset.verificationMetricBadgeKey === key) {
         continue;
       }
@@ -491,6 +503,7 @@
     });
 })();
 </script>
+
 
 
 
