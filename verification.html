@@ -215,21 +215,22 @@
 
   <script src="assets/js/verification.js?v=lead-day-20260703"></script>
 
+
 <style id="verification-metric-card-badges-style">
   .verification-metric-badges {
-    margin-top: 0.55rem;
-    padding: 0.65rem 0.75rem;
+    margin-top: 0.65rem;
+    padding: 0.75rem 0.85rem;
     border-radius: 12px;
     background: #f8fafc;
-    border: 1px solid #dbe4ee;
+    border: 1px solid #cbd5e1;
     color: #0f172a;
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     line-height: 1.45;
   }
 
   .verification-metric-badges-title {
     font-weight: 700;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
     color: #0f172a;
   }
 
@@ -237,17 +238,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem;
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
+    align-items: center;
   }
 
   .verification-metric-badge-model {
     font-weight: 700;
     color: #1e293b;
+    min-width: 76px;
   }
 
   .verification-metric-chip {
     display: inline-block;
-    padding: 0.12rem 0.38rem;
+    padding: 0.14rem 0.42rem;
     border-radius: 999px;
     background: #e2e8f0;
     color: #0f172a;
@@ -255,7 +258,7 @@
   }
 
   .verification-metric-badges-note {
-    margin-top: 0.35rem;
+    margin-top: 0.4rem;
     color: #64748b;
     font-size: 0.76rem;
   }
@@ -263,17 +266,18 @@
 
 <script id="verification-metric-card-badges-script">
 (function () {
-  // SAMPLE MODE:
-  // true  = add badge to only one matching verification map.
-  // false = add badges to all matching verification maps.
-  const METRIC_BADGES_SAMPLE_ONLY = true;
-  const SAMPLE_LIMIT = 1;
+  const SAMPLE_TARGET = {
+    init: "2026071200",
+    leadDay: "Day1",
+    domain: "Texas",
+    threshold: "0p5inch"
+  };
 
   const METRICS_URL = "data/verification_metrics_24h_by_init.json";
 
   let metricsIndex = new Map();
   let metricsLoaded = false;
-  let sampleCount = 0;
+  let badgeAdded = false;
 
   function fmt(x, digits = 3) {
     if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
@@ -282,6 +286,16 @@
 
   function metricKey(init, leadDay, domain, threshold) {
     return `${init}|${leadDay}|${domain}|${threshold}`;
+  }
+
+  function isSampleTarget(meta) {
+    return (
+      meta &&
+      meta.init === SAMPLE_TARGET.init &&
+      meta.leadDay === SAMPLE_TARGET.leadDay &&
+      meta.domain === SAMPLE_TARGET.domain &&
+      meta.threshold === SAMPLE_TARGET.threshold
+    );
   }
 
   function extractMapMeta(text) {
@@ -336,7 +350,7 @@
 
     div.innerHTML = `
       <div class="verification-metric-badges-title">
-        Metrics for this map | cutoff ≥ ${fmt(cutoff, 2)}
+        Sample metrics for this map | cutoff ≥ ${fmt(cutoff, 2)}
       </div>
       ${ordered.map(d => `
         <div class="verification-metric-badge-row">
@@ -348,65 +362,99 @@
         </div>
       `).join("")}
       <div class="verification-metric-badges-note">
-        24-h verification. Observed event: precipitation ≥ threshold. Forecast event for POD/FAR/CSI: probability ≥ cutoff.
+        Sample target: ${meta.init} | ${meta.leadDay} | ${meta.domain} | ${meta.threshold}.
+        Observed event: precipitation ≥ threshold. Forecast event for POD/FAR/CSI: probability ≥ cutoff.
       </div>
     `;
 
     return div;
   }
 
+  function collectElementText(el) {
+    const attrs = [
+      "src",
+      "href",
+      "alt",
+      "title",
+      "data-src",
+      "data-url",
+      "data-href",
+      "data-full",
+      "data-path"
+    ];
+
+    let parts = [];
+
+    for (const a of attrs) {
+      const v = el.getAttribute && el.getAttribute(a);
+      if (v) parts.push(v);
+    }
+
+    if (el.currentSrc) parts.push(el.currentSrc);
+
+    const link = el.closest ? el.closest("a[href]") : null;
+    if (link) parts.push(link.getAttribute("href") || "");
+
+    if (el.textContent) parts.push(el.textContent);
+
+    return parts.join(" ");
+  }
+
+  function findCard(el) {
+    return (
+      el.closest(".product-card, .verification-card, .gallery-card, .gallery-item, article, figure, li") ||
+      el.parentElement
+    );
+  }
+
   function attachBadges() {
-    if (!metricsLoaded) return;
+    if (!metricsLoaded || badgeAdded) return;
 
-    const imgs = Array.from(document.querySelectorAll("img"));
+    const candidates = Array.from(document.querySelectorAll(
+      'a[href], img, [data-src], [data-url], [data-href], [data-full], [data-path], .product-card, .verification-card, .gallery-card, .gallery-item, article, figure, li'
+    ));
 
-    for (const img of imgs) {
-      const imgText = [
-        img.getAttribute("src") || "",
-        img.currentSrc || "",
-        img.getAttribute("alt") || "",
-        img.closest("a") ? (img.closest("a").getAttribute("href") || "") : ""
-      ].join(" ");
+    for (const el of candidates) {
+      const text = collectElementText(el);
 
-      if (!imgText.includes("products/verification") && !imgText.includes("_verification_")) {
+      if (!text.includes("products/verification") && !text.includes("_verification_")) {
         continue;
       }
 
-      if (img.dataset.metricBadgeChecked === "1") {
+      const meta = extractMapMeta(text);
+
+      if (!isSampleTarget(meta)) {
         continue;
       }
-
-      const meta = extractMapMeta(imgText);
-      img.dataset.metricBadgeChecked = "1";
-
-      if (!meta) continue;
 
       const key = metricKey(meta.init, meta.leadDay, meta.domain, meta.threshold);
       const rows = metricsIndex.get(key);
 
-      if (!rows || !rows.length) continue;
-
-      const card =
-        img.closest("article, figure, .card, .product-card, .verification-card, .gallery-card, .gallery-item, li") ||
-        img.parentElement;
-
-      if (!card) continue;
-
-      const existing = Array.from(card.querySelectorAll(".verification-metric-badges"))
-        .some(el => el.dataset.badgeKey === key);
-
-      if (existing) continue;
-
-      if (METRIC_BADGES_SAMPLE_ONLY && sampleCount >= SAMPLE_LIMIT) {
+      if (!rows || !rows.length) {
+        console.warn("No metric rows found for target:", key);
         continue;
       }
 
+      const card = findCard(el);
+
+      if (!card || card === document.body || card === document.documentElement) {
+        continue;
+      }
+
+      if (card.querySelector(".verification-metric-badges")) {
+        badgeAdded = true;
+        return;
+      }
+
       card.appendChild(buildBadge(meta, rows));
-      sampleCount += 1;
+      badgeAdded = true;
+
+      console.info("Added verification metric badge to:", key);
+      return;
     }
   }
 
-  fetch(METRICS_URL)
+  fetch(METRICS_URL + "?v=" + Date.now())
     .then(r => {
       if (!r.ok) throw new Error("Could not load " + METRICS_URL);
       return r.json();
@@ -431,6 +479,7 @@
     });
 })();
 </script>
+
 
 </body>
 </html>
