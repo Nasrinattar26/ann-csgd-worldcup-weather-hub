@@ -216,6 +216,7 @@
   <script src="assets/js/verification.js?v=lead-day-20260703"></script>
 
 
+
 <style id="verification-metric-card-badges-style">
   .verification-metric-badges {
     margin-top: 0.65rem;
@@ -245,7 +246,7 @@
   .verification-metric-badge-model {
     font-weight: 700;
     color: #1e293b;
-    min-width: 76px;
+    min-width: 78px;
   }
 
   .verification-metric-chip {
@@ -266,18 +267,25 @@
 
 <script id="verification-metric-card-badges-script">
 (function () {
-  const SAMPLE_TARGET = {
-    init: "2026071200",
-    leadDay: "Day1",
-    domain: "Texas",
-    threshold: "0p5inch"
-  };
+  // Final mode:
+  // false = add metric badges to all matching threshold verification maps.
+  const METRIC_BADGES_SAMPLE_ONLY = false;
 
   const METRICS_URL = "data/verification_metrics_24h_by_init.json";
 
+  // Show raw GEFS first, then ANN-CSGD.
+  const MODEL_ORDER = ["raw_GEFS", "ANN-CSGD"];
+
+  const THRESHOLD_EVENT_LABELS = {
+    "0p5inch": "precipitation ≥ 0.5 inch",
+    "1inch": "precipitation ≥ 1 inch",
+    "2inch": "precipitation ≥ 2 inches",
+    "2yr24h_ari": "precipitation ≥ 2-year 24-hour ARI",
+    "5yr24h_ari": "precipitation ≥ 5-year 24-hour ARI"
+  };
+
   let metricsIndex = new Map();
   let metricsLoaded = false;
-  let badgeAdded = false;
 
   function fmt(x, digits = 3) {
     if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
@@ -288,18 +296,18 @@
     return `${init}|${leadDay}|${domain}|${threshold}`;
   }
 
-  function isSampleTarget(meta) {
-    return (
-      meta &&
-      meta.init === SAMPLE_TARGET.init &&
-      meta.leadDay === SAMPLE_TARGET.leadDay &&
-      meta.domain === SAMPLE_TARGET.domain &&
-      meta.threshold === SAMPLE_TARGET.threshold
-    );
+  function modelRank(model) {
+    const i = MODEL_ORDER.indexOf(model);
+    return i >= 0 ? i : 99;
   }
 
   function extractMapMeta(text) {
     if (!text) return null;
+
+    // Only threshold products receive POD/FAR/CSI badges.
+    if (!text.includes("/thresholds/")) {
+      return null;
+    }
 
     const initMatch =
       text.match(/products\/verification\/(\d{10})\//) ||
@@ -321,13 +329,18 @@
       domain = "CONUS";
     }
 
-    const thresholds = ["5yr24h_ari", "2yr24h_ari", "0p5inch", "1inch", "2inch"];
     let threshold = null;
 
-    for (const t of thresholds) {
-      if (text.includes(t)) {
-        threshold = t;
-        break;
+    const thresholdPathMatch = text.match(/\/thresholds\/([^\/\s]+)\//);
+    if (thresholdPathMatch) {
+      threshold = thresholdPathMatch[1];
+    } else {
+      const thresholds = ["5yr24h_ari", "2yr24h_ari", "0p5inch", "1inch", "2inch"];
+      for (const t of thresholds) {
+        if (text.includes(t)) {
+          threshold = t;
+          break;
+        }
       }
     }
 
@@ -342,15 +355,16 @@
     div.dataset.badgeKey = metricKey(meta.init, meta.leadDay, meta.domain, meta.threshold);
 
     const cutoff = rows.length ? rows[0].probability_cutoff : null;
+    const eventLabel =
+      THRESHOLD_EVENT_LABELS[meta.threshold] || "precipitation ≥ threshold";
 
     const ordered = rows.slice().sort((a, b) => {
-      const order = {"ANN-CSGD": 0, "raw_GEFS": 1};
-      return (order[a.model] ?? 99) - (order[b.model] ?? 99);
+      return modelRank(a.model) - modelRank(b.model);
     });
 
     div.innerHTML = `
       <div class="verification-metric-badges-title">
-        Sample metrics for this map | cutoff ≥ ${fmt(cutoff, 2)}
+        Metrics for this map | probability cutoff ≥ ${fmt(cutoff, 2)}
       </div>
       ${ordered.map(d => `
         <div class="verification-metric-badge-row">
@@ -362,8 +376,8 @@
         </div>
       `).join("")}
       <div class="verification-metric-badges-note">
-        Sample target: ${meta.init} | ${meta.leadDay} | ${meta.domain} | ${meta.threshold}.
-        Observed event: precipitation ≥ threshold. Forecast event for POD/FAR/CSI: probability ≥ cutoff.
+        24-h verification. Observed event: ${eventLabel}.
+        Forecast event for POD/FAR/CSI: probability ≥ ${fmt(cutoff, 2)}.
       </div>
     `;
 
@@ -371,29 +385,22 @@
   }
 
   function collectElementText(el) {
-    const attrs = [
-      "src",
-      "href",
-      "alt",
-      "title",
-      "data-src",
-      "data-url",
-      "data-href",
-      "data-full",
-      "data-path"
-    ];
-
     let parts = [];
 
-    for (const a of attrs) {
-      const v = el.getAttribute && el.getAttribute(a);
-      if (v) parts.push(v);
+    if (el.getAttributeNames) {
+      for (const name of el.getAttributeNames()) {
+        const value = el.getAttribute(name);
+        if (value) parts.push(value);
+      }
     }
 
     if (el.currentSrc) parts.push(el.currentSrc);
 
     const link = el.closest ? el.closest("a[href]") : null;
-    if (link) parts.push(link.getAttribute("href") || "");
+    if (link) {
+      parts.push(link.getAttribute("href") || "");
+      parts.push(link.textContent || "");
+    }
 
     if (el.textContent) parts.push(el.textContent);
 
@@ -402,28 +409,41 @@
 
   function findCard(el) {
     return (
-      el.closest(".product-card, .verification-card, .gallery-card, .gallery-item, article, figure, li") ||
+      el.closest(
+        ".product-card, .verification-card, .gallery-card, .gallery-item, .card, article, figure, li"
+      ) ||
       el.parentElement
     );
   }
 
   function attachBadges() {
-    if (!metricsLoaded || badgeAdded) return;
+    if (!metricsLoaded) return;
 
     const candidates = Array.from(document.querySelectorAll(
-      'a[href], img, [data-src], [data-url], [data-href], [data-full], [data-path], .product-card, .verification-card, .gallery-card, .gallery-item, article, figure, li'
+      [
+        'a[href*="products/verification"]',
+        'img[src*="products/verification"]',
+        '[data-src*="products/verification"]',
+        '[data-url*="products/verification"]',
+        '[data-href*="products/verification"]',
+        '[data-full*="products/verification"]',
+        '[data-path*="products/verification"]',
+        '[data-image*="products/verification"]',
+        '[data-file*="products/verification"]'
+      ].join(", ")
     ));
 
     for (const el of candidates) {
       const text = collectElementText(el);
 
-      if (!text.includes("products/verification") && !text.includes("_verification_")) {
+      if (!text.includes("products/verification")) {
         continue;
       }
 
       const meta = extractMapMeta(text);
 
-      if (!isSampleTarget(meta)) {
+      // Skip amount maps and any non-threshold products.
+      if (!meta) {
         continue;
       }
 
@@ -431,7 +451,6 @@
       const rows = metricsIndex.get(key);
 
       if (!rows || !rows.length) {
-        console.warn("No metric rows found for target:", key);
         continue;
       }
 
@@ -441,16 +460,17 @@
         continue;
       }
 
+      // Avoid duplicate metric boxes on the same card.
+      if (card.dataset.verificationMetricBadgeKey === key) {
+        continue;
+      }
+
       if (card.querySelector(".verification-metric-badges")) {
-        badgeAdded = true;
-        return;
+        continue;
       }
 
       card.appendChild(buildBadge(meta, rows));
-      badgeAdded = true;
-
-      console.info("Added verification metric badge to:", key);
-      return;
+      card.dataset.verificationMetricBadgeKey = key;
     }
   }
 
@@ -479,6 +499,7 @@
     });
 })();
 </script>
+
 
 
 </body>
