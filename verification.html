@@ -214,5 +214,223 @@
   </footer>
 
   <script src="assets/js/verification.js?v=lead-day-20260703"></script>
+
+<style id="verification-metric-card-badges-style">
+  .verification-metric-badges {
+    margin-top: 0.55rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #dbe4ee;
+    color: #0f172a;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .verification-metric-badges-title {
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    color: #0f172a;
+  }
+
+  .verification-metric-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.2rem;
+  }
+
+  .verification-metric-badge-model {
+    font-weight: 700;
+    color: #1e293b;
+  }
+
+  .verification-metric-chip {
+    display: inline-block;
+    padding: 0.12rem 0.38rem;
+    border-radius: 999px;
+    background: #e2e8f0;
+    color: #0f172a;
+    white-space: nowrap;
+  }
+
+  .verification-metric-badges-note {
+    margin-top: 0.35rem;
+    color: #64748b;
+    font-size: 0.76rem;
+  }
+</style>
+
+<script id="verification-metric-card-badges-script">
+(function () {
+  // SAMPLE MODE:
+  // true  = add badge to only one matching verification map.
+  // false = add badges to all matching verification maps.
+  const METRIC_BADGES_SAMPLE_ONLY = true;
+  const SAMPLE_LIMIT = 1;
+
+  const METRICS_URL = "data/verification_metrics_24h_by_init.json";
+
+  let metricsIndex = new Map();
+  let metricsLoaded = false;
+  let sampleCount = 0;
+
+  function fmt(x, digits = 3) {
+    if (x === null || x === undefined || Number.isNaN(Number(x))) return "—";
+    return Number(x).toFixed(digits);
+  }
+
+  function metricKey(init, leadDay, domain, threshold) {
+    return `${init}|${leadDay}|${domain}|${threshold}`;
+  }
+
+  function extractMapMeta(text) {
+    if (!text) return null;
+
+    const initMatch =
+      text.match(/products\/verification\/(\d{10})\//) ||
+      text.match(/(\d{10})_Day[1-8]/);
+
+    const dayMatch =
+      text.match(/_(Day[1-8])_/) ||
+      text.match(/\/(Day[1-8])\//);
+
+    if (!initMatch || !dayMatch) return null;
+
+    const init = initMatch[1];
+    const leadDay = dayMatch[1];
+
+    let domain = null;
+    if (text.includes("/Texas/") || text.includes("_Texas_")) {
+      domain = "Texas";
+    } else if (text.includes("/CONUS/") || text.includes("_CONUS_")) {
+      domain = "CONUS";
+    }
+
+    const thresholds = ["5yr24h_ari", "2yr24h_ari", "0p5inch", "1inch", "2inch"];
+    let threshold = null;
+
+    for (const t of thresholds) {
+      if (text.includes(t)) {
+        threshold = t;
+        break;
+      }
+    }
+
+    if (!domain || !threshold) return null;
+
+    return { init, leadDay, domain, threshold };
+  }
+
+  function buildBadge(meta, rows) {
+    const div = document.createElement("div");
+    div.className = "verification-metric-badges";
+    div.dataset.badgeKey = metricKey(meta.init, meta.leadDay, meta.domain, meta.threshold);
+
+    const cutoff = rows.length ? rows[0].probability_cutoff : null;
+
+    const ordered = rows.slice().sort((a, b) => {
+      const order = {"ANN-CSGD": 0, "raw_GEFS": 1};
+      return (order[a.model] ?? 99) - (order[b.model] ?? 99);
+    });
+
+    div.innerHTML = `
+      <div class="verification-metric-badges-title">
+        Metrics for this map | cutoff ≥ ${fmt(cutoff, 2)}
+      </div>
+      ${ordered.map(d => `
+        <div class="verification-metric-badge-row">
+          <span class="verification-metric-badge-model">${d.model}</span>
+          <span class="verification-metric-chip">BSS=${fmt(d.brier_skill_score, 3)}</span>
+          <span class="verification-metric-chip">POD=${fmt(d.POD, 3)}</span>
+          <span class="verification-metric-chip">FAR=${fmt(d.FAR, 3)}</span>
+          <span class="verification-metric-chip">CSI=${fmt(d.CSI, 3)}</span>
+        </div>
+      `).join("")}
+      <div class="verification-metric-badges-note">
+        24-h verification. Observed event: precipitation ≥ threshold. Forecast event for POD/FAR/CSI: probability ≥ cutoff.
+      </div>
+    `;
+
+    return div;
+  }
+
+  function attachBadges() {
+    if (!metricsLoaded) return;
+
+    const imgs = Array.from(document.querySelectorAll("img"));
+
+    for (const img of imgs) {
+      const imgText = [
+        img.getAttribute("src") || "",
+        img.currentSrc || "",
+        img.getAttribute("alt") || "",
+        img.closest("a") ? (img.closest("a").getAttribute("href") || "") : ""
+      ].join(" ");
+
+      if (!imgText.includes("products/verification") && !imgText.includes("_verification_")) {
+        continue;
+      }
+
+      if (img.dataset.metricBadgeChecked === "1") {
+        continue;
+      }
+
+      const meta = extractMapMeta(imgText);
+      img.dataset.metricBadgeChecked = "1";
+
+      if (!meta) continue;
+
+      const key = metricKey(meta.init, meta.leadDay, meta.domain, meta.threshold);
+      const rows = metricsIndex.get(key);
+
+      if (!rows || !rows.length) continue;
+
+      const card =
+        img.closest("article, figure, .card, .product-card, .verification-card, .gallery-card, .gallery-item, li") ||
+        img.parentElement;
+
+      if (!card) continue;
+
+      const existing = Array.from(card.querySelectorAll(".verification-metric-badges"))
+        .some(el => el.dataset.badgeKey === key);
+
+      if (existing) continue;
+
+      if (METRIC_BADGES_SAMPLE_ONLY && sampleCount >= SAMPLE_LIMIT) {
+        continue;
+      }
+
+      card.appendChild(buildBadge(meta, rows));
+      sampleCount += 1;
+    }
+  }
+
+  fetch(METRICS_URL)
+    .then(r => {
+      if (!r.ok) throw new Error("Could not load " + METRICS_URL);
+      return r.json();
+    })
+    .then(payload => {
+      const items = payload.items || [];
+
+      for (const row of items) {
+        const key = metricKey(row.init, row.lead_day, row.domain, row.threshold);
+        if (!metricsIndex.has(key)) metricsIndex.set(key, []);
+        metricsIndex.get(key).push(row);
+      }
+
+      metricsLoaded = true;
+      attachBadges();
+
+      const obs = new MutationObserver(() => attachBadges());
+      obs.observe(document.body, { childList: true, subtree: true });
+    })
+    .catch(err => {
+      console.warn("Verification metric badges unavailable:", err);
+    });
+})();
+</script>
+
 </body>
 </html>
