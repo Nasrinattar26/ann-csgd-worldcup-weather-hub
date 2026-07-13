@@ -217,6 +217,7 @@
 
 
 
+
 <style id="verification-metric-card-badges-style">
   .verification-metric-badges {
     margin-top: 0.65rem;
@@ -267,13 +268,8 @@
 
 <script id="verification-metric-card-badges-script">
 (function () {
-  // Final mode:
-  // false = add metric badges to all matching threshold verification maps.
-  const METRIC_BADGES_SAMPLE_ONLY = false;
-
   const METRICS_URL = "data/verification_metrics_24h_by_init.json";
 
-  // Show raw GEFS first, then ANN-CSGD.
   const MODEL_ORDER = ["raw_GEFS", "ANN-CSGD"];
 
   const THRESHOLD_EVENT_LABELS = {
@@ -304,7 +300,6 @@
   function extractMapMeta(text) {
     if (!text) return null;
 
-    // Only threshold products receive POD/FAR/CSI badges.
     if (!text.includes("/thresholds/")) {
       return null;
     }
@@ -330,8 +325,8 @@
     }
 
     let threshold = null;
-
     const thresholdPathMatch = text.match(/\/thresholds\/([^\/\s]+)\//);
+
     if (thresholdPathMatch) {
       threshold = thresholdPathMatch[1];
     } else {
@@ -354,7 +349,6 @@
     div.className = "verification-metric-badges";
     div.dataset.badgeKey = metricKey(meta.init, meta.leadDay, meta.domain, meta.threshold);
 
-    const cutoff = rows.length ? rows[0].probability_cutoff : null;
     const eventLabel =
       THRESHOLD_EVENT_LABELS[meta.threshold] || "precipitation ≥ threshold";
 
@@ -364,7 +358,7 @@
 
     div.innerHTML = `
       <div class="verification-metric-badges-title">
-        Metrics for this map | probability cutoff ≥ ${fmt(cutoff, 2)}
+        Metrics for this map
       </div>
       ${ordered.map(d => `
         <div class="verification-metric-badge-row">
@@ -377,7 +371,7 @@
       `).join("")}
       <div class="verification-metric-badges-note">
         24-h verification. Observed event: ${eventLabel}.
-        Forecast event for POD/FAR/CSI: probability ≥ ${fmt(cutoff, 2)}.
+        POD/FAR/CSI use mean precipitation forecasts. BSS uses exceedance probabilities.
       </div>
     `;
 
@@ -442,7 +436,6 @@
 
       const meta = extractMapMeta(text);
 
-      // Skip amount maps and any non-threshold products.
       if (!meta) {
         continue;
       }
@@ -460,7 +453,6 @@
         continue;
       }
 
-      // Avoid duplicate metric boxes on the same card.
       if (card.dataset.verificationMetricBadgeKey === key) {
         continue;
       }
@@ -499,6 +491,7 @@
     });
 })();
 </script>
+
 
 
 
