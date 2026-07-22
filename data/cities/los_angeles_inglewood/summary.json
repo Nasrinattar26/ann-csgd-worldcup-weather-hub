@@ -1,5 +1,5 @@
 {
-  "init": "2026072100",
+  "init": "2026072200",
   "city": {
     "id": "los_angeles_inglewood",
     "market": "Los Angeles / Inglewood",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.23981334269046783,
-        "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "value": 0.08564601093530655,
+        "lead_hour": 162,
+        "valid_time": "2026-07-28 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.8815902471542358,
-        "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "value": 0.12226767092943192,
+        "lead_hour": 120,
+        "valid_time": "2026-07-27 00:00 UTC"
       }
     },
     {
@@ -57,14 +57,14 @@
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 0.016194581985473633,
-        "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "value": 4.172325134277344e-05,
+        "lead_hour": 162,
+        "valid_time": "2026-07-28 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.0559141635894775,
-        "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "value": 0.0013232231140136719,
+        "lead_hour": 120,
+        "valid_time": "2026-07-27 00:00 UTC"
       }
     },
     {
@@ -72,14 +72,14 @@
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 7.748603820800781e-05,
+        "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.12273788452148438,
+        "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       }
     },
     {
@@ -89,12 +89,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.002557039260864258,
+        "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.014907121658325195,
+        "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       }
     },
     {
@@ -119,12 +119,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.002175569534301758,
+        "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-07-21 12:00 UTC"
+        "valid_time": "2026-07-22 12:00 UTC"
       }
     }
   ],
