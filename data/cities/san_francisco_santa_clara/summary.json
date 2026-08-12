@@ -1,5 +1,5 @@
 {
-  "init": "2026081100",
+  "init": "2026081200",
   "city": {
     "id": "san_francisco_santa_clara",
     "market": "San Francisco Bay Area / Santa Clara",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.037551578134298325,
-        "lead_hour": 48,
-        "valid_time": "2026-08-13 00:00 UTC"
+        "value": 0.036667026579380035,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.2465338110923767,
-        "lead_hour": 54,
-        "valid_time": "2026-08-13 06:00 UTC"
+        "value": 0.2831953167915344,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       }
     },
     {
@@ -59,12 +59,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.039386749267578125,
-        "lead_hour": 54,
-        "valid_time": "2026-08-13 06:00 UTC"
+        "value": 0.05126595497131348,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       }
     },
     {
@@ -74,12 +74,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.000476837158203125,
-        "lead_hour": 54,
-        "valid_time": "2026-08-13 06:00 UTC"
+        "value": 0.0006973743438720703,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       }
     },
     {
@@ -89,12 +89,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       },
       "box_max_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       }
     },
     {
@@ -104,12 +104,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.00013709068298339844,
-        "lead_hour": 48,
-        "valid_time": "2026-08-13 00:00 UTC"
+        "value": 0.00016689300537109375,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       }
     },
     {
@@ -119,12 +119,12 @@
       "nearest_peak": {
         "value": 0.0,
         "lead_hour": 12,
-        "valid_time": "2026-08-11 12:00 UTC"
+        "valid_time": "2026-08-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.1920928955078125e-05,
-        "lead_hour": 48,
-        "valid_time": "2026-08-13 00:00 UTC"
+        "value": 1.7881393432617188e-05,
+        "lead_hour": 42,
+        "valid_time": "2026-08-13 18:00 UTC"
       }
     }
   ],
