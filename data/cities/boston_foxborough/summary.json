@@ -1,5 +1,5 @@
 {
-  "init": "2026081700",
+  "init": "2026081800",
   "city": {
     "id": "boston_foxborough",
     "market": "Boston / Foxborough",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 5.1894330978393555,
-        "lead_hour": 96,
-        "valid_time": "2026-08-21 00:00 UTC"
+        "value": 6.603519916534424,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 5.275686264038086,
-        "lead_hour": 102,
-        "valid_time": "2026-08-21 06:00 UTC"
+        "value": 7.045112609863281,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       }
     },
     {
@@ -57,14 +57,14 @@
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 12.667441368103027,
-        "lead_hour": 96,
-        "valid_time": "2026-08-21 00:00 UTC"
+        "value": 16.037918090820312,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 12.89175796508789,
-        "lead_hour": 102,
-        "valid_time": "2026-08-21 06:00 UTC"
+        "value": 17.14870262145996,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       }
     },
     {
@@ -72,14 +72,14 @@
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 4.642093181610107,
-        "lead_hour": 102,
-        "valid_time": "2026-08-21 06:00 UTC"
+        "value": 7.16121768951416,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 4.910177230834961,
-        "lead_hour": 102,
-        "valid_time": "2026-08-21 06:00 UTC"
+        "value": 7.764381408691406,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       }
     },
     {
@@ -87,13 +87,13 @@
       "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 1.1418163776397705,
-        "lead_hour": 162,
-        "valid_time": "2026-08-23 18:00 UTC"
+        "value": 1.845693588256836,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.2439846992492676,
-        "lead_hour": 156,
+        "value": 2.0611584186553955,
+        "lead_hour": 132,
         "valid_time": "2026-08-23 12:00 UTC"
       }
     },
@@ -102,14 +102,14 @@
       "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.42525529861450195,
-        "lead_hour": 162,
-        "valid_time": "2026-08-23 18:00 UTC"
+        "value": 0.6646811962127686,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.4740297794342041,
-        "lead_hour": 168,
-        "valid_time": "2026-08-24 00:00 UTC"
+        "value": 0.7384240627288818,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       }
     },
     {
@@ -117,13 +117,13 @@
       "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.16853809356689453,
-        "lead_hour": 162,
-        "valid_time": "2026-08-23 18:00 UTC"
+        "value": 0.2532839775085449,
+        "lead_hour": 132,
+        "valid_time": "2026-08-23 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.2006053924560547,
-        "lead_hour": 156,
+        "value": 0.30537843704223633,
+        "lead_hour": 132,
         "valid_time": "2026-08-23 12:00 UTC"
       }
     }
