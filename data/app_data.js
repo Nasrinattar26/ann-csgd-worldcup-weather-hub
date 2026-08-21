@@ -2,7 +2,7 @@ window.WC_APP_DATA = {
   "title": "ANN-CSGD World Cup Weather Hub",
   "description": "Real ANN12-v4 city-level probabilistic precipitation guidance extracted from the run NetCDF.",
   "init": "2026082000",
-  "created_utc": "2026-08-21 13:21 UTC",
+  "created_utc": "2026-08-21 13:36 UTC",
   "mode": "real_ann12_v4",
   "is_sample_data": false,
   "source_netcdf": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026082000/ann12_v4_products/ANN12_v4_MRMS_VALIDONLY_12h_products_2026082000_with_2yr5yrARI.nc",
