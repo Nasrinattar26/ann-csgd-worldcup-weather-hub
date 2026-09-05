@@ -1,5 +1,5 @@
 {
-  "init": "2026090400",
+  "init": "2026090500",
   "city": {
     "id": "miami_gardens",
     "market": "Miami / Miami Gardens",
@@ -42,13 +42,13 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 4.551751613616943,
-        "lead_hour": 54,
-        "valid_time": "2026-09-06 06:00 UTC"
+        "value": 9.349027633666992,
+        "lead_hour": 12,
+        "valid_time": "2026-09-05 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 8.550665855407715,
-        "lead_hour": 48,
+        "value": 11.87438678741455,
+        "lead_hour": 24,
         "valid_time": "2026-09-06 00:00 UTC"
       }
     },
@@ -57,13 +57,13 @@
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 10.389745712280273,
-        "lead_hour": 54,
-        "valid_time": "2026-09-06 06:00 UTC"
+        "value": 22.026830673217773,
+        "lead_hour": 12,
+        "valid_time": "2026-09-05 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 19.9608154296875,
-        "lead_hour": 48,
+        "value": 27.38642692565918,
+        "lead_hour": 24,
         "valid_time": "2026-09-06 00:00 UTC"
       }
     },
@@ -72,13 +72,13 @@
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 5.034923553466797,
-        "lead_hour": 54,
-        "valid_time": "2026-09-06 06:00 UTC"
+        "value": 11.187190055847168,
+        "lead_hour": 12,
+        "valid_time": "2026-09-05 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 10.127991676330566,
-        "lead_hour": 48,
+        "value": 14.80122184753418,
+        "lead_hour": 24,
         "valid_time": "2026-09-06 00:00 UTC"
       }
     },
@@ -87,13 +87,13 @@
       "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 1.575636863708496,
-        "lead_hour": 54,
-        "valid_time": "2026-09-06 06:00 UTC"
+        "value": 3.6119580268859863,
+        "lead_hour": 12,
+        "valid_time": "2026-09-05 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 3.3525466918945312,
-        "lead_hour": 54,
+        "value": 5.557548999786377,
+        "lead_hour": 30,
         "valid_time": "2026-09-06 06:00 UTC"
       }
     },
@@ -102,13 +102,13 @@
       "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.11635422706604004,
-        "lead_hour": 54,
-        "valid_time": "2026-09-06 06:00 UTC"
+        "value": 0.26186704635620117,
+        "lead_hour": 12,
+        "valid_time": "2026-09-05 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.6139516830444336,
-        "lead_hour": 54,
+        "value": 1.1451363563537598,
+        "lead_hour": 30,
         "valid_time": "2026-09-06 06:00 UTC"
       }
     },
@@ -117,13 +117,13 @@
       "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.035637617111206055,
-        "lead_hour": 54,
+        "value": 0.08288025856018066,
+        "lead_hour": 30,
         "valid_time": "2026-09-06 06:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.26301145553588867,
-        "lead_hour": 54,
+        "value": 0.5236029624938965,
+        "lead_hour": 30,
         "valid_time": "2026-09-06 06:00 UTC"
       }
     }
