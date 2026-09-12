@@ -1,11 +1,11 @@
 window.WC_APP_DATA = {
   "title": "ANN-CSGD World Cup Weather Hub",
   "description": "Real ANN12-v4 city-level probabilistic precipitation guidance extracted from the run NetCDF.",
-  "init": "2026091100",
-  "created_utc": "2026-09-11 13:35 UTC",
+  "init": "2026091200",
+  "created_utc": "2026-09-12 13:05 UTC",
   "mode": "real_ann12_v4",
   "is_sample_data": false,
-  "source_netcdf": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026091100/ann12_v4_products/ANN12_v4_MRMS_VALIDONLY_12h_products_2026091100_with_2yr5yrARI.nc",
+  "source_netcdf": "/data/Nasrin/Ann_csgd_project/auto_website_lead8/runs/2026091200/ann12_v4_products/ANN12_v4_MRMS_VALIDONLY_12h_products_2026091200_with_2yr5yrARI.nc",
   "dimensions": {
     "record": 31,
     "lat": 117,
@@ -367,7 +367,7 @@ window.WC_APP_DATA = {
   ],
   "city_summaries": [
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "atlanta",
         "market": "Atlanta",
@@ -410,14 +410,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 10.515748023986816,
-            "lead_hour": 48,
+            "value": 8.261453628540039,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 11.733983993530273,
+            "value": 10.149456977844238,
             "lead_hour": 24,
-            "valid_time": "2026-09-12 00:00 UTC"
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -425,14 +425,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 27.010112762451172,
-            "lead_hour": 48,
+            "value": 21.319944381713867,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 30.020130157470703,
+            "value": 26.643253326416016,
             "lead_hour": 24,
-            "valid_time": "2026-09-12 00:00 UTC"
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -440,14 +440,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 12.3211088180542,
-            "lead_hour": 48,
+            "value": 8.526128768920898,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 14.261781692504883,
+            "value": 11.41096305847168,
             "lead_hour": 24,
-            "valid_time": "2026-09-12 00:00 UTC"
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -455,14 +455,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 3.056323528289795,
-            "lead_hour": 48,
+            "value": 1.670372486114502,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 3.7772655487060547,
+            "value": 2.4698078632354736,
             "lead_hour": 24,
-            "valid_time": "2026-09-12 00:00 UTC"
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -470,14 +470,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.7251858711242676,
-            "lead_hour": 48,
-            "valid_time": "2026-09-13 00:00 UTC"
+            "value": 0.3491520881652832,
+            "lead_hour": 192,
+            "valid_time": "2026-09-20 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.7902264595031738,
+            "value": 0.4507899284362793,
             "lead_hour": 24,
-            "valid_time": "2026-09-12 00:00 UTC"
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -485,14 +485,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.3514528274536133,
-            "lead_hour": 48,
-            "valid_time": "2026-09-13 00:00 UTC"
+            "value": 0.21450519561767578,
+            "lead_hour": 192,
+            "valid_time": "2026-09-20 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.38083791732788086,
-            "lead_hour": 48,
-            "valid_time": "2026-09-13 00:00 UTC"
+            "value": 0.21993517875671387,
+            "lead_hour": 192,
+            "valid_time": "2026-09-20 00:00 UTC"
           }
         }
       ],
@@ -504,7 +504,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "boston_foxborough",
         "market": "Boston / Foxborough",
@@ -547,13 +547,13 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 14.812626838684082,
-            "lead_hour": 66,
+            "value": 26.058542251586914,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 18.233301162719727,
-            "lead_hour": 66,
+            "value": 28.23170280456543,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -562,13 +562,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 42.315792083740234,
-            "lead_hour": 66,
+            "value": 77.57452392578125,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 53.479923248291016,
-            "lead_hour": 66,
+            "value": 82.41316986083984,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -577,13 +577,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 18.347698211669922,
-            "lead_hour": 66,
+            "value": 43.11629104614258,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 24.842798233032227,
-            "lead_hour": 66,
+            "value": 48.718482971191406,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -592,13 +592,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 3.4387707710266113,
-            "lead_hour": 66,
+            "value": 8.670306205749512,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 4.920572280883789,
-            "lead_hour": 66,
+            "value": 10.419475555419922,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -607,14 +607,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.9813904762268066,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 1.8748998641967773,
+            "lead_hour": 42,
+            "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 1.2983739376068115,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 2.132004499435425,
+            "lead_hour": 42,
+            "valid_time": "2026-09-13 18:00 UTC"
           }
         },
         {
@@ -622,13 +622,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.3110229969024658,
-            "lead_hour": 72,
+            "value": 0.395125150680542,
+            "lead_hour": 48,
             "valid_time": "2026-09-14 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.41628479957580566,
-            "lead_hour": 72,
+            "value": 0.5541443824768066,
+            "lead_hour": 48,
             "valid_time": "2026-09-14 00:00 UTC"
           }
         }
@@ -641,7 +641,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "dallas_arlington",
         "market": "Dallas / Arlington",
@@ -684,14 +684,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 4.199005126953125,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 1.089349389076233,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 7.767340660095215,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 1.4594627618789673,
+            "lead_hour": 180,
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -699,14 +699,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 10.003698348999023,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 2.423858642578125,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 19.96372413635254,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 3.300023078918457,
+            "lead_hour": 180,
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -714,14 +714,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 3.642076253890991,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 0.8841931819915771,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 7.768154144287109,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 1.432865858078003,
+            "lead_hour": 180,
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -729,14 +729,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 1.24891996383667,
-            "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "value": 0.1693248748779297,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 1.4523208141326904,
-            "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "value": 0.3782808780670166,
+            "lead_hour": 180,
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -744,14 +744,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.3566563129425049,
-            "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "value": 0.022619962692260742,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.3722846508026123,
+            "value": 0.08283257484436035,
             "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -759,14 +759,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.16721487045288086,
-            "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "value": 0.0065267086029052734,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.17244219779968262,
+            "value": 0.03209710121154785,
             "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         }
       ],
@@ -778,7 +778,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "houston",
         "market": "Houston",
@@ -821,14 +821,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 5.950984001159668,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 5.045762538909912,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 12.5299072265625,
+            "value": 6.1188249588012695,
             "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "valid_time": "2026-09-12 18:00 UTC"
           }
         },
         {
@@ -836,14 +836,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 14.509403228759766,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 12.236672401428223,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 31.947500228881836,
+            "value": 14.989829063415527,
             "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "valid_time": "2026-09-12 18:00 UTC"
           }
         },
         {
@@ -851,14 +851,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 6.087064743041992,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 4.616147041320801,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 15.490251541137695,
+            "value": 6.203097343444824,
             "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "valid_time": "2026-09-12 18:00 UTC"
           }
         },
         {
@@ -866,14 +866,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 1.3984203338623047,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 0.8696317672729492,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 4.236250877380371,
+            "value": 1.3812124729156494,
             "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "valid_time": "2026-09-12 18:00 UTC"
           }
         },
         {
@@ -881,14 +881,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.06440877914428711,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 0.02548694610595703,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.2708613872528076,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 0.06660223007202148,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           }
         },
         {
@@ -896,14 +896,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.010657310485839844,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 0.005227327346801758,
+            "lead_hour": 192,
+            "valid_time": "2026-09-20 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.055909156799316406,
-            "lead_hour": 18,
-            "valid_time": "2026-09-11 18:00 UTC"
+            "value": 0.019150972366333008,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           }
         }
       ],
@@ -915,7 +915,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "kansas_city",
         "market": "Kansas City",
@@ -958,13 +958,13 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 12.534086227416992,
-            "lead_hour": 132,
+            "value": 11.638304710388184,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 13.576166152954102,
-            "lead_hour": 132,
+            "value": 17.129610061645508,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         },
@@ -973,13 +973,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 31.136423110961914,
-            "lead_hour": 132,
+            "value": 28.3538875579834,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 34.1407356262207,
-            "lead_hour": 132,
+            "value": 44.54916763305664,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         },
@@ -988,13 +988,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 15.767091751098633,
-            "lead_hour": 132,
+            "value": 14.426994323730469,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 17.354482650756836,
-            "lead_hour": 132,
+            "value": 23.152006149291992,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         },
@@ -1003,13 +1003,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 4.747551918029785,
-            "lead_hour": 132,
+            "value": 4.485660552978516,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 5.21065616607666,
-            "lead_hour": 132,
+            "value": 6.6342949867248535,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         },
@@ -1018,13 +1018,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 1.3064146041870117,
-            "lead_hour": 132,
+            "value": 1.2978076934814453,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 1.46409273147583,
-            "lead_hour": 132,
+            "value": 1.8582165241241455,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         },
@@ -1033,13 +1033,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.49932003021240234,
-            "lead_hour": 132,
+            "value": 0.5178570747375488,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.6057500839233398,
-            "lead_hour": 132,
+            "value": 0.6885051727294922,
+            "lead_hour": 108,
             "valid_time": "2026-09-16 12:00 UTC"
           }
         }
@@ -1052,7 +1052,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "los_angeles_inglewood",
         "market": "Los Angeles / Inglewood",
@@ -1095,14 +1095,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 0.03400694951415062,
-            "lead_hour": 186,
-            "valid_time": "2026-09-18 18:00 UTC"
+            "value": 0.03619151562452316,
+            "lead_hour": 138,
+            "valid_time": "2026-09-17 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.06660157442092896,
+            "value": 0.04150198772549629,
             "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "valid_time": "2026-09-19 12:00 UTC"
           }
         },
         {
@@ -1112,12 +1112,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 5.9604644775390625e-06,
-            "lead_hour": 180,
-            "valid_time": "2026-09-18 12:00 UTC"
+            "value": 0.0,
+            "lead_hour": 12,
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1127,12 +1127,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1142,12 +1142,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1157,12 +1157,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1172,12 +1172,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         }
       ],
@@ -1189,7 +1189,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "miami_gardens",
         "market": "Miami / Miami Gardens",
@@ -1232,14 +1232,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 5.917518138885498,
-            "lead_hour": 48,
+            "value": 7.484734058380127,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 8.525250434875488,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 10.092804908752441,
+            "lead_hour": 24,
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -1247,14 +1247,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 13.97075080871582,
-            "lead_hour": 48,
+            "value": 17.747711181640625,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 19.55772590637207,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 23.921649932861328,
+            "lead_hour": 24,
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -1262,14 +1262,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 6.5248308181762695,
-            "lead_hour": 48,
+            "value": 8.57532024383545,
+            "lead_hour": 24,
             "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 10.152667999267578,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 12.244182586669922,
+            "lead_hour": 24,
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -1277,14 +1277,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 1.9609689712524414,
-            "lead_hour": 54,
-            "valid_time": "2026-09-13 06:00 UTC"
+            "value": 2.5663137435913086,
+            "lead_hour": 24,
+            "valid_time": "2026-09-13 00:00 UTC"
           },
           "box_max_peak": {
-            "value": 3.4701287746429443,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 3.967982530593872,
+            "lead_hour": 24,
+            "valid_time": "2026-09-13 00:00 UTC"
           }
         },
         {
@@ -1292,14 +1292,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.20592212677001953,
-            "lead_hour": 186,
+            "value": 0.23874640464782715,
+            "lead_hour": 162,
             "valid_time": "2026-09-18 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.6317853927612305,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 0.6127655506134033,
+            "lead_hour": 96,
+            "valid_time": "2026-09-16 00:00 UTC"
           }
         },
         {
@@ -1307,14 +1307,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.0840306282043457,
-            "lead_hour": 186,
+            "value": 0.0952303409576416,
+            "lead_hour": 162,
             "valid_time": "2026-09-18 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.2647519111633301,
-            "lead_hour": 72,
-            "valid_time": "2026-09-14 00:00 UTC"
+            "value": 0.26421546936035156,
+            "lead_hour": 96,
+            "valid_time": "2026-09-16 00:00 UTC"
           }
         }
       ],
@@ -1326,7 +1326,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "new_york_new_jersey",
         "market": "New York / New Jersey",
@@ -1369,13 +1369,13 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 15.299971580505371,
-            "lead_hour": 66,
+            "value": 21.851564407348633,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 17.563129425048828,
-            "lead_hour": 66,
+            "value": 24.386554718017578,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1384,13 +1384,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 43.54584884643555,
-            "lead_hour": 66,
+            "value": 66.57674407958984,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 51.05437088012695,
-            "lead_hour": 66,
+            "value": 71.72537994384766,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1399,13 +1399,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 19.333738327026367,
-            "lead_hour": 66,
+            "value": 32.73660659790039,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 23.55104637145996,
-            "lead_hour": 66,
+            "value": 38.587921142578125,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1414,13 +1414,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 3.7872731685638428,
-            "lead_hour": 66,
+            "value": 5.821913719177246,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 4.600191116333008,
-            "lead_hour": 66,
+            "value": 8.148795127868652,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1429,14 +1429,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.7451057434082031,
-            "lead_hour": 66,
+            "value": 0.8763551712036133,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.9633839130401611,
-            "lead_hour": 60,
-            "valid_time": "2026-09-13 12:00 UTC"
+            "value": 1.5045225620269775,
+            "lead_hour": 42,
+            "valid_time": "2026-09-13 18:00 UTC"
           }
         },
         {
@@ -1444,14 +1444,14 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.18704533576965332,
-            "lead_hour": 66,
+            "value": 0.16391873359680176,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.25132298469543457,
-            "lead_hour": 60,
-            "valid_time": "2026-09-13 12:00 UTC"
+            "value": 0.3319740295410156,
+            "lead_hour": 42,
+            "valid_time": "2026-09-13 18:00 UTC"
           }
         }
       ],
@@ -1463,7 +1463,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "philadelphia",
         "market": "Philadelphia",
@@ -1506,13 +1506,13 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 17.02880096435547,
-            "lead_hour": 60,
+            "value": 17.88876724243164,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 17.259185791015625,
-            "lead_hour": 60,
+            "value": 19.30661392211914,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         },
@@ -1521,13 +1521,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 48.57011413574219,
-            "lead_hour": 60,
+            "value": 53.77703857421875,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 50.20265579223633,
-            "lead_hour": 60,
+            "value": 60.1705207824707,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         },
@@ -1536,13 +1536,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 22.64440155029297,
-            "lead_hour": 60,
+            "value": 23.914653778076172,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 22.933334350585938,
-            "lead_hour": 60,
+            "value": 26.719539642333984,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         },
@@ -1551,13 +1551,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 4.711520671844482,
-            "lead_hour": 60,
+            "value": 4.042881965637207,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 4.811078071594238,
-            "lead_hour": 60,
+            "value": 4.046475887298584,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         },
@@ -1566,13 +1566,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 1.218491792678833,
-            "lead_hour": 60,
+            "value": 0.8334577083587646,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 1.470261812210083,
-            "lead_hour": 60,
+            "value": 0.8465945720672607,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         },
@@ -1581,13 +1581,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.3802001476287842,
-            "lead_hour": 60,
+            "value": 0.21020770072937012,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.5160868167877197,
-            "lead_hour": 60,
+            "value": 0.23218989372253418,
+            "lead_hour": 36,
             "valid_time": "2026-09-13 12:00 UTC"
           }
         }
@@ -1600,7 +1600,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "san_francisco_santa_clara",
         "market": "San Francisco Bay Area / Santa Clara",
@@ -1643,14 +1643,14 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 0.028425399214029312,
+            "value": 0.02844352088868618,
             "lead_hour": 186,
-            "valid_time": "2026-09-18 18:00 UTC"
+            "valid_time": "2026-09-19 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.04476811736822128,
-            "lead_hour": 192,
-            "valid_time": "2026-09-19 00:00 UTC"
+            "value": 0.028947297483682632,
+            "lead_hour": 186,
+            "valid_time": "2026-09-19 18:00 UTC"
           }
         },
         {
@@ -1660,12 +1660,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1675,12 +1675,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1690,12 +1690,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1705,12 +1705,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         },
         {
@@ -1720,12 +1720,12 @@ window.WC_APP_DATA = {
           "nearest_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           },
           "box_max_peak": {
             "value": 0.0,
             "lead_hour": 12,
-            "valid_time": "2026-09-11 12:00 UTC"
+            "valid_time": "2026-09-12 12:00 UTC"
           }
         }
       ],
@@ -1737,7 +1737,7 @@ window.WC_APP_DATA = {
       "is_sample_data": false
     },
     {
-      "init": "2026091100",
+      "init": "2026091200",
       "city": {
         "id": "seattle",
         "market": "Seattle",
@@ -1780,13 +1780,13 @@ window.WC_APP_DATA = {
           "product_label": "Expected precipitation",
           "units": "mm per 12h",
           "nearest_peak": {
-            "value": 13.148056983947754,
-            "lead_hour": 66,
+            "value": 13.978117942810059,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 20.806499481201172,
-            "lead_hour": 66,
+            "value": 31.588897705078125,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1795,13 +1795,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 0.5 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 42.02979278564453,
-            "lead_hour": 66,
+            "value": 45.895896911621094,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 73.45999908447266,
-            "lead_hour": 66,
+            "value": 94.87808990478516,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1810,13 +1810,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 1 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 11.339038848876953,
-            "lead_hour": 66,
+            "value": 12.534832954406738,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 29.17982292175293,
-            "lead_hour": 66,
+            "value": 63.04892349243164,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1825,13 +1825,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2 inch",
           "units": "%",
           "nearest_peak": {
-            "value": 0.5813419818878174,
-            "lead_hour": 66,
+            "value": 0.6049394607543945,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 2.0780861377716064,
-            "lead_hour": 66,
+            "value": 9.392112731933594,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1840,13 +1840,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 2-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 1.3668060302734375,
-            "lead_hour": 66,
+            "value": 1.4559447765350342,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 4.600024223327637,
-            "lead_hour": 66,
+            "value": 17.780292510986328,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         },
@@ -1855,13 +1855,13 @@ window.WC_APP_DATA = {
           "product_label": "Probability > 5-year 12-h ARI",
           "units": "%",
           "nearest_peak": {
-            "value": 0.23216009140014648,
-            "lead_hour": 66,
+            "value": 0.2348482608795166,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           },
           "box_max_peak": {
-            "value": 0.8661329746246338,
-            "lead_hour": 66,
+            "value": 4.487448692321777,
+            "lead_hour": 42,
             "valid_time": "2026-09-13 18:00 UTC"
           }
         }
