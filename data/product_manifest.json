@@ -1,6 +1,6 @@
 {
-  "init": "2026101500",
-  "created_utc": "2026-10-15 13:35 UTC",
+  "init": "2026101600",
+  "created_utc": "2026-10-16 13:05 UTC",
   "products_root": "products",
   "public_title": "Forecast Products and Downloads",
   "n_files": 35,
@@ -35,8 +35,8 @@
   },
   "files": [
     {
-      "path": "products/conus_gifs/2026101500_prob_gt_0p5inch_lead8.gif",
-      "name": "2026101500_prob_gt_0p5inch_lead8.gif",
+      "path": "products/conus_gifs/2026101600_prob_gt_0p5inch_lead8.gif",
+      "name": "2026101600_prob_gt_0p5inch_lead8.gif",
       "display_name": "Chance of 0.5+ inch rainfall animation",
       "category": "conus_gifs",
       "category_label": "Forecast animations",
@@ -44,13 +44,13 @@
       "product_label": "Chance of 0.5+ inch rainfall",
       "domain": "CONUS",
       "kind": "gif",
-      "size_bytes": 1502108,
-      "size_mb": 1.433,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 1522744,
+      "size_mb": 1.452,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_gifs/2026101500_prob_gt_1inch_lead8.gif",
-      "name": "2026101500_prob_gt_1inch_lead8.gif",
+      "path": "products/conus_gifs/2026101600_prob_gt_1inch_lead8.gif",
+      "name": "2026101600_prob_gt_1inch_lead8.gif",
       "display_name": "Chance of 1+ inch rainfall animation",
       "category": "conus_gifs",
       "category_label": "Forecast animations",
@@ -58,13 +58,13 @@
       "product_label": "Chance of 1+ inch rainfall",
       "domain": "CONUS",
       "kind": "gif",
-      "size_bytes": 1069466,
-      "size_mb": 1.02,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 1075425,
+      "size_mb": 1.026,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_gifs/2026101500_prob_gt_2inch_lead8.gif",
-      "name": "2026101500_prob_gt_2inch_lead8.gif",
+      "path": "products/conus_gifs/2026101600_prob_gt_2inch_lead8.gif",
+      "name": "2026101600_prob_gt_2inch_lead8.gif",
       "display_name": "Chance of 2+ inch rainfall animation",
       "category": "conus_gifs",
       "category_label": "Forecast animations",
@@ -72,13 +72,13 @@
       "product_label": "Chance of 2+ inch rainfall",
       "domain": "CONUS",
       "kind": "gif",
-      "size_bytes": 943415,
-      "size_mb": 0.9,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 1283299,
+      "size_mb": 1.224,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_gifs/2026101500_prob_gt_2yrARI_lead8.gif",
-      "name": "2026101500_prob_gt_2yrARI_lead8.gif",
+      "path": "products/conus_gifs/2026101600_prob_gt_2yrARI_lead8.gif",
+      "name": "2026101600_prob_gt_2yrARI_lead8.gif",
       "display_name": "Chance of exceeding a 2-year rainfall threshold animation",
       "category": "conus_gifs",
       "category_label": "Forecast animations",
@@ -86,13 +86,13 @@
       "product_label": "Chance of exceeding a 2-year rainfall threshold",
       "domain": "CONUS",
       "kind": "gif",
-      "size_bytes": 1482657,
-      "size_mb": 1.414,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 1655868,
+      "size_mb": 1.579,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_gifs/2026101500_prob_gt_5yrARI_lead8.gif",
-      "name": "2026101500_prob_gt_5yrARI_lead8.gif",
+      "path": "products/conus_gifs/2026101600_prob_gt_5yrARI_lead8.gif",
+      "name": "2026101600_prob_gt_5yrARI_lead8.gif",
       "display_name": "Chance of exceeding a 5-year rainfall threshold animation",
       "category": "conus_gifs",
       "category_label": "Forecast animations",
@@ -100,13 +100,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "gif",
-      "size_bytes": 1370985,
-      "size_mb": 1.307,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 1324028,
+      "size_mb": 1.263,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day1_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of 1+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -114,13 +114,13 @@
       "product_label": "Chance of 1+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 613118,
-      "size_mb": 0.585,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 575853,
+      "size_mb": 0.549,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day2_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of 1+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -128,83 +128,55 @@
       "product_label": "Chance of 1+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 574261,
-      "size_mb": 0.548,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of 1+ inch rainfall comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_1inch",
-      "product_label": "Chance of 1+ inch rainfall",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 551081,
-      "size_mb": 0.526,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of 1+ inch rainfall comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_1inch",
-      "product_label": "Chance of 1+ inch rainfall",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 547898,
-      "size_mb": 0.523,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of 1+ inch rainfall comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_1inch",
-      "product_label": "Chance of 1+ inch rainfall",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 556767,
-      "size_mb": 0.531,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of 2+ inch rainfall comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_2inch",
-      "product_label": "Chance of 2+ inch rainfall",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 596967,
-      "size_mb": 0.569,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of 2+ inch rainfall comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_2inch",
-      "product_label": "Chance of 2+ inch rainfall",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 561893,
+      "size_bytes": 561608,
       "size_mb": 0.536,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day3_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of 1+ inch rainfall comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_1inch",
+      "product_label": "Chance of 1+ inch rainfall",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 559013,
+      "size_mb": 0.533,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day4_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of 1+ inch rainfall comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_1inch",
+      "product_label": "Chance of 1+ inch rainfall",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 562440,
+      "size_mb": 0.536,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day5_prob_gt_1inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of 1+ inch rainfall comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_1inch",
+      "product_label": "Chance of 1+ inch rainfall",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 567034,
+      "size_mb": 0.541,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day1_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of 2+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -212,13 +184,13 @@
       "product_label": "Chance of 2+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 550560,
-      "size_mb": 0.525,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 564397,
+      "size_mb": 0.538,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day2_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of 2+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -226,13 +198,13 @@
       "product_label": "Chance of 2+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 548331,
-      "size_mb": 0.523,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 559401,
+      "size_mb": 0.533,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day3_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of 2+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -240,41 +212,41 @@
       "product_label": "Chance of 2+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 554092,
-      "size_mb": 0.528,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 555812,
+      "size_mb": 0.53,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
+      "path": "products/conus_ero_2x2/2026101600_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day4_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of 2+ inch rainfall comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_2yr",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "product_id": "prob_gt_2inch",
+      "product_label": "Chance of 2+ inch rainfall",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 589920,
-      "size_mb": 0.563,
-      "modified_utc": "2026-10-15 13:35 UTC"
-    },
-    {
-      "path": "products/conus_ero_2x2/2026101500_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
-      "category": "conus_ero_2x2",
-      "category_label": "Forecast comparison maps",
-      "product_id": "prob_gt_2yr",
-      "product_label": "Chance of exceeding a 2-year rainfall threshold",
-      "domain": "CONUS",
-      "kind": "image",
-      "size_bytes": 557413,
+      "size_bytes": 557350,
       "size_mb": 0.532,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day5_prob_gt_2inch_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of 2+ inch rainfall comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_2inch",
+      "product_label": "Chance of 2+ inch rainfall",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 559704,
+      "size_mb": 0.534,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day1_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -282,13 +254,13 @@
       "product_label": "Chance of exceeding a 2-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 548270,
-      "size_mb": 0.523,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 560115,
+      "size_mb": 0.534,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day2_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -296,13 +268,13 @@
       "product_label": "Chance of exceeding a 2-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 546252,
-      "size_mb": 0.521,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 553872,
+      "size_mb": 0.528,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day3_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -310,13 +282,41 @@
       "product_label": "Chance of exceeding a 2-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 550970,
-      "size_mb": 0.525,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 551479,
+      "size_mb": 0.526,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day4_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_2yr",
+      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 553745,
+      "size_mb": 0.528,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day5_prob_gt_2yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "display_name": "Chance of exceeding a 2-year rainfall threshold comparison map",
+      "category": "conus_ero_2x2",
+      "category_label": "Forecast comparison maps",
+      "product_id": "prob_gt_2yr",
+      "product_label": "Chance of exceeding a 2-year rainfall threshold",
+      "domain": "CONUS",
+      "kind": "image",
+      "size_bytes": 559736,
+      "size_mb": 0.534,
+      "modified_utc": "2026-10-16 13:05 UTC"
+    },
+    {
+      "path": "products/conus_ero_2x2/2026101600_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day1_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -324,13 +324,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 588030,
-      "size_mb": 0.561,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 559284,
+      "size_mb": 0.533,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day2_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -338,13 +338,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 557028,
-      "size_mb": 0.531,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 553600,
+      "size_mb": 0.528,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day3_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -352,13 +352,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 548263,
-      "size_mb": 0.523,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 551614,
+      "size_mb": 0.526,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day4_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -366,13 +366,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 546261,
-      "size_mb": 0.521,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 552740,
+      "size_mb": 0.527,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/conus_ero_2x2/2026101500_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
-      "name": "2026101500_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "path": "products/conus_ero_2x2/2026101600_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
+      "name": "2026101600_Day5_prob_gt_5yr24h_ari_24h_CONUS_GEFS_ANN12v4_ERO_2x2.png",
       "display_name": "Chance of exceeding a 5-year rainfall threshold comparison map",
       "category": "conus_ero_2x2",
       "category_label": "Forecast comparison maps",
@@ -380,13 +380,13 @@
       "product_label": "Chance of exceeding a 5-year rainfall threshold",
       "domain": "CONUS",
       "kind": "image",
-      "size_bytes": 550941,
-      "size_mb": 0.525,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "size_bytes": 557792,
+      "size_mb": 0.532,
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/12h/2026101500_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
-      "name": "2026101500_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
+      "path": "products/grib2/12h/2026101600_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
+      "name": "2026101600_ANN12v4_12h_prob_gt_0p5inch_percent.grib2",
       "display_name": "Chance of 0.5+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -396,11 +396,11 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/24h/2026101500_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
-      "name": "2026101500_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
+      "path": "products/grib2/24h/2026101600_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
+      "name": "2026101600_ANN12v4_24h_prob_gt_0p5inch_24h.grib2",
       "display_name": "Chance of 0.5+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -410,11 +410,11 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/12h/2026101500_ANN12v4_12h_prob_gt_1inch_percent.grib2",
-      "name": "2026101500_ANN12v4_12h_prob_gt_1inch_percent.grib2",
+      "path": "products/grib2/12h/2026101600_ANN12v4_12h_prob_gt_1inch_percent.grib2",
+      "name": "2026101600_ANN12v4_12h_prob_gt_1inch_percent.grib2",
       "display_name": "Chance of 1+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -424,11 +424,11 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/24h/2026101500_ANN12v4_24h_prob_gt_1inch_24h.grib2",
-      "name": "2026101500_ANN12v4_24h_prob_gt_1inch_24h.grib2",
+      "path": "products/grib2/24h/2026101600_ANN12v4_24h_prob_gt_1inch_24h.grib2",
+      "name": "2026101600_ANN12v4_24h_prob_gt_1inch_24h.grib2",
       "display_name": "Chance of 1+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -438,11 +438,11 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/12h/2026101500_ANN12v4_12h_prob_gt_2inch_percent.grib2",
-      "name": "2026101500_ANN12v4_12h_prob_gt_2inch_percent.grib2",
+      "path": "products/grib2/12h/2026101600_ANN12v4_12h_prob_gt_2inch_percent.grib2",
+      "name": "2026101600_ANN12v4_12h_prob_gt_2inch_percent.grib2",
       "display_name": "Chance of 2+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -452,11 +452,11 @@
       "kind": "grib2",
       "size_bytes": 1359598,
       "size_mb": 1.297,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/24h/2026101500_ANN12v4_24h_prob_gt_2inch_24h.grib2",
-      "name": "2026101500_ANN12v4_24h_prob_gt_2inch_24h.grib2",
+      "path": "products/grib2/24h/2026101600_ANN12v4_24h_prob_gt_2inch_24h.grib2",
+      "name": "2026101600_ANN12v4_24h_prob_gt_2inch_24h.grib2",
       "display_name": "Chance of 2+ inch rainfall forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -466,11 +466,11 @@
       "kind": "grib2",
       "size_bytes": 1271882,
       "size_mb": 1.213,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/12h/2026101500_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
-      "name": "2026101500_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
+      "path": "products/grib2/12h/2026101600_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
+      "name": "2026101600_ANN12v4_12h_prob_gt_2yr12h_ari_percent.grib2",
       "display_name": "Chance of exceeding a 2-year rainfall threshold forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -480,11 +480,11 @@
       "kind": "grib2",
       "size_bytes": 1307053,
       "size_mb": 1.247,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/24h/2026101500_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
-      "name": "2026101500_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
+      "path": "products/grib2/24h/2026101600_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
+      "name": "2026101600_ANN12v4_24h_prob_gt_2yr24h_ari_24h.grib2",
       "display_name": "Chance of exceeding a 2-year rainfall threshold forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -494,11 +494,11 @@
       "kind": "grib2",
       "size_bytes": 1222727,
       "size_mb": 1.166,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/12h/2026101500_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
-      "name": "2026101500_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
+      "path": "products/grib2/12h/2026101600_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
+      "name": "2026101600_ANN12v4_12h_prob_gt_5yr12h_ari_percent.grib2",
       "display_name": "Chance of exceeding a 5-year rainfall threshold forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -508,11 +508,11 @@
       "kind": "grib2",
       "size_bytes": 1307053,
       "size_mb": 1.247,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     },
     {
-      "path": "products/grib2/24h/2026101500_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
-      "name": "2026101500_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
+      "path": "products/grib2/24h/2026101600_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
+      "name": "2026101600_ANN12v4_24h_prob_gt_5yr24h_ari_24h.grib2",
       "display_name": "Chance of exceeding a 5-year rainfall threshold forecast data",
       "category": "grib2",
       "category_label": "Downloadable forecast data",
@@ -522,7 +522,7 @@
       "kind": "grib2",
       "size_bytes": 1270403,
       "size_mb": 1.212,
-      "modified_utc": "2026-10-15 13:35 UTC"
+      "modified_utc": "2026-10-16 13:05 UTC"
     }
   ],
   "note": "Public-facing gallery with forecast animations, comparison maps, and individual GRIB2 forecast data files only."
