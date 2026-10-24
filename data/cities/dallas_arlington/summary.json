@@ -1,5 +1,5 @@
 {
-  "init": "2026102300",
+  "init": "2026102400",
   "city": {
     "id": "dallas_arlington",
     "market": "Dallas / Arlington",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 4.131048202514648,
+        "value": 3.8328630924224854,
         "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "valid_time": "2026-11-01 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 5.404894828796387,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 5.710864543914795,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     },
     {
@@ -57,14 +57,14 @@
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 9.52940559387207,
+        "value": 8.82815170288086,
         "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "valid_time": "2026-11-01 00:00 UTC"
       },
       "box_max_peak": {
-        "value": 12.5941162109375,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 13.074117660522461,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     },
     {
@@ -72,14 +72,14 @@
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 4.454141616821289,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 4.1940155029296875,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 5.964255332946777,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 6.45468807220459,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     },
     {
@@ -87,14 +87,14 @@
       "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 1.3063013553619385,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 1.3324975967407227,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.7654180526733398,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 2.066725492477417,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     },
     {
@@ -102,14 +102,14 @@
       "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.29975175857543945,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 0.34155845642089844,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.48217177391052246,
+        "value": 0.5624711513519287,
         "lead_hour": 186,
-        "valid_time": "2026-10-30 18:00 UTC"
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     },
     {
@@ -117,14 +117,14 @@
       "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.12176036834716797,
-        "lead_hour": 192,
-        "valid_time": "2026-10-31 00:00 UTC"
+        "value": 0.14917850494384766,
+        "lead_hour": 186,
+        "valid_time": "2026-10-31 18:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.21538138389587402,
+        "value": 0.24744868278503418,
         "lead_hour": 186,
-        "valid_time": "2026-10-30 18:00 UTC"
+        "valid_time": "2026-10-31 18:00 UTC"
       }
     }
   ],
