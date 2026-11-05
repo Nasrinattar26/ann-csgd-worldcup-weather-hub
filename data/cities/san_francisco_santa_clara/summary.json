@@ -1,5 +1,5 @@
 {
-  "init": "2026110400",
+  "init": "2026110500",
   "city": {
     "id": "san_francisco_santa_clara",
     "market": "San Francisco Bay Area / Santa Clara",
@@ -42,14 +42,14 @@
       "product_label": "Expected precipitation",
       "units": "mm per 12h",
       "nearest_peak": {
-        "value": 0.6324505805969238,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 6.910055160522461,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 1.917330265045166,
-        "lead_hour": 12,
-        "valid_time": "2026-11-04 12:00 UTC"
+        "value": 8.768464088439941,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       }
     },
     {
@@ -57,14 +57,14 @@
       "product_label": "Probability > 0.5 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 1.145869493484497,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 17.180269241333008,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 2.6213884353637695,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 22.191083908081055,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       }
     },
     {
@@ -72,14 +72,14 @@
       "product_label": "Probability > 1 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 0.2614140510559082,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 7.221031188964844,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.8279621601104736,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 9.800827026367188,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       }
     },
     {
@@ -87,14 +87,14 @@
       "product_label": "Probability > 2 inch",
       "units": "%",
       "nearest_peak": {
-        "value": 0.02065300941467285,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 1.6296327114105225,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.1201927661895752,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 2.357661724090576,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       }
     },
     {
@@ -102,14 +102,14 @@
       "product_label": "Probability > 2-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.10194778442382812,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 4.154128074645996,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.5138099193572998,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 4.588282108306885,
+        "lead_hour": 186,
+        "valid_time": "2026-11-12 18:00 UTC"
       }
     },
     {
@@ -117,14 +117,14 @@
       "product_label": "Probability > 5-year 12-h ARI",
       "units": "%",
       "nearest_peak": {
-        "value": 0.03377199172973633,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 2.173495292663574,
+        "lead_hour": 180,
+        "valid_time": "2026-11-12 12:00 UTC"
       },
       "box_max_peak": {
-        "value": 0.2841174602508545,
-        "lead_hour": 192,
-        "valid_time": "2026-11-12 00:00 UTC"
+        "value": 3.0386030673980713,
+        "lead_hour": 186,
+        "valid_time": "2026-11-12 18:00 UTC"
       }
     }
   ],
